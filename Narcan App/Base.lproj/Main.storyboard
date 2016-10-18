@@ -7,6 +7,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Knowledge View Controller-->
+        <scene sceneID="xlX-l4-u06">
+            <objects>
+                <viewController id="qU2-bK-9v4" customClass="KnowledgeViewController" customModule="Narcan_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wXq-QS-JhO"/>
+                        <viewControllerLayoutGuide type="bottom" id="NTv-EW-Inf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZCa-nu-hyb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TfV-RW-ws1">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="250-St-QlZ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="MHH-vR-RCs">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Close">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="closeDidPress:" destination="qU2-bK-9v4" eventType="touchUpInside" id="Oi5-P2-DgX"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZS-Uf-lXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888.8" y="-1374.0629685157423"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -57,6 +96,9 @@
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="knowledge_base_120"/>
+                                <connections>
+                                    <segue destination="2tf-Lj-ief" kind="presentation" modalTransitionStyle="coverVertical" id="xl7-AL-ia4"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" id="dOM-bB-a8n">
@@ -64,18 +106,60 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="settings_120"/>
+                                <connections>
+                                    <segue destination="qux-Ft-qbo" kind="presentation" modalTransitionStyle="coverVertical" id="Kfq-KB-T24"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.6" y="-564.46776611694156"/>
+            <point key="canvasLocation" x="948" y="-564"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
+        <scene sceneID="0pe-Xh-BtQ">
+            <objects>
+                <viewController id="28I-tm-Gfs" customClass="SettingsViewController" customModule="Narcan_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uS2-To-mBp"/>
+                        <viewControllerLayoutGuide type="bottom" id="OEs-wY-A62"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UAc-US-XgE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nDi-0U-MaW">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="aDk-a5-hYK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="qjw-dh-A4q">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Close">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="closeDidPress:" destination="28I-tm-Gfs" eventType="touchUpInside" id="8cx-Tc-ajR"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KV1-Ux-e9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="167"/>
+        </scene>
+        <!--Request View Controller-->
         <scene sceneID="59z-48-Flm">
             <objects>
-                <viewController id="EuN-xs-muS" sceneMemberID="viewController">
+                <viewController id="EuN-xs-muS" customClass="RequestViewController" customModule="Narcan_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NVG-HL-jVv"/>
                         <viewControllerLayoutGuide type="bottom" id="Bpx-93-Ulr"/>
@@ -88,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9H-xk-mw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1762" y="-564"/>
+            <point key="canvasLocation" x="1889" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yxH-cE-V4d">
@@ -107,6 +191,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRw-NN-dwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="-563.56821589205401"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7d9-yy-1iR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2tf-Lj-ief" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rz5-ce-nxX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qU2-bK-9v4" kind="relationship" relationship="rootViewController" id="n5f-j5-mUm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvg-XE-2Bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.60000000000002" y="-1374.0629685157423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Pz-nn-vgk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qux-Ft-qbo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHa-nh-YHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="28I-tm-Gfs" kind="relationship" relationship="rootViewController" id="MgN-6C-ica"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlj-xo-zOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="167"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,9 @@
 		0114B9981DB6A1830029A3EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0114B9961DB6A1830029A3EC /* LaunchScreen.storyboard */; };
 		0114B9A31DB6A1830029A3EC /* Narcan_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9A21DB6A1830029A3EC /* Narcan_AppTests.swift */; };
 		0114B9AE1DB6A1830029A3EC /* Narcan_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9AD1DB6A1830029A3EC /* Narcan_AppUITests.swift */; };
+		0114B9C01DB6EC0A0029A3EC /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9BF1DB6EC0A0029A3EC /* KnowledgeViewController.swift */; };
+		0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */; };
+		0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C31DB6EC210029A3EC /* RequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0114B9A91DB6A1830029A3EC /* Narcan AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Narcan AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0114B9AD1DB6A1830029A3EC /* Narcan_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Narcan_AppUITests.swift; sourceTree = "<group>"; };
 		0114B9AF1DB6A1830029A3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0114B9BF1DB6EC0A0029A3EC /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
+		0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0114B9C31DB6EC210029A3EC /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				0114B9941DB6A1830029A3EC /* Assets.xcassets */,
 				0114B9961DB6A1830029A3EC /* LaunchScreen.storyboard */,
 				0114B9991DB6A1830029A3EC /* Info.plist */,
+				0114B9BF1DB6EC0A0029A3EC /* KnowledgeViewController.swift */,
+				0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */,
+				0114B9C31DB6EC210029A3EC /* RequestViewController.swift */,
 			);
 			path = "Narcan App";
 			sourceTree = "<group>";
@@ -264,6 +273,9 @@
 			files = (
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
 				0114B98E1DB6A1830029A3EC /* AppDelegate.swift in Sources */,
+				0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */,
+				0114B9C01DB6EC0A0029A3EC /* KnowledgeViewController.swift in Sources */,
+				0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
