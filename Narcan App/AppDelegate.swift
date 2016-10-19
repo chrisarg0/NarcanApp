@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        SCServiceCloud.sharedInstance().knowledge.isEnabled = true
+        /* SCServiceCloud.sharedInstance().knowledge.isEnabled = true
         SCServiceCloud.sharedInstance().cases.isEnabled = true
         SCServiceCloud.sharedInstance().cases.caseCreateActionName = "NewNarcanRequest"
         
@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Pass configuration to shared instance
         SCServiceCloud.sharedInstance().serviceConfiguration = config
+        */
         
         let navigationBarAppearace = UINavigationBar.appearance()
         
