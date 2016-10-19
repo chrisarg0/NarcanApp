@@ -251,17 +251,20 @@
 					0114B9891DB6A1830029A3EC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = XK8F5XL2UM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					0114B99D1DB6A1830029A3EC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = XK8F5XL2UM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0114B9891DB6A1830029A3EC;
 					};
 					0114B9A81DB6A1830029A3EC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = XK8F5XL2UM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0114B9891DB6A1830029A3EC;
 					};
@@ -519,6 +522,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -547,6 +551,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -568,6 +573,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -588,6 +594,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -596,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED4BE25D9166264B1A70252 /* Pods-Narcan App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
@@ -610,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8ADACFC1DB9CDD809CD19A0D /* Pods-Narcan App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
