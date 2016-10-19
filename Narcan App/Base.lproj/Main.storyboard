@@ -180,7 +180,7 @@
                                 <state key="normal" image="login_active"/>
                                 <connections>
                                     <action selector="didPressLogin:" destination="tgH-Vo-HBs" eventType="touchUpInside" id="C3S-9p-qLU"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginSegue" id="gaW-Ee-PNQ"/>
+                                    <segue destination="vEh-BC-RPv" kind="presentation" identifier="loginSegue" id="UNc-kO-0gH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3h-pR-5w4">
@@ -257,7 +257,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ARo-ao-Lyq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ARo-ao-Lyq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -277,7 +277,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iHa-nh-YHJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHa-nh-YHJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -295,7 +295,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JHv-oc-ZlQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="04O-51-Nl0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="04O-51-Nl0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -313,7 +313,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mFb-wX-lPh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KzZ-7G-ir7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KzZ-7G-ir7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -336,7 +336,4 @@
         <image name="requestButton" width="335" height="64"/>
         <image name="settings_120" width="25" height="27"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="gaW-Ee-PNQ"/>
-    </inferredMetricsTieBreakers>
 </document>
