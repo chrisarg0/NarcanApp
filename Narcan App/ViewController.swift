@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "NarcanFinderAppIcon@1x")!,iconInitialSize: CGSize(width: 181, height: 181), backgroundColor: UIColor(red:0.11, green:0.56, blue:0.95, alpha:1.0))
+        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "NarcanFinderAppIcon@1x")!,iconInitialSize: CGSize(width: 181, height: 181), backgroundColor: UIColor(red:0.90, green:0.06, blue:0.47, alpha:1.00))
         
         //Adds the revealing splash view as a sub view
         self.view.addSubview(revealingSplashView)
