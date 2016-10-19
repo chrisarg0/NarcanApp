@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '10.0'
 
 target 'Narcan App' do
 source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git'
@@ -14,9 +14,8 @@ source 'https://github.com/goinstant/pods-specs-public'
 pod 'SalesforceSDKCore'
 pod 'RevealingSplashView'
 pod 'DesignSystem'
-pod 'Alamofire'
 pod 'ServiceSDK'
-
+pod 'Alamofire'
 
   target 'Narcan AppTests' do
     inherit! :search_paths

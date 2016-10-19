@@ -27,5 +27,9 @@ public protocol SplashAnimatable: class{
     /// The delay to play the animation
     var delay: Double { get set }
     
+    /// The trigger to stop heartBeat animation
+    var heartAttack: Bool { get set }
+    
+    /// The minimum number of beats before removing the splash view
+    var minimumBeats: Int { get set }
 }
-
