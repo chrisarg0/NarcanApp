@@ -7,45 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Knowledge View Controller-->
-        <scene sceneID="xlX-l4-u06">
-            <objects>
-                <viewController id="qU2-bK-9v4" customClass="KnowledgeViewController" customModule="Narcan_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wXq-QS-JhO"/>
-                        <viewControllerLayoutGuide type="bottom" id="NTv-EW-Inf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZCa-nu-hyb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="TfV-RW-ws1">
-                        <barButtonItem key="rightBarButtonItem" style="done" id="250-St-QlZ">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="MHH-vR-RCs">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Close">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="closeDidPress:" destination="qU2-bK-9v4" eventType="touchUpInside" id="Oi5-P2-DgX"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YZS-Uf-lXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1888.8" y="-1374.0629685157423"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -97,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="knowledge_base_120"/>
                                 <connections>
-                                    <segue destination="2tf-Lj-ief" kind="presentation" modalTransitionStyle="coverVertical" id="xl7-AL-ia4"/>
+                                    <action selector="showKnowledge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZW-05-fXX"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -179,7 +140,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vEh-BC-RPv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ARo-ao-Lyq">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ARo-ao-Lyq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -193,29 +156,13 @@
             <point key="canvasLocation" x="128.80000000000001" y="-563.56821589205401"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="7d9-yy-1iR">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2tf-Lj-ief" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rz5-ce-nxX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="qU2-bK-9v4" kind="relationship" relationship="rootViewController" id="n5f-j5-mUm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rvg-XE-2Bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="949.60000000000002" y="-1374.0629685157423"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="0Pz-nn-vgk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qux-Ft-qbo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHa-nh-YHJ">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iHa-nh-YHJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

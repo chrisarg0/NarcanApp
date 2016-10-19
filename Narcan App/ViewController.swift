@@ -9,6 +9,9 @@
 import UIKit
 import Alamofire
 import RevealingSplashView
+import ServiceCore
+import ServiceCases
+import ServiceKnowledge
 
 class ViewController: UIViewController {
 
@@ -31,10 +34,13 @@ class ViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func showKnowledge(_ sender: UIButton) {
+        SCServiceCloud.sharedInstance().knowledge.setInterfaceVisible(true,
+                                                                      animated: true,
+                                                                      completion: nil)
+        
     }
+    
 
 
 }
