@@ -17,6 +17,9 @@
 		0114B9C01DB6EC0A0029A3EC /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9BF1DB6EC0A0029A3EC /* KnowledgeViewController.swift */; };
 		0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */; };
 		0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C31DB6EC210029A3EC /* RequestViewController.swift */; };
+		46768326B317CACC9795468A /* Pods_Narcan_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD88CC730DD147C391F134 /* Pods_Narcan_App.framework */; };
+		5193F7A6BC26BE023472EC8D /* Pods_Narcan_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */; };
+		6F66E84FF4857CE8A5060A39 /* Pods_Narcan_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,15 @@
 		0114B9BF1DB6EC0A0029A3EC /* KnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
 		0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0114B9C31DB6EC210029A3EC /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		2ED4BE25D9166264B1A70252 /* Pods-Narcan App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan App/Pods-Narcan App.debug.xcconfig"; sourceTree = "<group>"; };
+		6CF97A04D98FE9B0B56D2069 /* Pods-Narcan AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppUITests/Pods-Narcan AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8ADACFC1DB9CDD809CD19A0D /* Pods-Narcan App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan App/Pods-Narcan App.release.xcconfig"; sourceTree = "<group>"; };
+		ACDD88CC730DD147C391F134 /* Pods_Narcan_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5A0103426ECAE10EDEF207 /* Pods-Narcan AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F1F383E4CE689F55852274 /* Pods-Narcan AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3A2AE67E5A971BEF97DE0AA /* Pods-Narcan AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppUITests/Pods-Narcan AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46768326B317CACC9795468A /* Pods_Narcan_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F66E84FF4857CE8A5060A39 /* Pods_Narcan_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5193F7A6BC26BE023472EC8D /* Pods_Narcan_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,8 @@
 				0114B9A11DB6A1830029A3EC /* Narcan AppTests */,
 				0114B9AC1DB6A1830029A3EC /* Narcan AppUITests */,
 				0114B98B1DB6A1830029A3EC /* Products */,
+				FDA0087499FDE9C2C3A84865 /* Pods */,
+				CBACE8D28766D14EBB5E4EC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +151,29 @@
 			path = "Narcan AppUITests";
 			sourceTree = "<group>";
 		};
+		CBACE8D28766D14EBB5E4EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACDD88CC730DD147C391F134 /* Pods_Narcan_App.framework */,
+				B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */,
+				EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDA0087499FDE9C2C3A84865 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ED4BE25D9166264B1A70252 /* Pods-Narcan App.debug.xcconfig */,
+				8ADACFC1DB9CDD809CD19A0D /* Pods-Narcan App.release.xcconfig */,
+				F1F1F383E4CE689F55852274 /* Pods-Narcan AppTests.debug.xcconfig */,
+				CB5A0103426ECAE10EDEF207 /* Pods-Narcan AppTests.release.xcconfig */,
+				6CF97A04D98FE9B0B56D2069 /* Pods-Narcan AppUITests.debug.xcconfig */,
+				F3A2AE67E5A971BEF97DE0AA /* Pods-Narcan AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0114B9B21DB6A1830029A3EC /* Build configuration list for PBXNativeTarget "Narcan App" */;
 			buildPhases = (
+				B9147F6494B00F90715142AA /* [CP] Check Pods Manifest.lock */,
 				0114B9861DB6A1830029A3EC /* Sources */,
 				0114B9871DB6A1830029A3EC /* Frameworks */,
 				0114B9881DB6A1830029A3EC /* Resources */,
+				1EDD2FDE5A05E783BCDB0A14 /* [CP] Embed Pods Frameworks */,
+				1741632C68A91C938FC00388 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0114B9B51DB6A1830029A3EC /* Build configuration list for PBXNativeTarget "Narcan AppTests" */;
 			buildPhases = (
+				E738C405BA12FF8DBA31D9B0 /* [CP] Check Pods Manifest.lock */,
 				0114B99A1DB6A1830029A3EC /* Sources */,
 				0114B99B1DB6A1830029A3EC /* Frameworks */,
 				0114B99C1DB6A1830029A3EC /* Resources */,
+				3F6204D68231E2623EBA632A /* [CP] Embed Pods Frameworks */,
+				768C4FDB76A16FA2515B2EB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0114B9B81DB6A1830029A3EC /* Build configuration list for PBXNativeTarget "Narcan AppUITests" */;
 			buildPhases = (
+				D68BAAA123AEECE0B0C689C4 /* [CP] Check Pods Manifest.lock */,
 				0114B9A51DB6A1830029A3EC /* Sources */,
 				0114B9A61DB6A1830029A3EC /* Frameworks */,
 				0114B9A71DB6A1830029A3EC /* Resources */,
+				4AFC1422206CCED74C98CB4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +313,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1741632C68A91C938FC00388 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Narcan App/Pods-Narcan App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EDD2FDE5A05E783BCDB0A14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Narcan App/Pods-Narcan App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F6204D68231E2623EBA632A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AFC1422206CCED74C98CB4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Narcan AppUITests/Pods-Narcan AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		768C4FDB76A16FA2515B2EB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9147F6494B00F90715142AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D68BAAA123AEECE0B0C689C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E738C405BA12FF8DBA31D9B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0114B9861DB6A1830029A3EC /* Sources */ = {
@@ -423,6 +594,7 @@
 		};
 		0114B9B31DB6A1830029A3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED4BE25D9166264B1A70252 /* Pods-Narcan App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
@@ -436,6 +608,7 @@
 		};
 		0114B9B41DB6A1830029A3EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADACFC1DB9CDD809CD19A0D /* Pods-Narcan App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
@@ -449,6 +622,7 @@
 		};
 		0114B9B61DB6A1830029A3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F1F383E4CE689F55852274 /* Pods-Narcan AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +638,7 @@
 		};
 		0114B9B71DB6A1830029A3EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5A0103426ECAE10EDEF207 /* Pods-Narcan AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +654,7 @@
 		};
 		0114B9B91DB6A1830029A3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF97A04D98FE9B0B56D2069 /* Pods-Narcan AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
@@ -493,6 +669,7 @@
 		};
 		0114B9BA1DB6A1830029A3EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A2AE67E5A971BEF97DE0AA /* Pods-Narcan AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
@@ -524,6 +701,7 @@
 				0114B9B41DB6A1830029A3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0114B9B51DB6A1830029A3EC /* Build configuration list for PBXNativeTarget "Narcan AppTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +710,7 @@
 				0114B9B71DB6A1830029A3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0114B9B81DB6A1830029A3EC /* Build configuration list for PBXNativeTarget "Narcan AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +719,7 @@
 				0114B9BA1DB6A1830029A3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

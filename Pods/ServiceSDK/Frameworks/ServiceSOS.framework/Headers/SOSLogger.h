@@ -1,0 +1,228 @@
+/*
+ * Copyright 2016 salesforce.com, inc.
+ * All rights reserved.
+ *
+ * Use of this software is subject to the salesforce.com Developerforce Terms of
+ * Use and other applicable terms that salesforce.com may make available, as may be
+ * amended from time to time. You may not decompile, reverse engineer, disassemble,
+ * attempt to derive the source code of, decrypt, modify, or create derivative
+ * works of this software, updates thereto, or any part thereof. You may not use
+ * the software to engage in any development activity that infringes the rights of
+ * a third party, including that which interferes with, damages, or accesses in an
+ * unauthorized manner the servers, networks, or other properties or services of
+ * salesforce.com or any third party.
+ *
+ * WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, THE SOFTWARE IS PROVIDED
+ * "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL
+ * SALESFORCE.COM HAVE ANY LIABILITY FOR ANY DAMAGES, INCLUDING BUT NOT LIMITED TO,
+ * DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR
+ * DAMAGES BASED ON LOST PROFITS, DATA OR USE, IN CONNECTION WITH THE SOFTWARE,
+ * HOWEVER CAUSED AND, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF
+ * LIABILITY, WHETHER OR NOT YOU HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGES.
+ */
+
+#import <Foundation/Foundation.h>
+
+extern NSString *kSOSRequestDateFormatter;
+extern NSString *kSOSLoggerStartedAtField;
+extern NSString *kSOSLoggerEndedAtField;
+extern NSString *kSOSLoggerDescriptionField;
+
+/**
+ *  List of Logging types which can be watched.
+ */
+typedef NS_ENUM(NSInteger, SOSLogStream) {
+    /**
+     *  Log when the connectivity of the app changes.
+     */
+    SOSLogConnectivity = 0,
+    /**
+     *  Log when the app enters the background.
+     */
+    SOSLogBackgrounded,
+    /**
+     *  Logging stream for battery.
+     */
+    SOSLogBattery,
+    /**
+     * Logging stream for data.
+     */
+    SOSLogData,
+    /**
+     *  Log the device type and OS information.
+     */
+    SOSLogDevice,
+    /**
+     * Log when the field masking has turned on and off.
+     */
+    SOSLogFieldMasking,
+    /**
+     *  Logging the SOSLifeCycle changes.
+     */
+    SOSLogLifeCycle,
+    /**
+     *  Logging the network speed test.
+     */
+    SOSLogNetworkTest,
+    /**
+     * Logging the connection status during a session.
+     */
+    SOSLogConnectionStatus,
+    /**
+     *  Logging stream for orientation.
+     */
+    SOSLogOrientation,
+    /**
+     *  Logging the phone call info.
+     */
+    SOSLogPhone,
+    /**
+     *  Logging stream for info.
+     */
+    SOSLogSession,
+    /**
+     * Logging stream for errors.
+     */
+    SOSLogError,
+    /**
+     *  Logging stream for debug, this is for local use only.
+     */
+    SOSLogDebug,
+    /**
+     *  Logging stream for agent availability.
+     */
+    SOSLogAgentAvailability,
+    /**
+     *  Logging stream for telemetry-based logs.
+     */
+    SOSLogTelemetry,
+    /**
+     *  Logging stream for AV Session reference id.
+     */
+    SOSLogAVSessionRef,
+    /**
+     *  Logging stream for warnings.
+     */
+    SOSLogWarning,
+    /**
+     *  Logging stream for sesion recording.
+     */
+    SOSLogRecording,
+    /**
+     *  Logging stream for events that occure.
+     */
+    SOSLogEvent
+};
+
+/**
+ *  List of Timer-specific logging types which can be tracked.
+ */
+typedef NS_ENUM(NSInteger, SOSTelemetryLogStream) {
+    /**
+     * Telemetry stream for user confirmation.
+     */
+    SOSTelemetryLogStreamUserConfirmation = 0,
+    /**
+     * Telemetry stream for network tests.
+     */
+    SOSTelemetryLogStreamNetworkTest,
+    /**
+     * Telemetry stream for waiting in the LA queue.
+     */
+    SOSTelemetryLogStreamWaiting,
+    /**
+     * Telemetry stream for when joining a session.
+     */
+    SOSTelemetryLogStreamJoining,
+    /**
+     * Telemetry stream for being connected to a session.
+     */
+    SOSTelemetryLogStreamConnected
+};
+
+/**
+ *  SOSLog Timer Code enum.
+ *  See the schema for information: https://github.com/goinstant/schema/blob/master/schemas/common/messages/timer.json
+ */
+typedef NS_ENUM(NSInteger, SOSLogTimerCode) {
+    /**
+     *  userequest-to-inqueue
+     */
+    SOSLogUserRequestToInqueue = 0,
+    /**
+     *  networkteststart-to-networktestend
+     */
+    SOSLogNetworkTestStartToNetworkTestEnd,
+    /**
+     *  inqueue-to-agentaccept
+     */
+    SOSLogInQueueToAgentAccept,
+    /**
+     *  agentaccept-to-connected
+     */
+    SOSLogAgentAcceptToConnected,
+    /**
+     *  capture-screen-to-camera
+     */
+    SOSLogCaptureScreenToCamera,
+    /**
+     *  capture-camera-to-screen
+     */
+    SOSLogCaptureCameraToScreen,
+    /**
+     *  capture-swap-camera
+     */
+    SOSLogCaptureSwapCamera,
+    /**
+     *  onload-to-widget-ready
+     */
+    SOSLogOnloadToWidgetReady
+};
+
+/**
+ *  Allows classes to listen to log messages generated by SOS.
+ */
+@protocol SOSLoggerProtocol
+/**
+ * Delegate method for when we receive stream events. Will be sent on a dispatch thread.
+ *
+ * @param stream The stream the message will be logged to.
+ * @param object The object to log. This may be a `NSString` or a `NSDictonary`, depending on the stream.
+ */
+- (void)didReceiveStream:(SOSLogStream)stream object:(id)object;
+@end
+
+/**
+ *  SOSLogging singleton which manages all logging messages generated by SOS.
+ */
+@interface SOSLogger : NSObject
+
+/**
+ * Singleton used to register your target to receive specific streams.
+ */
++ (instancetype)sharedInstance;
+
+/**
+ * Register your target to receive streams. Only streams your target registers will be sent.
+ *
+ * @param stream The stream the message will be logged to.
+ * @param target The object that stream will be registered to.
+ */
++ (void)registerStream:(SOSLogStream)stream target:(__weak id)target;
+
+/**
+ * Unregister your target from the specified stream.
+ *
+ * @param stream The message stream.
+ * @param target The object that stream will be unregistered from.
+ */
++ (void)deregisterStream:(SOSLogStream)stream target:(__weak id)target;
+
++ (void)addTimestampForStream:(SOSTelemetryLogStream)stream;
+
++ (void)sendTimestampLogForStream:(SOSTelemetryLogStream)fromStream description:(SOSLogTimerCode)description;
+
++ (NSDate*)timestampForStream:(SOSTelemetryLogStream)stream;
+
+@end

@@ -1,0 +1,6 @@
+framework module Pods_Narcan_AppUITests {
+  umbrella header "Pods-Narcan AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
