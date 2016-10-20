@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 import RevealingSplashView
 import ServiceCore
 import ServiceCases
