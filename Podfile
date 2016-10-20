@@ -15,7 +15,9 @@ pod 'SalesforceSDKCore'
 pod 'RevealingSplashView'
 pod 'DesignSystem'
 pod 'ServiceSDK'
-pod 'Alamofire'
+#pod 'Alamofire'
+
+pod 'IQKeyboardManager'
 pod 'AFNetworking', '~> 3.0'
 
   target 'Narcan AppTests' do

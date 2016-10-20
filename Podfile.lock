@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Alamofire (4.0.1)
   - CocoaLumberjack (2.3.0):
     - CocoaLumberjack/Default (= 2.3.0)
     - CocoaLumberjack/Extensions (= 2.3.0)
@@ -24,6 +23,7 @@ PODS:
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
   - DesignSystem (2.0.8)
+  - IQKeyboardManager (4.0.7)
   - RevealingSplashView (0.1.0)
   - SalesforceSDKCore (4.3.1):
     - SalesforceSDKCore/SalesforceSDKCore (= 4.3.1)
@@ -47,21 +47,21 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - Alamofire
   - DesignSystem
+  - IQKeyboardManager
   - RevealingSplashView
   - SalesforceSDKCore
   - ServiceSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DesignSystem: 0777e9c9eec974d02334461735c6d95552341b59
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
   RevealingSplashView: 501dd03d975ba2c4165dd463ea1c7c407fb9d13e
   SalesforceSDKCore: 64be7b51436f190c70ebac4adb0e56a70a46b0ad
   ServiceSDK: 32819a29a0f3cac59a6942634dc2f20e020187db
 
-PODFILE CHECKSUM: f19c0775580ef0867c187f72bddf7fff1acf9074
+PODFILE CHECKSUM: 02d74d79b80c494d2df59396558c8257f475085e
 
 COCOAPODS: 1.1.0

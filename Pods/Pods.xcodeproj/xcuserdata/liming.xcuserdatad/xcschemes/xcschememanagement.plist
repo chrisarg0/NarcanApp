@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>CocoaLumberjack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +20,11 @@
 			<false/>
 		</dict>
 		<key>DesignSystem.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>392361D5C2FFD347474A22990132923B</key>
+		<key>37C76CD246D637B8E4C586284A0D96B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4010F01E264A42EA2CA50B748C3A413B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,11 +87,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8A2E8FED01C8A6BC8ADFCF3C3B78368F</key>
 		<dict>
 			<key>primary</key>
@@ -97,17 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>94D0BE3AE50E7BB57F192DC084FFD1BF</key>
+		<key>98A7966113629EBF35097648FFB0939C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC88CF2DCAB38FD3F60EF174C90095A0</key>
+		<key>BC308FBD7CF024960F12347BD8A3525B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DEA22ABED27F68613B9EE59405287EF1</key>
+		<key>E85A2109BFB03C3587BF4C0FA6B6811E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
