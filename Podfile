@@ -12,10 +12,13 @@ source 'https://github.com/goinstant/pods-specs-public'
   # Pods for Narcan App
 
 pod 'SalesforceSDKCore'
+pod 'SalesforceNetwork'
+pod 'SalesforceRestAPI'
 pod 'RevealingSplashView'
 pod 'DesignSystem'
 pod 'ServiceSDK'
 pod 'Alamofire'
+pod 'AFNetworking', '~> 3.0'
 
   target 'Narcan AppTests' do
     inherit! :search_paths
