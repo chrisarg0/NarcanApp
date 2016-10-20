@@ -84,10 +84,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DesignSystem/DesignSystem.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RevealingSplashView/RevealingSplashView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SalesforceNetwork/SalesforceNetwork.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SalesforceRestAPI/SalesforceRestAPI.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SalesforceSDKCore/SalesforceSDKCore.framework"
   install_framework "${PODS_ROOT}/ServiceSDK/Frameworks/ServiceSOS.framework"
   install_framework "${PODS_ROOT}/ServiceSDK/Frameworks/ServiceChat.framework"
@@ -97,10 +100,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/ServiceSDK/Frameworks/SalesforceKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DesignSystem/DesignSystem.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RevealingSplashView/RevealingSplashView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SalesforceNetwork/SalesforceNetwork.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SalesforceRestAPI/SalesforceRestAPI.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SalesforceSDKCore/SalesforceSDKCore.framework"
   install_framework "${PODS_ROOT}/ServiceSDK/Frameworks/ServiceSOS.framework"
   install_framework "${PODS_ROOT}/ServiceSDK/Frameworks/ServiceChat.framework"

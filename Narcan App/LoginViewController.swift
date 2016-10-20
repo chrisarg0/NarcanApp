@@ -10,6 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    static let Salesforce =
+        [
+            "consumerKey": "3MVG9fMtCkV6eLheNionz1q.nG4THaffbBSGBaniRqNdWm5qA9vZZC01ct10P1xBs.QbrS9Y42o784K0x1LCE",
+            "consumerSecret": "1234991665278513929"
+    ]
+    
     @IBOutlet weak var loginForm: UIImageView!
     
     @IBOutlet weak var emailField: UITextField!
