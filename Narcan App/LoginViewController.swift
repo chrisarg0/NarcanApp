@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class LoginViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class LoginViewController: UIViewController {
             "consumerKey": "3MVG9fMtCkV6eLheNionz1q.nG4THaffbBSGBaniRqNdWm5qA9vZZC01ct10P1xBs.QbrS9Y42o784K0x1LCE",
             "consumerSecret": "1234991665278513929"
     ]
+    
+    static let apiManager = NarcanAPIManager.sharedInstance
     
     @IBOutlet weak var loginForm: UIImageView!
     
@@ -65,9 +68,31 @@ class LoginViewController: UIViewController {
     @IBAction func didPressLogin(_ sender: AnyObject) {
         
         if emailField.text != "" && pwField.text != "" {
-            delay(3, closure: {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            })
+            
+            if LoginViewController.apiManager.isOnline() {
+                
+                let client_id = LoginViewController.Salesforce["consumerKey"]
+                let client_secret = LoginViewController.Salesforce["consumerSecret"]
+                let username = emailField.text
+                let userpw = pwField.text
+                
+                let login_url = "https://login.salesforce.com/services/oauth2/token"
+                let params = ["grant_type":"password", "client_id":client_id!, "client_secret":client_secret!, "username":username!, "password":userpw!]
+                
+                LoginViewController.apiManager.postMethodAPI(url: login_url, params: params as NSDictionary, successBlock: { (success) -> () in
+                    
+                    
+                    }, failureBlock: { (failure) -> () in
+                        
+                })
+                
+//                delay(3, closure: {
+//                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+//                })
+                
+            }
+            
+            
         } else {
             delay(0.4, closure: {
                 let alertControler = UIAlertController(title: "Sign-in Failed", message: "Please check that your email address and password are correct", preferredStyle: .alert)
