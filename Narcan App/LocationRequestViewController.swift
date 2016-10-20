@@ -1,20 +1,18 @@
 //
-//  RequestViewController.swift
+//  LocationRequestViewController.swift
 //  Narcan App
 //
-//  Created by Chris Argonish on 10/18/16.
+//  Created by Chris Argonish on 10/19/16.
 //  Copyright © 2016 Chris. All rights reserved.
 //
 
 import UIKit
 
-class RequestViewController: UIViewController {
-    
-    @IBOutlet weak var carrierView: UIView!
-    
+class LocationRequestViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
 
@@ -28,8 +26,6 @@ class RequestViewController: UIViewController {
         navigationController!.popViewController(animated: true)
         
     }
-    
 
     
-
 }

@@ -22,6 +22,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextBtn.isHidden = true
         firstNameField.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
@@ -29,13 +30,18 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func didPressBack(_ sender: AnyObject) {
+    
+        dismiss(animated: true, completion: nil)
+        
+    }
     
     @IBAction func pwFieldDidChange(_ sender: AnyObject) {
     
         if firstNameField.text!.isEmpty || lastNameField.text!.isEmpty || phoneField.text!.isEmpty || emailField.text!.isEmpty || pwField.text!.isEmpty {
             nextBtn.isHidden = true
         } else {
-            nextBtn.isEnabled = true
+            nextBtn.isHidden = false
         }
     
     }

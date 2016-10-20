@@ -18,6 +18,26 @@
 		0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */; };
 		0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C31DB6EC210029A3EC /* RequestViewController.swift */; };
 		017951751DB84E7300AF53A3 /* SelectUserTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017951741DB84E7300AF53A3 /* SelectUserTypeViewController.swift */; };
+		0179518A1DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951801DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf */; };
+		0179518B1DB88A6F00AF53A3 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951811DB88A6F00AF53A3 /* OpenSans-Semibold.ttf */; };
+		0179518C1DB88A6F00AF53A3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951821DB88A6F00AF53A3 /* OpenSans-Regular.ttf */; };
+		0179518D1DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951831DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf */; };
+		0179518E1DB88A6F00AF53A3 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951841DB88A6F00AF53A3 /* OpenSans-Light.ttf */; };
+		0179518F1DB88A6F00AF53A3 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951851DB88A6F00AF53A3 /* OpenSans-Italic.ttf */; };
+		017951901DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951861DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf */; };
+		017951911DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951871DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf */; };
+		017951921DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951881DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf */; };
+		017951931DB88A6F00AF53A3 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951891DB88A6F00AF53A3 /* OpenSans-Bold.ttf */; };
+		017951941DB88A7400AF53A3 /* SalesforceSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951781DB88A4D00AF53A3 /* SalesforceSans-Bold.ttf */; };
+		017951951DB88A7800AF53A3 /* SalesforceSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017951791DB88A4D00AF53A3 /* SalesforceSans-BoldItalic.ttf */; };
+		017951961DB88A7A00AF53A3 /* SalesforceSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517A1DB88A4D00AF53A3 /* SalesforceSans-Italic.ttf */; };
+		017951971DB88A7C00AF53A3 /* SalesforceSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517B1DB88A4D00AF53A3 /* SalesforceSans-Light.ttf */; };
+		017951981DB88A7F00AF53A3 /* SalesforceSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517C1DB88A4D00AF53A3 /* SalesforceSans-LightItalic.ttf */; };
+		017951991DB88A8300AF53A3 /* SalesforceSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517D1DB88A4D00AF53A3 /* SalesforceSans-Regular.ttf */; };
+		0179519A1DB88A8500AF53A3 /* SalesforceSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517E1DB88A4D00AF53A3 /* SalesforceSans-Thin.ttf */; };
+		0179519B1DB88A8700AF53A3 /* SalesforceSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */; };
+		0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179519E1DB8922700AF53A3 /* LocationRequestViewController.swift */; };
+		017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */; };
 		01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */; };
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
 		01C067161DB82D6300DC5AA7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067151DB82D6300DC5AA7 /* Common.swift */; };
@@ -62,6 +82,26 @@
 		0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0114B9C31DB6EC210029A3EC /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		017951741DB84E7300AF53A3 /* SelectUserTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserTypeViewController.swift; sourceTree = "<group>"; };
+		017951781DB88A4D00AF53A3 /* SalesforceSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-Bold.ttf"; sourceTree = "<group>"; };
+		017951791DB88A4D00AF53A3 /* SalesforceSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0179517A1DB88A4D00AF53A3 /* SalesforceSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-Italic.ttf"; sourceTree = "<group>"; };
+		0179517B1DB88A4D00AF53A3 /* SalesforceSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-Light.ttf"; sourceTree = "<group>"; };
+		0179517C1DB88A4D00AF53A3 /* SalesforceSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		0179517D1DB88A4D00AF53A3 /* SalesforceSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-Regular.ttf"; sourceTree = "<group>"; };
+		0179517E1DB88A4D00AF53A3 /* SalesforceSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-Thin.ttf"; sourceTree = "<group>"; };
+		0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SalesforceSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		017951801DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		017951811DB88A6F00AF53A3 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		017951821DB88A6F00AF53A3 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		017951831DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		017951841DB88A6F00AF53A3 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		017951851DB88A6F00AF53A3 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		017951861DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		017951871DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		017951881DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		017951891DB88A6F00AF53A3 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		0179519E1DB8922700AF53A3 /* LocationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRequestViewController.swift; sourceTree = "<group>"; };
+		017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
 		01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01C067151DB82D6300DC5AA7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -162,6 +202,24 @@
 		017951761DB86A0200AF53A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				017951801DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf */,
+				017951811DB88A6F00AF53A3 /* OpenSans-Semibold.ttf */,
+				017951821DB88A6F00AF53A3 /* OpenSans-Regular.ttf */,
+				017951831DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf */,
+				017951841DB88A6F00AF53A3 /* OpenSans-Light.ttf */,
+				017951851DB88A6F00AF53A3 /* OpenSans-Italic.ttf */,
+				017951861DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf */,
+				017951871DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf */,
+				017951881DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf */,
+				017951891DB88A6F00AF53A3 /* OpenSans-Bold.ttf */,
+				017951781DB88A4D00AF53A3 /* SalesforceSans-Bold.ttf */,
+				017951791DB88A4D00AF53A3 /* SalesforceSans-BoldItalic.ttf */,
+				0179517A1DB88A4D00AF53A3 /* SalesforceSans-Italic.ttf */,
+				0179517B1DB88A4D00AF53A3 /* SalesforceSans-Light.ttf */,
+				0179517C1DB88A4D00AF53A3 /* SalesforceSans-LightItalic.ttf */,
+				0179517D1DB88A4D00AF53A3 /* SalesforceSans-Regular.ttf */,
+				0179517E1DB88A4D00AF53A3 /* SalesforceSans-Thin.ttf */,
+				0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */,
 				01C067151DB82D6300DC5AA7 /* Common.swift */,
 			);
 			name = Resources;
@@ -178,6 +236,8 @@
 				01C067171DB8362800DC5AA7 /* SignUpViewController.swift */,
 				01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */,
 				017951741DB84E7300AF53A3 /* SelectUserTypeViewController.swift */,
+				0179519E1DB8922700AF53A3 /* LocationRequestViewController.swift */,
+				017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -326,9 +386,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0179518F1DB88A6F00AF53A3 /* OpenSans-Italic.ttf in Resources */,
+				017951911DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf in Resources */,
+				0179518A1DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				017951981DB88A7F00AF53A3 /* SalesforceSans-LightItalic.ttf in Resources */,
+				017951991DB88A8300AF53A3 /* SalesforceSans-Regular.ttf in Resources */,
 				0114B9981DB6A1830029A3EC /* LaunchScreen.storyboard in Resources */,
+				017951971DB88A7C00AF53A3 /* SalesforceSans-Light.ttf in Resources */,
+				017951961DB88A7A00AF53A3 /* SalesforceSans-Italic.ttf in Resources */,
+				0179518E1DB88A6F00AF53A3 /* OpenSans-Light.ttf in Resources */,
+				0179518D1DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf in Resources */,
+				017951921DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf in Resources */,
+				017951951DB88A7800AF53A3 /* SalesforceSans-BoldItalic.ttf in Resources */,
 				0114B9951DB6A1830029A3EC /* Assets.xcassets in Resources */,
 				0114B9931DB6A1830029A3EC /* Main.storyboard in Resources */,
+				017951901DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				0179519A1DB88A8500AF53A3 /* SalesforceSans-Thin.ttf in Resources */,
+				017951931DB88A6F00AF53A3 /* OpenSans-Bold.ttf in Resources */,
+				017951941DB88A7400AF53A3 /* SalesforceSans-Bold.ttf in Resources */,
+				0179518C1DB88A6F00AF53A3 /* OpenSans-Regular.ttf in Resources */,
+				0179518B1DB88A6F00AF53A3 /* OpenSans-Semibold.ttf in Resources */,
+				0179519B1DB88A8700AF53A3 /* SalesforceSans-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,12 +556,14 @@
 			files = (
 				01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */,
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
+				0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */,
 				01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */,
 				0114B98E1DB6A1830029A3EC /* AppDelegate.swift in Sources */,
 				0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */,
 				01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */,
 				0114B9C01DB6EC0A0029A3EC /* KnowledgeViewController.swift in Sources */,
 				0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */,
+				017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */,
 				01C067161DB82D6300DC5AA7 /* Common.swift in Sources */,
 				017951751DB84E7300AF53A3 /* SelectUserTypeViewController.swift in Sources */,
 			);

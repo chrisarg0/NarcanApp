@@ -23,6 +23,10 @@ class SelectUserTypeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func didPressBack(_ sender: AnyObject) {
+        navigationController!.popViewController(animated: true)
+        
+    }
     @IBAction func carrierDidTouch(_ sender: AnyObject) {
         
         carrierIsSelected.isHidden = false
