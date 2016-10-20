@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -44,6 +49,16 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>SalesforceNetwork.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>SalesforceRestAPI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>SalesforceSDKCore-SalesforceSDKResources.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -57,7 +72,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1B417E9052F6A2E508FDBFDE13313338</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AA8DF734A64F88502BCFEC66E760E89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4392A722DB90337F648E10CF18110BC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>593A2763D4B39295E4713A47CAE61265</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>612D6AF2748EAB31573753DD7F3096A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6180EB1E37F457604D65BD8D388767DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -93,6 +138,11 @@
 			<true/>
 		</dict>
 		<key>8EF1AFB92F72E78154ED8F59E80C3731</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D24735D62123A93E5D6FDA7A9FB1AA9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
