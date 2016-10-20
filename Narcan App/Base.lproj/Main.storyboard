@@ -334,7 +334,7 @@
                                     <color key="titleColor" red="0.98256606540000002" green="0.28627450980000002" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tgH-Vo-HBs" kind="presentation" modalTransitionStyle="coverVertical" id="a2o-7L-hUl"/>
+                                    <segue destination="tgH-Vo-HBs" kind="presentation" modalTransitionStyle="crossDissolve" id="a2o-7L-hUl"/>
                                 </connections>
                             </button>
                         </barButtonItem>
