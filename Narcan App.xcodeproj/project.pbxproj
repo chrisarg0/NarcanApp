@@ -174,11 +174,9 @@
 		0114B98C1DB6A1830029A3EC /* Narcan App */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				E22CBE2A1DB93F6D001F0AF2 /* Manager Controllers */,
 				017951771DB86A0F00AF53A3 /* View Controllers */,
-=======
->>>>>>> origin/master
 				017951761DB86A0200AF53A3 /* Resources */,
 				017951771DB86A0F00AF53A3 /* View Controllers */,
 				0114B98D1DB6A1830029A3EC /* AppDelegate.swift */,
