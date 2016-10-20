@@ -38,6 +38,7 @@
 		0179519B1DB88A8700AF53A3 /* SalesforceSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */; };
 		0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179519E1DB8922700AF53A3 /* LocationRequestViewController.swift */; };
 		017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */; };
+		017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017A8EB01DB93EDB00FA9F25 /* Validation.swift */; };
 		01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */; };
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
 		01C067161DB82D6300DC5AA7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067151DB82D6300DC5AA7 /* Common.swift */; };
@@ -103,6 +104,7 @@
 		017951891DB88A6F00AF53A3 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		0179519E1DB8922700AF53A3 /* LocationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRequestViewController.swift; sourceTree = "<group>"; };
 		017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
+		017A8EB01DB93EDB00FA9F25 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01C067151DB82D6300DC5AA7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -172,14 +174,19 @@
 		0114B98C1DB6A1830029A3EC /* Narcan App */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				E22CBE2A1DB93F6D001F0AF2 /* Manager Controllers */,
 				017951771DB86A0F00AF53A3 /* View Controllers */,
+=======
+>>>>>>> origin/master
 				017951761DB86A0200AF53A3 /* Resources */,
+				017951771DB86A0F00AF53A3 /* View Controllers */,
 				0114B98D1DB6A1830029A3EC /* AppDelegate.swift */,
 				0114B9911DB6A1830029A3EC /* Main.storyboard */,
 				0114B9961DB6A1830029A3EC /* LaunchScreen.storyboard */,
 				0114B9941DB6A1830029A3EC /* Assets.xcassets */,
 				0114B9991DB6A1830029A3EC /* Info.plist */,
+				017A8EB01DB93EDB00FA9F25 /* Validation.swift */,
 			);
 			path = "Narcan App";
 			sourceTree = "<group>";
@@ -584,6 +591,7 @@
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
 				0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */,
 				01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */,
+				017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */,
 				0114B98E1DB6A1830029A3EC /* AppDelegate.swift in Sources */,
 				0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */,
 				01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */,
