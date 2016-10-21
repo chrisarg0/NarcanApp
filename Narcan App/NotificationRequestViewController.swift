@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import CoreLocation
 
-class NotificationRequestViewController: UIViewController {
+class NotificationRequestViewController: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +30,9 @@ class NotificationRequestViewController: UIViewController {
         navigationController!.popViewController(animated: true)
     }
 
+    //Alex Location Manager
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+    }
     
-    
-
 }
