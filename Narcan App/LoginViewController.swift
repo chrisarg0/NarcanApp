@@ -29,8 +29,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var icon: UIImageView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailField.becomeFirstResponder()
@@ -54,9 +52,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func createAccountDidTouch(_ sender: AnyObject) {
+        
     }
-    
-    
     
     @IBAction func pwEditDidChange(_ sender: AnyObject) {
         
