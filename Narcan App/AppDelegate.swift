@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 import ServiceCore
 import ServiceCases
 import ServiceKnowledge
@@ -15,7 +16,9 @@ import ServiceKnowledge
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let registerationKey = "onRegisterCompleted"
+    let messageKey = "onMessageReceived"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -43,7 +46,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
         // Override point for customization after application launch.
+        
+        //Push Notification
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            // actions based on whether notifications were authorized or not
+        }
+        application.registerForRemoteNotifications()
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        
+        
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        
+        let nc = NotificationCenter.default
+        nc.post(name: NSNotification.Name(rawValue: messageKey), object: nil, userInfo: userInfo)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        let nc = NotificationCenter.default
+        nc.post(name: NSNotification.Name(rawValue: messageKey), object: nil, userInfo: userInfo)
+        
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print(deviceTokenString)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

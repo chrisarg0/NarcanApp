@@ -2,7 +2,7 @@
 //  NarcanAPIManager.swift
 //  Narcan App
 //
-//  Created by Liming on 21/10/2016.
+//  Created by Alex on 21/10/2016.
 //  Copyright © 2016 Chris. All rights reserved.
 //
 
