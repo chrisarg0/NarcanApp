@@ -13,9 +13,6 @@ class SelectUserTypeViewController: UIViewController {
     @IBOutlet weak var carrierIsSelected: UIImageView!
     @IBOutlet weak var requesterIsSelected: UIImageView!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         carrierIsSelected.isHidden = true

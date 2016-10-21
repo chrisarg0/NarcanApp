@@ -174,9 +174,7 @@
 		0114B98C1DB6A1830029A3EC /* Narcan App */ = {
 			isa = PBXGroup;
 			children = (
-
 				E22CBE2A1DB93F6D001F0AF2 /* Manager Controllers */,
-				017951771DB86A0F00AF53A3 /* View Controllers */,
 				017951761DB86A0200AF53A3 /* Resources */,
 				017951771DB86A0F00AF53A3 /* View Controllers */,
 				0114B98D1DB6A1830029A3EC /* AppDelegate.swift */,
@@ -358,6 +356,7 @@
 				TargetAttributes = {
 					0114B9891DB6A1830029A3EC = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XK8F5XL2UM;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -754,7 +753,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XK8F5XL2UM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";
@@ -769,7 +769,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XK8F5XL2UM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";

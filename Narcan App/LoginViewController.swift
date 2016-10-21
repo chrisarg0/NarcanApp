@@ -34,18 +34,18 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         emailField.becomeFirstResponder()
-        /* UIView.animate(withDuration: 0.4) {
+        UIView.animate(withDuration: 0.4) {
             self.icon.center.y = self.icon.center.y - 130
-        } */
+        }
 
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        /* UIView.animate(withDuration: 90.0) {
+         UIView.animate(withDuration: 90.0) {
             self.loginForm.alpha = 1
-        } */
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -88,9 +88,9 @@ class LoginViewController: UIViewController {
                         
                 })
                 
-//                delay(3, closure: {
-//                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
-//                })
+                delay(3, closure: {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                })
                 
             }
             
