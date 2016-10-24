@@ -78,7 +78,29 @@ class LoginViewController: UIViewController {
                 let login_url = "https://login.salesforce.com/services/oauth2/token"
                 let params = ["grant_type":"password", "client_id":client_id!, "client_secret":client_secret!, "username":username!, "password":userpw!]
                 
-                LoginViewController.apiManager.postMethodAPI(url: login_url, params: params as NSDictionary, successBlock: { (success) -> () in
+                AppDelegate.apiManager.postMethodAPI(url: login_url, params: params as NSDictionary, successBlock: { (success) -> () in
+                    
+                    AppDelegate.defaultManager.is_login = true
+                    
+                    let access_token = success.object(forKey: "access_token")
+                    if access_token != nil {
+                        AppDelegate.defaultManager.access_token = access_token as! String
+                    }
+                    
+                    let instance_url = success.object(forKey: "instance_url")
+                    if access_token != nil {
+                        AppDelegate.defaultManager.access_token = instance_url as! String
+                    }
+                    
+                    let id = success.object(forKey: "id")
+                    if id != nil {
+                        AppDelegate.defaultManager.access_token = id as! String
+                    }
+                    
+                    let signature = success.object(forKey: "signature")
+                    if signature != nil {
+                        AppDelegate.defaultManager.access_token = signature as! String
+                    }
                     
                     
                     }, failureBlock: { (failure) -> () in
