@@ -29,6 +29,7 @@ class NarcanAPIManager: NSObject {
             static var instance = NarcanAPIManager()
         }
         
+        
         return Static.instance
     }
     

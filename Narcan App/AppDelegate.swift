@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    static let apiManager = NarcanAPIManager.sharedInstance
+    static let defaultManager = NarcanDefaultsManager.sharedInstance
+    
     let registerationKey = "onRegisterCompleted"
     let messageKey = "onMessageReceived"
 
