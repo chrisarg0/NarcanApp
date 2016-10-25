@@ -38,9 +38,8 @@ class ViewController: UIViewController {
             }
             
             if AppDelegate.defaultManager.user.thumbnail != "" {
-                self.avatarImageView.sd_setImage(with: URL(string: AppDelegate.defaultManager.user.picture)!, placeholderImage: UIImage(named: "avatar.png")!)
-                
-                
+                let imageUrlWithToken = "\(AppDelegate.defaultManager.user.picture!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
+                self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
             }
         }
         

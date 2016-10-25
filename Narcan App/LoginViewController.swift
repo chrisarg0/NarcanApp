@@ -9,6 +9,7 @@
 import UIKit
 import AFNetworking
 import MBProgressHUD
+import SalesforceKit
 
 class LoginViewController: UIViewController {
     
@@ -108,7 +109,6 @@ class LoginViewController: UIViewController {
                     let access_token = success.object(forKey: "access_token")
                     if access_token != nil {
                         AppDelegate.defaultManager.access_token = access_token as! String
-                        
                         self.getProfile()
                     }
                     
@@ -154,7 +154,7 @@ class LoginViewController: UIViewController {
     func getProfile() {
         AppDelegate.apiManager.getMethodAPI(url: AppDelegate.defaultManager.id, params: [:], successBlock: { (success) -> () in
             MBProgressHUD.hide(for: self.view, animated: true)
-            
+        
             let user = NarcanUser(dic : success)
             
             AppDelegate.defaultManager.user = user
