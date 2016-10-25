@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -70,6 +71,8 @@ class LoginViewController: UIViewController {
             
             if LoginViewController.apiManager.isOnline() {
                 
+                MBProgressHUD.showAdded(to: self.view, animated: true)
+                
                 let client_id = LoginViewController.Salesforce["consumerKey"]
                 let client_secret = LoginViewController.Salesforce["consumerSecret"]
                 let username = emailField.text
@@ -111,12 +114,20 @@ class LoginViewController: UIViewController {
                     
                     }, failureBlock: { (failure) -> () in
                         
+                        MBProgressHUD.hide(for: self.view, animated: true)
+                        
+                        delay(0.4, closure: {
+                            let alertControler = UIAlertController(title: "Sign-in Failed", message: "Please check that your email address and password are correct", preferredStyle: .alert)
+                            let okAction = UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction) in
+                                
+                            })
+                            
+                            alertControler.addAction(okAction)
+                            self.present(alertControler, animated: true, completion: nil)
+                            
+                        })
+                        
                 })
-                
-//                delay(3, closure: {
-//                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
-//                })
-                
             }
             
             
@@ -137,13 +148,31 @@ class LoginViewController: UIViewController {
     
     func getProfile() {
         AppDelegate.apiManager.getMethodAPI(url: AppDelegate.defaultManager.id, params: [:], successBlock: { (success) -> () in
+            MBProgressHUD.hide(for: self.view, animated: true)
             
             let user = NarcanUser(dic : success)
             
             AppDelegate.defaultManager.user = user
             
+            delay(0.3, closure: {
+                
+                self.performSegue(withIdentifier: "login_segue", sender: nil)
+            })
+            
             }) { (error) -> () in
                 
+                MBProgressHUD.hide(for: self.view, animated: true)
+                
+                delay(0.4, closure: {
+                    let alertControler = UIAlertController(title: "Sign-in Failed", message: "Please check that your email address and password are correct", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction) in
+                        
+                    })
+                    
+                    alertControler.addAction(okAction)
+                    self.present(alertControler, animated: true, completion: nil)
+                    
+                })
         }
     }
     
