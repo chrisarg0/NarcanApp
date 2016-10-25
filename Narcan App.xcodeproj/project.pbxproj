@@ -182,7 +182,6 @@
 				0114B9961DB6A1830029A3EC /* LaunchScreen.storyboard */,
 				0114B9941DB6A1830029A3EC /* Assets.xcassets */,
 				0114B9991DB6A1830029A3EC /* Info.plist */,
-				017A8EB01DB93EDB00FA9F25 /* Validation.swift */,
 			);
 			path = "Narcan App";
 			sourceTree = "<group>";
@@ -208,6 +207,8 @@
 		017951761DB86A0200AF53A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				017A8EB01DB93EDB00FA9F25 /* Validation.swift */,
+				01C067151DB82D6300DC5AA7 /* Common.swift */,
 				017951801DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf */,
 				017951811DB88A6F00AF53A3 /* OpenSans-Semibold.ttf */,
 				017951821DB88A6F00AF53A3 /* OpenSans-Regular.ttf */,
@@ -226,7 +227,6 @@
 				0179517D1DB88A4D00AF53A3 /* SalesforceSans-Regular.ttf */,
 				0179517E1DB88A4D00AF53A3 /* SalesforceSans-Thin.ttf */,
 				0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */,
-				01C067151DB82D6300DC5AA7 /* Common.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
