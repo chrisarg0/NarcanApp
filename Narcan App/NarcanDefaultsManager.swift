@@ -92,5 +92,7 @@ class NarcanDefaultsManager: NSObject {
             mUserDefault.synchronize();
         }
     }
+    
+    var user : NarcanUser!
 
 }

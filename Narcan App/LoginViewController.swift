@@ -82,19 +82,14 @@ class LoginViewController: UIViewController {
                     
                     AppDelegate.defaultManager.is_login = true
                     
-                    let access_token = success.object(forKey: "access_token")
-                    if access_token != nil {
-                        AppDelegate.defaultManager.access_token = access_token as! String
-                    }
-                    
                     let instance_url = success.object(forKey: "instance_url")
-                    if access_token != nil {
+                    if instance_url != nil {
                         AppDelegate.defaultManager.instance_url = instance_url as! String
                     }
                     
                     let id = success.object(forKey: "id")
                     if id != nil {
-                        AppDelegate.defaultManager.access_token = id as! String
+                        AppDelegate.defaultManager.id = id as! String
                     }
                     
                     let token_type = success.object(forKey: "token_type")
@@ -107,6 +102,12 @@ class LoginViewController: UIViewController {
                         AppDelegate.defaultManager.signature = signature as! String
                     }
                     
+                    let access_token = success.object(forKey: "access_token")
+                    if access_token != nil {
+                        AppDelegate.defaultManager.access_token = access_token as! String
+                        
+                        
+                    }
                     
                     }, failureBlock: { (failure) -> () in
                         
@@ -132,6 +133,18 @@ class LoginViewController: UIViewController {
             })
         }
         
+    }
+    
+    func getProfile() {
+        AppDelegate.apiManager.getMethodAPI(url: AppDelegate.defaultManager.id, params: [:], successBlock: { (success) -> () in
+            
+            let user = NarcanUser(dic : success)
+            
+            AppDelegate.defaultManager.user = user
+            
+            }) { (error) -> () in
+                
+        }
     }
     
     

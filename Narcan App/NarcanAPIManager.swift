@@ -72,7 +72,10 @@ class NarcanAPIManager: NSObject {
         httpManager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Content-Type")
         httpManager.responseSerializer = AFJSONResponseSerializer();
         
-        
+        let token = AppDelegate.defaultManager.access_token
+        if token != nil && !(token?.isEmpty)! {
+            httpManager.requestSerializer.setValue("\(AppDelegate.defaultManager.token_type) \(token)", forHTTPHeaderField: "Authorization");
+        }
         
         httpManager.get(url, parameters: params, progress: nil, success: { (task, responseObj) in
             AFNetworkReachabilityManager.shared().stopMonitoring()
