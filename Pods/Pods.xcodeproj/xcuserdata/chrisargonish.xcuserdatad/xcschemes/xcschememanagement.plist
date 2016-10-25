@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>Pods-Narcan App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +58,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
 		</dict>
 		<key>SalesforceNetwork.xcscheme</key>
 		<dict>
@@ -83,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>319301176C2C1FEC1459A0815FF15DC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,6 +157,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7A7FCDE5C1960E634C2F169491048136</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>84819E979E3F58B938DF8DC20F68DF59</key>
 		<dict>
 			<key>primary</key>
@@ -157,7 +177,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8C4092EE5CA6F01E67884B969B54053B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8EF1AFB92F72E78154ED8F59E80C3731</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>905D8C2E9FD9A17D483E3294AA45D0EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -182,6 +212,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DBA6001481CEA0EBA031CC5C94508FAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DC88CF2DCAB38FD3F60EF174C90095A0</key>
 		<dict>
 			<key>primary</key>
@@ -193,6 +228,11 @@
 			<true/>
 		</dict>
 		<key>DEA22ABED27F68613B9EE59405287EF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E42266D9D44C69E835502F38746A94E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
