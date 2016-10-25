@@ -47,6 +47,8 @@
 		5193F7A6BC26BE023472EC8D /* Pods_Narcan_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */; };
 		6F66E84FF4857CE8A5060A39 /* Pods_Narcan_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */; };
 		E22CBE2C1DB93FB2001F0AF2 /* NarcanAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */; };
+		E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */; };
+		E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,9 @@
 		B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5A0103426ECAE10EDEF207 /* Pods-Narcan AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanAPIManager.swift; sourceTree = "<group>"; };
+		E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Narcan App.entitlements"; sourceTree = "<group>"; };
+		E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanUser.swift; sourceTree = "<group>"; };
+		E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanDefaultsManager.swift; sourceTree = "<group>"; };
 		EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F1F383E4CE689F55852274 /* Pods-Narcan AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3A2AE67E5A971BEF97DE0AA /* Pods-Narcan AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppUITests/Pods-Narcan AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +179,7 @@
 		0114B98C1DB6A1830029A3EC /* Narcan App */ = {
 			isa = PBXGroup;
 			children = (
+				E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */,
 				E22CBE2A1DB93F6D001F0AF2 /* Manager Controllers */,
 				017951761DB86A0200AF53A3 /* Resources */,
 				017951771DB86A0F00AF53A3 /* View Controllers */,
@@ -262,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */,
+				E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */,
+				E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */,
 			);
 			name = "Manager Controllers";
 			sourceTree = "<group>";
@@ -361,6 +369,12 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -591,6 +605,7 @@
 			files = (
 				01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */,
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
+				E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */,
 				0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */,
 				01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */,
 				017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */,
@@ -601,6 +616,7 @@
 				0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */,
 				017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */,
 				01C067161DB82D6300DC5AA7 /* Common.swift in Sources */,
+				E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */,
 				E22CBE2C1DB93FB2001F0AF2 /* NarcanAPIManager.swift in Sources */,
 				017951751DB84E7300AF53A3 /* SelectUserTypeViewController.swift in Sources */,
 			);
@@ -682,6 +698,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -733,6 +750,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

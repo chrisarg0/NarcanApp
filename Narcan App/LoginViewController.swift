@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -70,6 +71,8 @@ class LoginViewController: UIViewController {
             
             if LoginViewController.apiManager.isOnline() {
                 
+                MBProgressHUD.showAdded(to: self.view, animated: true)
+                
                 let client_id = LoginViewController.Salesforce["consumerKey"]
                 let client_secret = LoginViewController.Salesforce["consumerSecret"]
                 let username = emailField.text
@@ -78,10 +81,51 @@ class LoginViewController: UIViewController {
                 let login_url = "https://login.salesforce.com/services/oauth2/token"
                 let params = ["grant_type":"password", "client_id":client_id!, "client_secret":client_secret!, "username":username!, "password":userpw!]
                 
-                LoginViewController.apiManager.postMethodAPI(url: login_url, params: params as NSDictionary, successBlock: { (success) -> () in
+                AppDelegate.apiManager.postMethodAPI(url: login_url, params: params as NSDictionary, successBlock: { (success) -> () in
                     
+                    AppDelegate.defaultManager.is_login = true
+                    
+                    let instance_url = success.object(forKey: "instance_url")
+                    if instance_url != nil {
+                        AppDelegate.defaultManager.instance_url = instance_url as! String
+                    }
+                    
+                    let id = success.object(forKey: "id")
+                    if id != nil {
+                        AppDelegate.defaultManager.id = id as! String
+                    }
+                    
+                    let token_type = success.object(forKey: "token_type")
+                    if token_type != nil {
+                        AppDelegate.defaultManager.token_type = token_type as! String
+                    }
+                    
+                    let signature = success.object(forKey: "signature")
+                    if signature != nil {
+                        AppDelegate.defaultManager.signature = signature as! String
+                    }
+                    
+                    let access_token = success.object(forKey: "access_token")
+                    if access_token != nil {
+                        AppDelegate.defaultManager.access_token = access_token as! String
+                        
+                        self.getProfile()
+                    }
                     
                     }, failureBlock: { (failure) -> () in
+                        
+                        MBProgressHUD.hide(for: self.view, animated: true)
+                        
+                        delay(0.4, closure: {
+                            let alertControler = UIAlertController(title: "Sign-in Failed", message: "Please check that your email address and password are correct", preferredStyle: .alert)
+                            let okAction = UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction) in
+                                
+                            })
+                            
+                            alertControler.addAction(okAction)
+                            self.present(alertControler, animated: true, completion: nil)
+                            
+                        })
                         
                 })
                 
@@ -105,6 +149,36 @@ class LoginViewController: UIViewController {
             })
         }
         
+    }
+    
+    func getProfile() {
+        AppDelegate.apiManager.getMethodAPI(url: AppDelegate.defaultManager.id, params: [:], successBlock: { (success) -> () in
+            MBProgressHUD.hide(for: self.view, animated: true)
+            
+            let user = NarcanUser(dic : success)
+            
+            AppDelegate.defaultManager.user = user
+            
+            delay(0.3, closure: {
+                
+                self.performSegue(withIdentifier: "login_segue", sender: nil)
+            })
+            
+            }) { (error) -> () in
+                
+                MBProgressHUD.hide(for: self.view, animated: true)
+                
+                delay(0.4, closure: {
+                    let alertControler = UIAlertController(title: "Sign-in Failed", message: "Please check that your email address and password are correct", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction) in
+                        
+                    })
+                    
+                    alertControler.addAction(okAction)
+                    self.present(alertControler, animated: true, completion: nil)
+                    
+                })
+        }
     }
     
     

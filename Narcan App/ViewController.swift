@@ -12,9 +12,14 @@ import RevealingSplashView
 import ServiceCore
 import ServiceCases
 import ServiceKnowledge
+import SDWebImage
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var nameLbl: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,8 +33,15 @@ class ViewController: UIViewController {
         revealingSplashView.startAnimation(){
             print("Completed")
             
+            if AppDelegate.defaultManager.user.display_name != "" {
+                self.nameLbl.text = AppDelegate.defaultManager.user.display_name
+            }
             
-            
+            if AppDelegate.defaultManager.user.thumbnail != "" {
+                self.avatarImageView.sd_setImage(with: URL(string: AppDelegate.defaultManager.user.picture)!, placeholderImage: UIImage(named: "avatar.png")!)
+                
+                
+            }
         }
         
     }

@@ -24,6 +24,7 @@ PODS:
     - CocoaLumberjack/Default
   - DesignSystem (2.0.8)
   - IQKeyboardManager (4.0.7)
+  - MBProgressHUD (1.0.0)
   - RevealingSplashView (0.1.0)
   - SalesforceSDKCore (4.3.1):
     - SalesforceSDKCore/SalesforceSDKCore (= 4.3.1)
@@ -41,6 +42,9 @@ PODS:
   - SalesforceSDKCore/SalesforceSDKCore/no-arc (4.3.1):
     - CocoaLumberjack (~> 2.3.0)
     - SalesforceSDKCore/SalesforceSDKCore/base
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - ServiceSDK (1.2.0):
     - ServiceSDK/All (= 1.2.0)
   - ServiceSDK/All (1.2.0)
@@ -49,8 +53,10 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - DesignSystem
   - IQKeyboardManager
+  - MBProgressHUD
   - RevealingSplashView
   - SalesforceSDKCore
+  - SDWebImage (~> 3.8)
   - ServiceSDK
 
 SPEC CHECKSUMS:
@@ -58,10 +64,12 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DesignSystem: 0777e9c9eec974d02334461735c6d95552341b59
   IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   RevealingSplashView: 501dd03d975ba2c4165dd463ea1c7c407fb9d13e
   SalesforceSDKCore: 64be7b51436f190c70ebac4adb0e56a70a46b0ad
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ServiceSDK: 32819a29a0f3cac59a6942634dc2f20e020187db
 
-PODFILE CHECKSUM: 02d74d79b80c494d2df59396558c8257f475085e
+PODFILE CHECKSUM: 861e43109c89506b661fadaf312fbdff0c62f8e2
 
 COCOAPODS: 1.1.0
