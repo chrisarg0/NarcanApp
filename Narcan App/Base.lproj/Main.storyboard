@@ -629,7 +629,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ARo-ao-Lyq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ARo-ao-Lyq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -649,7 +649,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHa-nh-YHJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iHa-nh-YHJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -686,7 +686,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mFb-wX-lPh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="cFC-Ai-dib"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KzZ-7G-ir7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KzZ-7G-ir7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
