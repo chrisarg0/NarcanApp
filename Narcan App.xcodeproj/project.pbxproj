@@ -117,6 +117,7 @@
 		B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5A0103426ECAE10EDEF207 /* Pods-Narcan AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanAPIManager.swift; sourceTree = "<group>"; };
+		E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Narcan App.entitlements"; sourceTree = "<group>"; };
 		E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanDefaultsManager.swift; sourceTree = "<group>"; };
 		EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F1F383E4CE689F55852274 /* Pods-Narcan AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 		0114B98C1DB6A1830029A3EC /* Narcan App */ = {
 			isa = PBXGroup;
 			children = (
+				E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */,
 				E22CBE2A1DB93F6D001F0AF2 /* Manager Controllers */,
 				017951761DB86A0200AF53A3 /* Resources */,
 				017951771DB86A0F00AF53A3 /* View Controllers */,
@@ -359,10 +361,17 @@
 				TargetAttributes = {
 					0114B9891DB6A1830029A3EC = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XK8F5XL2UM;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -763,8 +772,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Narcan App/Narcan App.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XK8F5XL2UM;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";
@@ -779,8 +789,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Narcan App/Narcan App.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XK8F5XL2UM;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";
