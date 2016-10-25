@@ -775,6 +775,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Narcan App/Narcan App.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";
@@ -792,6 +793,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Narcan App/Narcan App.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = XK8F5XL2UM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Narcan App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";

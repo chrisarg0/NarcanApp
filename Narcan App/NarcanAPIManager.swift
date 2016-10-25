@@ -73,6 +73,7 @@ class NarcanAPIManager: NSObject {
         httpManager.responseSerializer = AFJSONResponseSerializer();
         
         
+        
         httpManager.get(url, parameters: params, progress: nil, success: { (task, responseObj) in
             AFNetworkReachabilityManager.shared().stopMonitoring()
             successBlock(responseObj as! NSDictionary)

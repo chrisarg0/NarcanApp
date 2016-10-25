@@ -177,6 +177,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Za7-wE-NMb">
+                                <frame key="frameInset" minY="64" width="375" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -197,11 +201,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="carrierView" destination="uQO-26-y8j" id="Liv-49-n9e"/>
+                        <outlet property="mapView" destination="Za7-wE-NMb" id="chc-7D-TXG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9H-xk-mw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="-564"/>
+            <point key="canvasLocation" x="1888.8" y="-564.46776611694156"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="9lN-gb-kx0">

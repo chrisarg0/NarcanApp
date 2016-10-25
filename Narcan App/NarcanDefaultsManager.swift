@@ -70,6 +70,18 @@ class NarcanDefaultsManager: NSObject {
         }
     }
     
+    var token_type:String! {
+        get {
+            return mUserDefault.string(forKey: "token_type");
+        }
+        
+        set {
+            mUserDefault.setValue(newValue, forKey: "token_type");
+            mUserDefault.synchronize();
+        }
+    }
+
+    
     var signature:String! {
         get {
             return mUserDefault.string(forKey: "signature");

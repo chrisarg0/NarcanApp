@@ -89,7 +89,7 @@ class LoginViewController: UIViewController {
                     
                     let instance_url = success.object(forKey: "instance_url")
                     if access_token != nil {
-                        AppDelegate.defaultManager.access_token = instance_url as! String
+                        AppDelegate.defaultManager.instance_url = instance_url as! String
                     }
                     
                     let id = success.object(forKey: "id")
@@ -97,9 +97,14 @@ class LoginViewController: UIViewController {
                         AppDelegate.defaultManager.access_token = id as! String
                     }
                     
+                    let token_type = success.object(forKey: "token_type")
+                    if token_type != nil {
+                        AppDelegate.defaultManager.token_type = token_type as! String
+                    }
+                    
                     let signature = success.object(forKey: "signature")
                     if signature != nil {
-                        AppDelegate.defaultManager.access_token = signature as! String
+                        AppDelegate.defaultManager.signature = signature as! String
                     }
                     
                     
