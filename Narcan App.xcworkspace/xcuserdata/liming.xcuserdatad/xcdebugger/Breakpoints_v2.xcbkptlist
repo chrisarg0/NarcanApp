@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Narcan App/NarcanUser.swift"
-            timestampString = "499078671.145692"
+            filePath = "Narcan App/NarcanAPIManager.swift"
+            timestampString = "499079981.311634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "init(dic:)"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "getMethodAPI(url:params:successBlock:failureBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Narcan App/NarcanAPIManager.swift"
+            timestampString = "499079981.311634"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "getMethodAPI(url:params:successBlock:failureBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

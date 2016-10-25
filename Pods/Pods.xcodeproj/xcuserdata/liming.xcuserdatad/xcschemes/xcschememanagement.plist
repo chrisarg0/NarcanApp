@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Narcan App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -45,6 +50,11 @@
 			<false/>
 		</dict>
 		<key>RevealingSplashView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37C76CD246D637B8E4C586284A0D96B2</key>
+		<key>319301176C2C1FEC1459A0815FF15DC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4010F01E264A42EA2CA50B748C3A413B</key>
+		<key>37C76CD246D637B8E4C586284A0D96B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7A7FCDE5C1960E634C2F169491048136</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8A2E8FED01C8A6BC8ADFCF3C3B78368F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C4092EE5CA6F01E67884B969B54053B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,17 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98A7966113629EBF35097648FFB0939C</key>
+		<key>905D8C2E9FD9A17D483E3294AA45D0EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC308FBD7CF024960F12347BD8A3525B</key>
+		<key>DBA6001481CEA0EBA031CC5C94508FAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E85A2109BFB03C3587BF4C0FA6B6811E</key>
+		<key>E42266D9D44C69E835502F38746A94E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

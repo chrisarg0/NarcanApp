@@ -106,7 +106,7 @@ class LoginViewController: UIViewController {
                     if access_token != nil {
                         AppDelegate.defaultManager.access_token = access_token as! String
                         
-                        
+                        self.getProfile()
                     }
                     
                     }, failureBlock: { (failure) -> () in

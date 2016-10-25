@@ -19,6 +19,8 @@ pod 'ServiceSDK'
 
 pod 'IQKeyboardManager'
 pod 'AFNetworking', '~> 3.0'
+pod 'SDWebImage', '~>3.8'
+pod 'MBProgressHUD'
 
   target 'Narcan AppTests' do
     inherit! :search_paths

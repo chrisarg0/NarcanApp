@@ -65,16 +65,13 @@ class NarcanAPIManager: NSObject {
     
     func getMethodAPI (url: String, params: NSDictionary, successBlock: @escaping tSuccessBlock, failureBlock: @escaping tFailureBlock) {
         //Start Monitoring
-        self.startMonitoring();
+        self.startMonitoring()
         
-        httpManager = AFHTTPSessionManager();
-        httpManager.requestSerializer = AFJSONRequestSerializer();
-        httpManager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        httpManager.responseSerializer = AFJSONResponseSerializer();
+        httpManager = AFHTTPSessionManager()
         
         let token = AppDelegate.defaultManager.access_token
         if token != nil && !(token?.isEmpty)! {
-            httpManager.requestSerializer.setValue("\(AppDelegate.defaultManager.token_type) \(token)", forHTTPHeaderField: "Authorization");
+            httpManager.requestSerializer.setValue("\(AppDelegate.defaultManager.token_type!) \(token!)", forHTTPHeaderField: "Authorization");
         }
         
         httpManager.get(url, parameters: params, progress: nil, success: { (task, responseObj) in
@@ -90,13 +87,9 @@ class NarcanAPIManager: NSObject {
     
     func postMethodAPI (url: String, params: NSDictionary, successBlock:@escaping tSuccessBlock, failureBlock:@escaping tFailureBlock) {
         //Start Monitoring
-        self.startMonitoring();
+        self.startMonitoring()
         
-        httpManager = AFHTTPSessionManager();
-        
-        httpManager.requestSerializer = AFJSONRequestSerializer();
-        httpManager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        httpManager.responseSerializer = AFJSONResponseSerializer();
+        httpManager = AFHTTPSessionManager()
         
         httpManager.post(url, parameters: params, progress: nil, success: { (task, responseObj) in
             AFNetworkReachabilityManager.shared().stopMonitoring()
