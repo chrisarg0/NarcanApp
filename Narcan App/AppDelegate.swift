@@ -26,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         SCServiceCloud.sharedInstance().knowledge.isEnabled = true
-        //SCServiceCloud.sharedInstance().cases.isEnabled = true
-        //SCServiceCloud.sharedInstance().cases.caseCreateActionName = "NewNarcanRequest"
+        SCServiceCloud.sharedInstance().cases.isEnabled = true
+        SCServiceCloud.sharedInstance().cases.caseCreateActionName = "NewNarcanRequest"
         
         // Create configuration object with init params
         let config = SCSServiceConfiguration(
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Perform any additional configuration here
         
         // Pass configuration to shared instance
-        SCServiceCloud.sharedInstance().serviceConfiguration = config
+        //SCServiceCloud.sharedInstance().serviceConfiguration = config
         
         
         let navigationBarAppearace = UINavigationBar.appearance()
