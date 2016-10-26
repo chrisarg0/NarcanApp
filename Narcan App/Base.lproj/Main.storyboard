@@ -42,7 +42,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Burton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-vR-rau">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="jHI-lV-5hl"/>
+                                    <constraint firstAttribute="height" constant="30" id="jHI-lV-5hl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="22"/>
                                 <nil key="textColor"/>

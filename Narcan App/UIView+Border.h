@@ -2,8 +2,8 @@
 //  UIView+Border.h
 //  Videre
 //
-//  Created by Luokey on 12/29/15.
-//  Copyright © 2015 Luokey. All rights reserved.
+//  Created by Alex on 12/29/15.
+//  Copyright © 2015 Alex. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,7 +2,7 @@
 //  UIView+Border.m
 //  Videre
 //
-//  Created by Luokey on 12/29/15.
+//  Created by Alex on 12/29/15.
 //  Copyright © 2015 Luokey. All rights reserved.
 //
 
