@@ -49,6 +49,7 @@
 		E22CBE2C1DB93FB2001F0AF2 /* NarcanAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */; };
 		E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */; };
 		E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */; };
+		E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E2815F951DBFEF7F00C36697 /* UIView+Border.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,9 @@
 		E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Narcan App.entitlements"; sourceTree = "<group>"; };
 		E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanUser.swift; sourceTree = "<group>"; };
 		E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanDefaultsManager.swift; sourceTree = "<group>"; };
+		E2815F931DBFEF7E00C36697 /* Narcan App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Narcan App-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2815F941DBFEF7F00C36697 /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
+		E2815F951DBFEF7F00C36697 /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
 		EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Narcan_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F1F383E4CE689F55852274 /* Pods-Narcan AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppTests/Pods-Narcan AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3A2AE67E5A971BEF97DE0AA /* Pods-Narcan AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppUITests/Pods-Narcan AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +274,9 @@
 				E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */,
 				E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */,
 				E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */,
+				E2815F941DBFEF7F00C36697 /* UIView+Border.h */,
+				E2815F951DBFEF7F00C36697 /* UIView+Border.m */,
+				E2815F931DBFEF7E00C36697 /* Narcan App-Bridging-Header.h */,
 			);
 			name = "Manager Controllers";
 			sourceTree = "<group>";
@@ -605,6 +612,7 @@
 			files = (
 				01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */,
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
+				E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */,
 				E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */,
 				0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */,
 				01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */,
@@ -782,6 +790,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Narcan App/Narcan App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -798,6 +808,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisargo.Narcan-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Narcan App/Narcan App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

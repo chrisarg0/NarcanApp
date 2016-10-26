@@ -49,8 +49,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="1Fo-6b-9kW">
-                                <frame key="frameInset" minX="103" minY="131" width="169" height="169"/>
+                                <frame key="frameInset" minX="104" minY="131" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="85"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -638,7 +643,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ARo-ao-Lyq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ARo-ao-Lyq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -658,7 +663,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iHa-nh-YHJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iHa-nh-YHJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -676,7 +681,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JHv-oc-ZlQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="04O-51-Nl0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="04O-51-Nl0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -695,7 +700,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mFb-wX-lPh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="cFC-Ai-dib"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KzZ-7G-ir7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KzZ-7G-ir7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
