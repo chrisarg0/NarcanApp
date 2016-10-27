@@ -28,7 +28,7 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>salesforceliveagent.com</key>
+			<key>salesforce.com</key>
 			<dict>
 				<key>NSExceptionRequiresForwardSecrecy</key>
 				<false/>
@@ -37,7 +37,7 @@
 				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 				<false/>
 			</dict>
-			<key>salesforce.com</key>
+			<key>salesforceliveagent.com</key>
 			<dict>
 				<key>NSExceptionRequiresForwardSecrecy</key>
 				<false/>
@@ -48,10 +48,14 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is used for SOS video chat with an agent.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Location is required</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location is required</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone is used for SOS chat with an agent.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SalesforceSans-Regular.ttf</string>
@@ -82,9 +86,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSCameraUsageDescription</key>
-	<string>Camera is used for SOS video chat with an agent.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Microphone is used for SOS chat with an agent.</string>
 </dict>
 </plist>

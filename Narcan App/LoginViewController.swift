@@ -21,24 +21,56 @@ class LoginViewController: UIViewController {
     
     static let apiManager = NarcanAPIManager.sharedInstance
     
+    
+    @IBOutlet weak var loginParentView: UIView!
+    @IBOutlet weak var formParentView: UIView!
     @IBOutlet weak var loginForm: UIImageView!
-    
     @IBOutlet weak var emailField: UITextField!
-    
     @IBOutlet weak var pwField: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
     
-    @IBOutlet weak var icon: UIImageView!
+    var formInitialY: CGFloat!
+    var formOffset: CGFloat!
+    var btnInitialY: CGFloat!
+    var btnOffset: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailField.becomeFirstResponder()
-        UIView.animate(withDuration: 0.4) {
-            self.icon.center.y = self.icon.center.y - 130
-        }
+//        emailField.becomeFirstResponder()
+//        UIView.animate(withDuration: 0.4) {
+//            self.icon.center.y = self.icon.center.y - 130
+//        }
 
         // Do any additional setup after loading the view.
+        
+//        formInitialY = formParentView.frame.origin.y
+//        formOffset = 0
+//        btnInitialY = loginParentView.frame.origin.y
+//        btnOffset = 0
+        
+        // assign values to our variables
+        formInitialY = formParentView.frame.origin.y
+        formOffset = -175
+        btnInitialY = loginParentView.frame.origin.y
+        btnOffset = -205
+        
+        // Register for keyboard events
+        NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
+            // Any code you put in here will be called when the keyboard is about to display
+            self.formParentView.frame.origin.y = self.formInitialY + self.formOffset
+            self.loginParentView.frame.origin.y = self.btnInitialY + self.btnOffset
+        }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification: Notification) in
+            // Any code you put in here will be called when the keyboard is about to hide
+            self.formParentView.frame.origin.y = self.formInitialY
+            self.loginParentView.frame.origin.y = self.btnInitialY
+            
+            func keyboardWillHide(notification: NSNotification) {
+                // Move the buttons back down to it's original position
+                self.loginParentView.frame.origin.y = self.btnInitialY
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -56,7 +88,7 @@ class LoginViewController: UIViewController {
     @IBAction func createAccountDidTouch(_ sender: AnyObject) {
         
     }
-    
+        
     @IBAction func pwEditDidChange(_ sender: AnyObject) {
         
         if emailField.text!.isEmpty || pwField.text!.isEmpty {
@@ -66,6 +98,13 @@ class LoginViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func didTap(_ sender: UITapGestureRecognizer) {
+        
+        view.endEditing(true)
+        
+    }
+    
     @IBAction func didPressLogin(_ sender: AnyObject) {
         
         if emailField.text != "" && pwField.text != "" {
@@ -130,7 +169,7 @@ class LoginViewController: UIViewController {
                 })
                 
                 delay(3, closure: {
-                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    self.performSegue(withIdentifier: "login_segue", sender: nil)
                 })
                 
             }
