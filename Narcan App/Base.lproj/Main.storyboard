@@ -173,6 +173,10 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="avatarImageView" destination="1U5-Ut-SVW" id="9Xp-Zp-CUs"/>
+                        <outlet property="fullnameLbl" destination="SMn-EY-UNL" id="131-tC-65g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV1-Ux-e9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

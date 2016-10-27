@@ -168,9 +168,9 @@ class LoginViewController: UIViewController {
                         
                 })
                 
-                delay(3, closure: {
-                    self.performSegue(withIdentifier: "login_segue", sender: nil)
-                })
+//                delay(3, closure: {
+//                    self.performSegue(withIdentifier: "login_segue", sender: nil)
+//                })
                 
             }
             
