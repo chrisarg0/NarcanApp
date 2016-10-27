@@ -40,6 +40,7 @@
 		017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */; };
 		017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017A8EB01DB93EDB00FA9F25 /* Validation.swift */; };
 		01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */; };
+		018C7AA81DC1ECDF00E02FDC /* CareTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C7AA71DC1ECDF00E02FDC /* CareTeamViewController.swift */; };
 		01A0C44B1DC1849100174DD0 /* EmailChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */; };
 		01A0C44D1DC184AC00174DD0 /* PhoneChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */; };
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
@@ -111,6 +112,7 @@
 		017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
 		017A8EB01DB93EDB00FA9F25 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		018C7AA71DC1ECDF00E02FDC /* CareTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTeamViewController.swift; sourceTree = "<group>"; };
 		01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailChangeViewController.swift; sourceTree = "<group>"; };
 		01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneChangeViewController.swift; sourceTree = "<group>"; };
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */,
 				01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */,
 				01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */,
+				018C7AA71DC1ECDF00E02FDC /* CareTeamViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018C7AA81DC1ECDF00E02FDC /* CareTeamViewController.swift in Sources */,
 				01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */,
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
 				E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */,
