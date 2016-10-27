@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="tgH-Vo-HBs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="tgH-Vo-HBs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -41,16 +41,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cleanPill" id="mHs-Ks-EZt">
-                                <frame key="frameInset" minX="130" minY="357" width="116" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHZ-mT-PIr">
                                 <frame key="frameInset" minX="1" minY="603" width="376" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="requestButton"/>
                                 <connections>
                                     <segue destination="EuN-xs-muS" kind="push" id="1lX-7R-56Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="1BF-I7-FIU">
+                                <frame key="frameInset" minX="249" minY="276" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="settings_120"/>
+                                <connections>
+                                    <segue destination="28I-tm-Gfs" kind="push" id="AEZ-O3-wxa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,10 +75,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="ZWP-vQ-at6">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="settings_120"/>
-                                <connections>
-                                    <segue destination="28I-tm-Gfs" kind="push" id="sVB-D5-YLL"/>
-                                </connections>
+                                <state key="normal" image="phoneBook"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -447,7 +448,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Upu-6R-APg">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="settings_120"/>
+                                <state key="normal" image="phoneBook"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1004,7 +1005,6 @@
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="back" width="13" height="21"/>
         <image name="care_team" width="34" height="27"/>
-        <image name="cleanPill" width="116" height="28"/>
         <image name="defaultAvatar" width="169" height="169"/>
         <image name="forgotPwForm" width="375" height="603"/>
         <image name="iconTransparent" width="92" height="93"/>
@@ -1012,13 +1012,14 @@
         <image name="knowledge_base_120" width="31" height="24"/>
         <image name="loginForm" width="300" height="130"/>
         <image name="login_active" width="335" height="64"/>
+        <image name="phoneBook" width="27" height="28"/>
         <image name="requestButton" width="375" height="64"/>
         <image name="requestLocationPermission" width="375" height="603"/>
         <image name="requestNotifPermission" width="375" height="603"/>
         <image name="selectUser" width="375" height="603"/>
         <image name="selected" width="31" height="31"/>
         <image name="settingsBase" width="375" height="603"/>
-        <image name="settings_120" width="25" height="27"/>
+        <image name="settings_120" width="52" height="52"/>
         <image name="signUpForm" width="375" height="603"/>
         <image name="update_inactive" width="90" height="40"/>
     </resources>
