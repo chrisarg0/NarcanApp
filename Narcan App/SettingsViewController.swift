@@ -27,6 +27,32 @@ class SettingsViewController: UIViewController {
         
     }
     
+    @IBAction func didPressProfilePic(_ sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let chooseFromLibrary = UIAlertAction(title: "Choose From Library", style: .default) { (action) in
+            
+            //self.performSegue(withIdentifier: "", sender: nil)
+        }
+        
+        alertController.addAction(chooseFromLibrary)
+        
+        let takeProfilePicture = UIAlertAction(title: "Take Profile Picture", style: .default) { (action) in
+            
+            //self.performSegue(withIdentifier: "", sender: nil)
+        }
+        
+        alertController.addAction(takeProfilePicture)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+        }
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
+        
+    }
+    
 
 
 }

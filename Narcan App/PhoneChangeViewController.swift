@@ -10,9 +10,11 @@ import UIKit
 
 class PhoneChangeViewController: UIViewController {
 
+    @IBOutlet weak var phoneNumberField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        phoneNumberField.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
 
