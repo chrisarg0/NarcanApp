@@ -33,11 +33,11 @@ class ViewController: UIViewController {
         revealingSplashView.startAnimation(){
             print("Completed")
             
-            if AppDelegate.defaultManager.user.display_name != "" {
+            if AppDelegate.defaultManager.user.display_name != nil && AppDelegate.defaultManager.user.display_name != "" {
                 self.nameLbl.text = AppDelegate.defaultManager.user.display_name
             }
             
-            if AppDelegate.defaultManager.user.thumbnail != "" {
+            if AppDelegate.defaultManager.user.thumbnail != nil && AppDelegate.defaultManager.user.thumbnail != "" {
                 let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
                 self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
             }
