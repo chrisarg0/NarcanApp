@@ -10,12 +10,19 @@ import UIKit
 
 class PhoneChangeViewController: UIViewController {
 
+    @IBOutlet weak var oldPhoneLbl: UILabel!
     @IBOutlet weak var phoneNumberField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneNumberField.becomeFirstResponder()
         // Do any additional setup after loading the view.
+        if AppDelegate.defaultManager.user.mobile_phone != nil && AppDelegate.defaultManager.user.mobile_phone != "" {
+            oldPhoneLbl.text = AppDelegate.defaultManager.user.mobile_phone
+        }
+        else {
+            oldPhoneLbl.text = ""
+        }
     }
 
     override func didReceiveMemoryWarning() {

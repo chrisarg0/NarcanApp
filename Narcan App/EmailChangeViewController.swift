@@ -10,12 +10,20 @@ import UIKit
 
 class EmailChangeViewController: UIViewController {
 
+    @IBOutlet weak var oldEmailLbl: UILabel!
     @IBOutlet weak var emailAddressField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         emailAddressField.becomeFirstResponder()
         // Do any additional setup after loading the view.
+        
+        if AppDelegate.defaultManager.user.email != nil && AppDelegate.defaultManager.user.email != "" {
+            oldEmailLbl.text = AppDelegate.defaultManager.user.email
+        }
+        else {
+            oldEmailLbl.text = ""
+        }
     }
 
     override func didReceiveMemoryWarning() {

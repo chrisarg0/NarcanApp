@@ -103,6 +103,11 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="defaultAvatar" id="1U5-Ut-SVW">
                                 <frame key="frameInset" minX="20" minY="137" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="41"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SMn-EY-UNL">
                                 <frame key="frameInset" minX="10" minY="86" width="349" height="24"/>
@@ -281,6 +286,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailAddressField" destination="afI-HJ-v0V" id="nMG-HS-bmh"/>
+                        <outlet property="oldEmailLbl" destination="XEY-eD-c7v" id="62L-oB-dXs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9w4-FN-9og" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,6 +358,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="oldPhoneLbl" destination="QpO-3t-TNq" id="Xif-Ls-x2x"/>
                         <outlet property="phoneNumberField" destination="Vfz-nh-wNX" id="BFF-Pd-99j"/>
                     </connections>
                 </viewController>
