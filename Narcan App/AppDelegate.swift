@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let messageKey = "onMessageReceived"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+
+//////////Commented out due to errors//////////////////////////////////////////////////
 //        SCServiceCloud.sharedInstance().knowledge.isEnabled = true
 //        SCServiceCloud.sharedInstance().cases.isEnabled = true
 //        SCServiceCloud.sharedInstance().cases.caseCreateActionName = "NewNarcanRequest"

@@ -1,14 +1,14 @@
 //
-//  SettingsViewController.swift
+//  EmailChangeViewController.swift
 //  Narcan App
 //
-//  Created by Chris Argonish on 10/18/16.
+//  Created by Chris Argonish on 10/26/16.
 //  Copyright © 2016 Chris. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class EmailChangeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +21,9 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backDidPress(_ sender: AnyObject) {
-        
-        navigationController!.popViewController(animated: true)
-        
+    @IBAction func didPressCancel(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
-
 
 }

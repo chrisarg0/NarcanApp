@@ -40,6 +40,9 @@
 		017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */; };
 		017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017A8EB01DB93EDB00FA9F25 /* Validation.swift */; };
 		01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */; };
+		01A0C44B1DC1849100174DD0 /* EmailChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */; };
+		01A0C44D1DC184AC00174DD0 /* PhoneChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */; };
+		01A0C44F1DC184C800174DD0 /* ProfPicChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44E1DC184C800174DD0 /* ProfPicChangeViewController.swift */; };
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
 		01C067161DB82D6300DC5AA7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067151DB82D6300DC5AA7 /* Common.swift */; };
 		01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067171DB8362800DC5AA7 /* SignUpViewController.swift */; };
@@ -109,6 +112,9 @@
 		017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
 		017A8EB01DB93EDB00FA9F25 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailChangeViewController.swift; sourceTree = "<group>"; };
+		01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneChangeViewController.swift; sourceTree = "<group>"; };
+		01A0C44E1DC184C800174DD0 /* ProfPicChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfPicChangeViewController.swift; sourceTree = "<group>"; };
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01C067151DB82D6300DC5AA7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		01C067171DB8362800DC5AA7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +260,9 @@
 				017951741DB84E7300AF53A3 /* SelectUserTypeViewController.swift */,
 				0179519E1DB8922700AF53A3 /* LocationRequestViewController.swift */,
 				017951A01DB8992400AF53A3 /* NotificationRequestViewController.swift */,
+				01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */,
+				01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */,
+				01A0C44E1DC184C800174DD0 /* ProfPicChangeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -614,12 +623,15 @@
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
 				E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */,
 				E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */,
+				01A0C44F1DC184C800174DD0 /* ProfPicChangeViewController.swift in Sources */,
 				0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */,
+				01A0C44B1DC1849100174DD0 /* EmailChangeViewController.swift in Sources */,
 				01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */,
 				017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */,
 				0114B98E1DB6A1830029A3EC /* AppDelegate.swift in Sources */,
 				0114B9C41DB6EC210029A3EC /* RequestViewController.swift in Sources */,
 				01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */,
+				01A0C44D1DC184AC00174DD0 /* PhoneChangeViewController.swift in Sources */,
 				0114B9C01DB6EC0A0029A3EC /* KnowledgeViewController.swift in Sources */,
 				0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */,
 				017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */,
