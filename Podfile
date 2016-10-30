@@ -12,6 +12,8 @@ source 'https://github.com/goinstant/pods-specs-public'
   # Pods for Narcan App
 
 pod 'SalesforceSDKCore'
+#pod 'SalesforceRestAPI'
+#pod 'SalesforceNetwork'
 pod 'RevealingSplashView'
 pod 'DesignSystem'
 pod 'ServiceSDK'
