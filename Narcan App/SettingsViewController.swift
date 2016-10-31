@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var fullnameLbl: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
@@ -46,6 +46,11 @@ class SettingsViewController: UIViewController {
         let chooseFromLibrary = UIAlertAction(title: "Choose From Library", style: .default) { (action) in
             
             //self.performSegue(withIdentifier: "", sender: nil)
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
         }
         
         alertController.addAction(chooseFromLibrary)
@@ -53,6 +58,11 @@ class SettingsViewController: UIViewController {
         let takeProfilePicture = UIAlertAction(title: "Take Profile Picture", style: .default) { (action) in
             
             //self.performSegue(withIdentifier: "", sender: nil)
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
         }
         
         alertController.addAction(takeProfilePicture)
@@ -65,6 +75,13 @@ class SettingsViewController: UIViewController {
         
     }
     
-
-
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        avatarImageView.image = selectedImage
+        
+        // Dismiss the picker.
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
