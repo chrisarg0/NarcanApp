@@ -11,6 +11,7 @@ import UserNotifications
 import ServiceCore
 import ServiceCases
 import ServiceKnowledge
+import SalesforceKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -52,18 +53,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //Push Notification
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
-            // actions based on whether notifications were authorized or not
-        }
-        application.registerForRemoteNotifications()
+        SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
+        
+//        let center = UNUserNotificationCenter.current()
+//        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+//            // actions based on whether notifications were authorized or not
+//        }
+//        application.registerForRemoteNotifications()
         
         return true
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         
-        
+        NSLog("Failed to get token, error: \(error.localizedDescription)")
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
@@ -82,6 +85,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
         print(deviceTokenString)
+        
+        SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
+        
+        SFPushNotificationManager.sharedInstance().registerForSalesforceNotifications()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
