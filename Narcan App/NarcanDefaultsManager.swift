@@ -12,8 +12,11 @@ class NarcanDefaultsManager: NSObject {
     
     var mUserDefault : UserDefaults!
     
+    var mCareUsers   : NSMutableArray!
+    
     override init() {
         self.mUserDefault = UserDefaults.standard
+        self.mCareUsers   = NSMutableArray()
     }
     
     class var sharedInstance: NarcanDefaultsManager {

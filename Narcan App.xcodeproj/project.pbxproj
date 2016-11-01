@@ -51,6 +51,8 @@
 		6F66E84FF4857CE8A5060A39 /* Pods_Narcan_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42579015E929A70622BF60A /* Pods_Narcan_AppTests.framework */; };
 		E22CBE2C1DB93FB2001F0AF2 /* NarcanAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */; };
 		E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */; };
+		E23ADEF71DC94A5300F06599 /* CareTeamAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ADEF61DC94A5300F06599 /* CareTeamAddViewController.swift */; };
+		E23ADEF91DC94ECE00F06599 /* NarcanCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ADEF81DC94ECE00F06599 /* NarcanCare.swift */; };
 		E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */; };
 		E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E2815F951DBFEF7F00C36697 /* UIView+Border.m */; };
 /* End PBXBuildFile section */
@@ -127,6 +129,8 @@
 		E22CBE2B1DB93FB2001F0AF2 /* NarcanAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanAPIManager.swift; sourceTree = "<group>"; };
 		E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Narcan App.entitlements"; sourceTree = "<group>"; };
 		E22F2CC81DBF503F0056C8AA /* NarcanUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanUser.swift; sourceTree = "<group>"; };
+		E23ADEF61DC94A5300F06599 /* CareTeamAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTeamAddViewController.swift; sourceTree = "<group>"; };
+		E23ADEF81DC94ECE00F06599 /* NarcanCare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanCare.swift; sourceTree = "<group>"; };
 		E27CA1B41DBECED7000B4D0D /* NarcanDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarcanDefaultsManager.swift; sourceTree = "<group>"; };
 		E2815F931DBFEF7E00C36697 /* Narcan App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Narcan App-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2815F941DBFEF7F00C36697 /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 				01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */,
 				01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */,
 				018C7AA71DC1ECDF00E02FDC /* CareTeamViewController.swift */,
+				E23ADEF61DC94A5300F06599 /* CareTeamAddViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				E2815F941DBFEF7F00C36697 /* UIView+Border.h */,
 				E2815F951DBFEF7F00C36697 /* UIView+Border.m */,
 				E2815F931DBFEF7E00C36697 /* Narcan App-Bridging-Header.h */,
+				E23ADEF81DC94ECE00F06599 /* NarcanCare.swift */,
 			);
 			name = "Manager Controllers";
 			sourceTree = "<group>";
@@ -624,6 +630,7 @@
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,
 				E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */,
 				E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */,
+				E23ADEF91DC94ECE00F06599 /* NarcanCare.swift in Sources */,
 				0179519F1DB8922700AF53A3 /* LocationRequestViewController.swift in Sources */,
 				01A0C44B1DC1849100174DD0 /* EmailChangeViewController.swift in Sources */,
 				01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */,
@@ -634,6 +641,7 @@
 				01A0C44D1DC184AC00174DD0 /* PhoneChangeViewController.swift in Sources */,
 				0114B9C01DB6EC0A0029A3EC /* KnowledgeViewController.swift in Sources */,
 				0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */,
+				E23ADEF71DC94A5300F06599 /* CareTeamAddViewController.swift in Sources */,
 				017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */,
 				01C067161DB82D6300DC5AA7 /* Common.swift in Sources */,
 				E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */,
