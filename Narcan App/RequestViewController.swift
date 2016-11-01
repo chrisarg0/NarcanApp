@@ -13,7 +13,10 @@ class RequestViewController: UIViewController {
     
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var avatarImageView: UIImageView!
     
+    @IBOutlet weak var timeLbl: UILabel!
+    @IBOutlet weak var userTypeLbl: UILabel!
     let regionRadius: CLLocationDistance = 1000
     
     override func viewDidLoad() {
@@ -23,6 +26,16 @@ class RequestViewController: UIViewController {
         
         let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
         centerMapOnLocation(location: initialLocation)
+        
+        if AppDelegate.defaultManager.user.thumbnail != nil && AppDelegate.defaultManager.user.thumbnail != "" {
+            let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
+            self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
+            
+        }
+        
+        if AppDelegate.defaultManager.user.user_type != nil && AppDelegate.defaultManager.user.user_type != "" {
+            self.userTypeLbl.text = AppDelegate.defaultManager.user.user_type
+        }
     }
 
     override func didReceiveMemoryWarning() {
