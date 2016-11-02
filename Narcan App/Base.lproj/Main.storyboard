@@ -263,13 +263,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="addCareTeamMember"/>
                                 <connections>
-                                    <segue destination="OCz-WL-iCe" kind="modal" modalTransitionStyle="coverVertical" id="4fE-iQ-K2B"/>
+                                    <segue destination="OCz-WL-iCe" kind="modal" identifier="" modalTransitionStyle="coverVertical" id="4fE-iQ-K2B"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rJq-v0-Y8e" id="2aj-ud-TT9"/>
+                        <segue destination="OCz-WL-iCe" kind="modal" identifier="CareAddSegue" id="h5I-bo-Vtd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWW-0s-4Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -425,7 +426,7 @@
         <!--Care Team Add View Controller-->
         <scene sceneID="IRg-av-bMh">
             <objects>
-                <viewController id="QZZ-LI-KbE" customClass="CareTeamAddViewController" customModule="Narcan_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CareTeamCtrl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QZZ-LI-KbE" customClass="CareTeamAddViewController" customModule="Narcan_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWj-lp-0vT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1206,6 +1207,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="gui-8S-cok"/>
+        <segue reference="h5I-bo-Vtd"/>
         <segue reference="SGX-8Q-0qt"/>
         <segue reference="lK2-bP-dNE"/>
     </inferredMetricsTieBreakers>

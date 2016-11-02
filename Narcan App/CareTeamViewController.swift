@@ -11,6 +11,7 @@ import UIKit
 class CareTeamViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    var index : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +51,23 @@ class CareTeamViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.index = indexPath.row
+        self.performSegue(withIdentifier: "CareAddSegue", sender: self)
     }
     
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "CareAddSegue" {
+            let navCtrl = segue.destination as! UINavigationController
+            let careTeamCtrl = navCtrl.viewControllers[0] as! CareTeamAddViewController
+            careTeamCtrl.mCare = AppDelegate.defaultManager.mCareUsers.object(at: self.index) as! NarcanCare
+        }
+        
+    }
     
     
     // Override to support conditional editing of the table view.

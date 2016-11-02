@@ -21,6 +21,8 @@ class CareTeamAddViewController: UIViewController, UIPickerViewDataSource, UIPic
     let roleArray = ["Mother", "Father", "Loved one", "Primary physician"]
     var rolePicker: UIPickerView!
     
+    var mCare : NarcanCare!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +31,15 @@ class CareTeamAddViewController: UIViewController, UIPickerViewDataSource, UIPic
         rolePicker = UIPickerView()
         rolePicker.delegate = self
         roleText.inputView = rolePicker
+        
+        if self.mCare != nil {
+            self.firstNameText.text = self.mCare.first_name
+            self.lastNameText.text = self.mCare.last_name
+            self.emailText.text = self.mCare.email
+            self.phoneText.text = self.mCare.phone
+            self.roleText.text = self.mCare.role
+            self.roleSwitch.isOn = self.mCare.notification
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,7 +104,12 @@ class CareTeamAddViewController: UIViewController, UIPickerViewDataSource, UIPic
         care.role = self.roleText.text
         care.notification = self.roleSwitch.isOn
         
-        AppDelegate.defaultManager.mCareUsers.add(care)
+        if self.mCare != nil {
+            AppDelegate.defaultManager.mCareUsers.replaceObject(at: AppDelegate.defaultManager.mCareUsers.index(of: self.mCare), with: care)
+        }
+        else {
+            AppDelegate.defaultManager.mCareUsers.add(care)
+        }
         
         self.dismiss(animated: true, completion: nil)
     }
