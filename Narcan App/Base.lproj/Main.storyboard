@@ -775,17 +775,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9YE-qo-Nij">
-                                <frame key="frameInset" minX="97" minY="254" width="183" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="carrierDidTouch:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="iYg-rm-3NQ"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectUser" id="1xR-VJ-63I">
-                                <frame key="frameInset" minY="64" width="376" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5ne-AM-FhU">
                                 <frame key="frameInset" minX="97" minY="423" width="183" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -793,14 +782,38 @@
                                     <action selector="requesterDidTouch:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="5VS-Iz-EXL"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="selected" id="Xhs-s6-bcm">
-                                <frame key="frameInset" minX="212" minY="254" width="31" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="selected" id="ZM8-C8-VJk">
-                                <frame key="frameInset" minX="218" minY="423" width="31" height="31"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WHAT BEST DESCRIBES YOU?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h7k-DR-bgT">
+                                <frame key="frameInset" minX="16" minY="173" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Bold" family="Salesforce Sans" pointSize="17"/>
+                                <color key="textColor" red="0.070588235289999995" green="0.14117647059999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CH7-vg-4JE">
+                                <frame key="frameInset" minX="102" minY="292" width="150" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="lovedOne_inactive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x4i-aA-zqw">
+                                <frame key="frameInset" minX="102" minY="358" width="150" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrier_inactive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Toh-IF-7M3">
+                                <frame key="frameInset" minX="102" minY="224" width="150" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="user_inactive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kwa-ld-gxv">
+                                <frame key="frameInset" minY="603" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Next_Inactive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4h1-L3-54r">
+                                <frame key="frameInset" minX="102" minY="410" width="150" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="medicalPractitioner_inactive"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -819,10 +832,6 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="carrierIsSelected" destination="Xhs-s6-bcm" id="hw5-2T-y7O"/>
-                        <outlet property="requesterIsSelected" destination="ZM8-C8-VJk" id="5nt-HR-TVg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPL-9S-H3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1155,6 +1164,7 @@
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="back" width="13" height="21"/>
         <image name="care_team" width="34" height="27"/>
+        <image name="carrier_inactive" width="300" height="64"/>
         <image name="defaultAvatar" width="169" height="169"/>
         <image name="forgotPwForm" width="375" height="603"/>
         <image name="iconTransparent" width="92" height="93"/>
@@ -1162,17 +1172,18 @@
         <image name="knowledge_base_120" width="31" height="24"/>
         <image name="loginForm" width="300" height="130"/>
         <image name="login_active" width="335" height="64"/>
+        <image name="lovedOne_inactive" width="300" height="92"/>
+        <image name="medicalPractitioner_inactive" width="300" height="64"/>
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
         <image name="requestButton" width="375" height="64"/>
         <image name="requestLocationPermission" width="375" height="603"/>
         <image name="requestNotifPermission" width="375" height="603"/>
-        <image name="selectUser" width="375" height="603"/>
-        <image name="selected" width="31" height="31"/>
         <image name="settingsBase" width="375" height="603"/>
         <image name="settings_120" width="52" height="52"/>
         <image name="signUpForm" width="375" height="667"/>
         <image name="update_inactive" width="90" height="40"/>
+        <image name="user_inactive" width="300" height="96"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
