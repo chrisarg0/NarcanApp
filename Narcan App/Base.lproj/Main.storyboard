@@ -808,12 +808,19 @@
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Next_Inactive"/>
+                                <connections>
+                                    <segue destination="4kM-Kk-Tuz" kind="modal" modalTransitionStyle="crossDissolve" id="dYn-5O-8Nh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4h1-L3-54r">
                                 <frame key="frameInset" minX="102" minY="410" width="150" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="medicalPractitioner_inactive"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="2of4" id="kgW-NK-JNj">
+                                <frame key="frameInset" minY="592" width="375" height="10"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -900,6 +907,10 @@
                                 <state key="normal" image="Next_Inactive"/>
                                 <state key="highlighted" image="Next_Active"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="1of4" id="FD5-KN-4FK">
+                                <frame key="frameInset" minY="592" width="375" height="10"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -929,12 +940,14 @@
                                     <color key="titleColor" red="0.98256606540000002" green="0.28627450980000002" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L6X-Aj-aE1" kind="push" id="fJW-o0-bc9"/>
+                                    <segue destination="L6X-Aj-aE1" kind="modal" modalTransitionStyle="crossDissolve" id="fJW-o0-bc9"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="emailField" destination="V4e-53-VKe" id="pV8-Je-BOM"/>
                         <outlet property="firstNameField" destination="u8t-c3-3eo" id="jql-fV-pem"/>
@@ -956,11 +969,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="requestNotifPermission" id="Vq4-cD-uhr">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1kF-Re-K4J">
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Next_Inactive"/>
+                                <connections>
+                                    <segue destination="lAr-fv-kew" kind="modal" modalTransitionStyle="crossDissolve" id="H3f-O0-c72"/>
+                                </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="3of4" id="JyB-Vr-2Nu">
+                                <frame key="frameInset" minY="592" width="375" height="10"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -992,11 +1016,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="requestLocationPermission" id="rJh-i2-iE0">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gr7-UL-tQl">
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Next_Inactive"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="Cz2-zs-9d2"/>
+                                </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="final" id="wVx-e1-tTf">
+                                <frame key="frameInset" minY="592" width="375" height="10"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1133,6 +1168,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1of4" width="750" height="20"/>
+        <image name="2of4" width="750" height="20"/>
+        <image name="3of4" width="750" height="20"/>
         <image name="Next_Active" width="744" height="128"/>
         <image name="Next_Inactive" width="744" height="128"/>
         <image name="addCareTeamMember" width="21" height="21"/>
@@ -1140,6 +1178,7 @@
         <image name="care_team" width="34" height="27"/>
         <image name="carrier_inactive" width="300" height="64"/>
         <image name="defaultAvatar" width="169" height="169"/>
+        <image name="final" width="750" height="20"/>
         <image name="forgotPwForm" width="375" height="603"/>
         <image name="iconTransparent" width="92" height="93"/>
         <image name="inTransitPill" width="87" height="21"/>
@@ -1151,6 +1190,8 @@
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
         <image name="requestButton" width="375" height="64"/>
+        <image name="requestLocationPermission" width="375" height="667"/>
+        <image name="requestNotifPermission" width="375" height="667"/>
         <image name="settingsBase" width="375" height="603"/>
         <image name="settings_120" width="52" height="52"/>
         <image name="signUpForm" width="375" height="667"/>
@@ -1163,6 +1204,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Cz2-zs-9d2"/>
         <segue reference="hou-pt-bRW"/>
     </inferredMetricsTieBreakers>
 </document>
