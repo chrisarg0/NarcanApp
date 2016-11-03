@@ -956,23 +956,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="requestNotifPermission" id="25E-wp-V0D">
-                                <frame key="frameInset" minY="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qn2-O9-a0Q">
-                                <frame key="frameInset" minX="206" minY="588" width="153" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1kF-Re-K4J">
+                                <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="lAr-fv-kew" kind="push" id="LxV-GO-BFh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gur-Jq-Lek">
-                                <frame key="frameInset" minX="45" minY="585" width="153" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="lAr-fv-kew" kind="push" id="lK2-bP-dNE"/>
-                                </connections>
+                                <state key="normal" title="Button" image="Next_Inactive"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1005,23 +992,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="requestLocationPermission" id="2TZ-KP-fat">
-                                <frame key="frameInset" minY="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fCW-pe-1wy">
-                                <frame key="frameInset" minX="199" minY="579" width="153" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gr7-UL-tQl">
+                                <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="vEh-BC-RPv" kind="modal" modalTransitionStyle="crossDissolve" id="neF-d3-cdj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DZd-eJ-4IJ">
-                                <frame key="frameInset" minX="22" minY="579" width="157" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="vEh-BC-RPv" kind="modal" modalTransitionStyle="crossDissolve" id="mcz-fJ-fcd"/>
-                                </connections>
+                                <state key="normal" title="Button" image="Next_Inactive"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1177,8 +1151,6 @@
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
         <image name="requestButton" width="375" height="64"/>
-        <image name="requestLocationPermission" width="375" height="603"/>
-        <image name="requestNotifPermission" width="375" height="603"/>
         <image name="settingsBase" width="375" height="603"/>
         <image name="settings_120" width="52" height="52"/>
         <image name="signUpForm" width="375" height="667"/>
@@ -1191,8 +1163,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Bvx-mi-JZ4"/>
         <segue reference="hou-pt-bRW"/>
-        <segue reference="lK2-bP-dNE"/>
     </inferredMetricsTieBreakers>
 </document>
