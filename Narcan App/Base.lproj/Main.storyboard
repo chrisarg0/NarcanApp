@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="tgH-Vo-HBs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="axz-45-5j6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -627,7 +627,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="createAccountDidTouch:" destination="tgH-Vo-HBs" eventType="touchUpInside" id="ac5-YO-Elu"/>
+                                            <segue destination="AoJ-Tv-BzR" kind="push" id="lYD-8J-CEM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -681,6 +681,8 @@
                             <outletCollection property="gestureRecognizers" destination="MRl-FZ-YBl" appends="YES" id="EWe-60-FKf"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="dH2-CF-gQK"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailField" destination="0h7-QW-4cI" id="OhK-wP-f5z"/>
                         <outlet property="formParentView" destination="xLs-ef-hrk" id="b3J-Vl-Fag"/>
@@ -698,7 +700,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-781.5" y="-1469.5"/>
+            <point key="canvasLocation" x="-194.5" y="-1469.5"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="hzO-Xe-SVW">
@@ -751,7 +753,7 @@
                                     <color key="titleColor" red="0.98256606540000002" green="0.28627450980000002" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tgH-Vo-HBs" kind="modal" modalTransitionStyle="crossDissolve" id="a2o-7L-hUl"/>
+                                    <segue destination="axz-45-5j6" kind="modal" modalTransitionStyle="crossDissolve" id="a2o-7L-hUl"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -824,7 +826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPL-9S-H3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180.625" y="-1649.7133333333331"/>
+            <point key="canvasLocation" x="1767.5" y="-1650.5"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="bmx-My-d4H">
@@ -834,40 +836,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="signUpForm" id="tX7-YI-9n2">
-                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="signUpForm" id="tX7-YI-9n2">
+                                <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="u8t-c3-3eo">
-                                <frame key="frameInset" minX="50" minY="162" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="u8t-c3-3eo">
+                                <frame key="frameInset" minX="50" minY="117" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="RLz-em-hJO">
-                                <frame key="frameInset" minX="50" minY="264" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="RLz-em-hJO">
+                                <frame key="frameInset" minX="50" minY="219" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="V4e-53-VKe">
-                                <frame key="frameInset" minX="50" minY="366" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="V4e-53-VKe">
+                                <frame key="frameInset" minX="50" minY="321" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(212) 867 - 5309" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="x4K-mP-ebL">
-                                <frame key="frameInset" minX="50" minY="468" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(212) 867 - 5309" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="x4K-mP-ebL">
+                                <frame key="frameInset" minX="50" minY="423" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" id="sau-4B-TvB">
-                                <frame key="frameInset" minX="50" minY="568" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" id="sau-4B-TvB">
+                                <frame key="frameInset" minX="50" minY="523" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
@@ -876,6 +878,19 @@
                                     <action selector="pwFieldDidChange:" destination="AoJ-Tv-BzR" eventType="editingChanged" id="0wH-nH-Sxa"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SIGN UP FORM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t05-eb-UJx">
+                                <frame key="frameInset" minX="20" minY="30" width="339" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Bold" family="Salesforce Sans" pointSize="17"/>
+                                <color key="textColor" red="0.070588235289999995" green="0.14117647059999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uLX-ap-f0I">
+                                <frame key="frameInset" minY="603" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Next_Inactive"/>
+                                <state key="highlighted" image="Next_Active"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -910,6 +925,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailField" destination="V4e-53-VKe" id="pV8-Je-BOM"/>
                         <outlet property="firstNameField" destination="u8t-c3-3eo" id="jql-fV-pem"/>
@@ -921,7 +937,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARj-r6-6yQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592.5" y="-1648.6016666666665"/>
+            <point key="canvasLocation" x="1179.5" y="-1649.5"/>
         </scene>
         <!--Notification Request View Controller-->
         <scene sceneID="taa-ap-brs">
@@ -970,7 +986,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a3-jE-qFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703.125" y="-1648.6016666666665"/>
+            <point key="canvasLocation" x="2289.5" y="-1649.5"/>
         </scene>
         <!--Location Request View Controller-->
         <scene sceneID="B0m-2i-ccv">
@@ -1019,7 +1035,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPd-Zl-yiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153.75" y="-1650.8249999999998"/>
+            <point key="canvasLocation" x="2740.5" y="-1651.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yxH-cE-V4d">
@@ -1040,24 +1056,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRw-NN-dwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="-736"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mfK-15-WKm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JHv-oc-ZlQ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="04O-51-Nl0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="AoJ-Tv-BzR" kind="relationship" relationship="rootViewController" id="gq8-Gt-dpX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f9Z-c5-KeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="80.625" y="-1647.4899999999998"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PCY-18-sG4">
@@ -1132,8 +1130,28 @@
             </objects>
             <point key="canvasLocation" x="1752" y="2018"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HWc-4b-tB6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="axz-45-5j6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bUk-SL-eXi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tgH-Vo-HBs" kind="relationship" relationship="rootViewController" id="Sp3-tg-vaE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5q-j9-f2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781.5" y="-1469.5"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Next_Active" width="744" height="128"/>
+        <image name="Next_Inactive" width="744" height="128"/>
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="back" width="13" height="21"/>
         <image name="care_team" width="34" height="27"/>
@@ -1153,7 +1171,7 @@
         <image name="selected" width="31" height="31"/>
         <image name="settingsBase" width="375" height="603"/>
         <image name="settings_120" width="52" height="52"/>
-        <image name="signUpForm" width="375" height="603"/>
+        <image name="signUpForm" width="375" height="667"/>
         <image name="update_inactive" width="90" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

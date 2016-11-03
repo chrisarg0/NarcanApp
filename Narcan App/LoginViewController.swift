@@ -90,10 +90,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func createAccountDidTouch(_ sender: AnyObject) {
-        
-    }
         
     @IBAction func pwEditDidChange(_ sender: AnyObject) {
         
