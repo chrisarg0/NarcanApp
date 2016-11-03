@@ -9,14 +9,9 @@
 import UIKit
 
 class SelectUserTypeViewController: UIViewController {
-
-    @IBOutlet weak var carrierIsSelected: UIImageView!
-    @IBOutlet weak var requesterIsSelected: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        carrierIsSelected.isHidden = true
-        requesterIsSelected.isHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -26,11 +21,9 @@ class SelectUserTypeViewController: UIViewController {
     }
     @IBAction func carrierDidTouch(_ sender: AnyObject) {
         
-        carrierIsSelected.isHidden = false
     }
     
     @IBAction func requesterDidTouch(_ sender: AnyObject) {
-        requesterIsSelected.isHidden = false
     }
 
 }
