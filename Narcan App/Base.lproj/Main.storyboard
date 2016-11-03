@@ -205,7 +205,7 @@
                                         <rect key="frame" x="0.0" y="65" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQh-AM-8t3" id="hrN-kW-56E">
-                                            <frame key="frameInset" width="375" height="79"/>
+                                            <frame key="frameInset" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultAvatar" id="lxN-yb-hLs">
@@ -565,6 +565,22 @@
                                 <frame key="frameInset" minY="64" width="375" height="508"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="recenterMapIcon" id="thp-da-x3F">
+                                <frame key="frameInset" minX="328" minY="525" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="messageMapIcon" id="35X-xv-AgD">
+                                <frame key="frameInset" minX="22" minY="498" width="54" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="callMapIcon" id="iNk-oX-icm">
+                                <frame key="frameInset" minX="20" minY="424" width="54" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="cancelRequestMapIcon" id="Ulm-1I-4jV">
+                                <frame key="frameInset" minX="160" minY="498" width="54" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -842,7 +858,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPL-9S-H3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767.5" y="-1650.5"/>
+            <point key="canvasLocation" x="1752" y="-1652"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="bmx-My-d4H">
@@ -1006,7 +1022,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a3-jE-qFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2289.5" y="-1649.5"/>
+            <point key="canvasLocation" x="2339" y="-1653"/>
         </scene>
         <!--Location Request View Controller-->
         <scene sceneID="B0m-2i-ccv">
@@ -1053,7 +1069,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPd-Zl-yiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740.5" y="-1651.5"/>
+            <point key="canvasLocation" x="2930" y="-1654"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yxH-cE-V4d">
@@ -1175,6 +1191,8 @@
         <image name="Next_Inactive" width="744" height="128"/>
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="back" width="13" height="21"/>
+        <image name="callMapIcon" width="54" height="54"/>
+        <image name="cancelRequestMapIcon" width="54" height="54"/>
         <image name="care_team" width="34" height="27"/>
         <image name="carrier_inactive" width="300" height="64"/>
         <image name="defaultAvatar" width="169" height="169"/>
@@ -1187,8 +1205,10 @@
         <image name="login_active" width="335" height="64"/>
         <image name="lovedOne_inactive" width="300" height="92"/>
         <image name="medicalPractitioner_inactive" width="300" height="64"/>
+        <image name="messageMapIcon" width="54" height="54"/>
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
+        <image name="recenterMapIcon" width="27" height="27"/>
         <image name="requestButton" width="375" height="64"/>
         <image name="requestLocationPermission" width="375" height="667"/>
         <image name="requestNotifPermission" width="375" height="667"/>
