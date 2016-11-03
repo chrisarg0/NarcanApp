@@ -16,7 +16,10 @@ class LoginViewController: UIViewController {
     static let Salesforce =
         [
             "consumerKey": "3MVG9fMtCkV6eLheNionz1q.nG4THaffbBSGBaniRqNdWm5qA9vZZC01ct10P1xBs.QbrS9Y42o784K0x1LCE",
-            "consumerSecret": "1234991665278513929"
+            "consumerSecret": "1234991665278513929",
+            "redirectURI":"naproxoneforce:///oauth/done",
+            "loginDomain":"",
+            "userID":""
     ]
     
     static let apiManager = NarcanAPIManager.sharedInstance
@@ -47,6 +50,9 @@ class LoginViewController: UIViewController {
 //        formOffset = 0
 //        btnInitialY = loginParentView.frame.origin.y
 //        btnOffset = 0
+        
+        SFUserAccountManager.sharedInstance().oauthClientId = LoginViewController.Salesforce["consumerKey"]
+        SFUserAccountManager.sharedInstance().oauthCompletionUrl = LoginViewController.Salesforce["redirectURI"]
         
         // assign values to our variables
         formInitialY = formParentView.frame.origin.y
@@ -150,6 +156,8 @@ class LoginViewController: UIViewController {
                         AppDelegate.defaultManager.access_token = access_token as! String
                         self.getProfile()
                     }
+                    
+                    
                     
                     }, failureBlock: { (failure) -> () in
                         

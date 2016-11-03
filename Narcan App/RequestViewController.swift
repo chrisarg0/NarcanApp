@@ -8,8 +8,10 @@
 
 import UIKit
 import MapKit
+import ServiceCore
+import SalesforceKit
 
-class RequestViewController: UIViewController {
+class RequestViewController: UIViewController, SCServiceCloudDelegate {
     
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
@@ -23,6 +25,7 @@ class RequestViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        //SCServiceCloud.sharedInstance().delegate = self
         
         let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
         centerMapOnLocation(location: initialLocation)
@@ -53,6 +56,27 @@ class RequestViewController: UIViewController {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func serviceCloud(_ serviceCloud: SCServiceCloud,
+                      shouldAuthenticateService service: String,
+                      completion: @escaping (SFUserAccount?) -> Void) -> Bool {
+        
+        let user = SFUserAccount.init()// get user account
+        user.email = "chris@test.com"
+        
+        // After acquiring user information, call
+        // this completion block to set the new user:
+        completion(user)
+        
+        return true
+    }
+    
+    func serviceCloud(serviceCloud: SCServiceCloud,
+                      serviceAuthenticationFailedWithError error: NSError,
+                      forService service: String) {
+        
+        // Inspect error and handle appropriately.
     }
     
 
