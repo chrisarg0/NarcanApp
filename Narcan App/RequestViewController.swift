@@ -11,7 +11,7 @@ import MapKit
 import ServiceCore
 import SalesforceKit
 
-class RequestViewController: UIViewController, SCServiceCloudDelegate {
+class RequestViewController: UIViewController {
     
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
@@ -79,5 +79,5 @@ class RequestViewController: UIViewController, SCServiceCloudDelegate {
         // Inspect error and handle appropriately.
     }
     
-
+    
 }
