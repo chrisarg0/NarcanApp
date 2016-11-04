@@ -50,13 +50,14 @@ class LoginViewController: UIViewController {
 //        formOffset = 0
 //        btnInitialY = loginParentView.frame.origin.y
 //        btnOffset = 0
+        self.navigationController!.navigationBar.isHidden = true
         
         SFUserAccountManager.sharedInstance().oauthClientId = LoginViewController.Salesforce["consumerKey"]
         SFUserAccountManager.sharedInstance().oauthCompletionUrl = LoginViewController.Salesforce["redirectURI"]
         
         // assign values to our variables
         formInitialY = formParentView.frame.origin.y
-        formOffset = -175
+        formOffset = -150
         btnInitialY = loginParentView.frame.origin.y
         btnOffset = -205
         

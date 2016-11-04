@@ -566,11 +566,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="recenterMapIcon" id="thp-da-x3F">
-                                <frame key="frameInset" minX="328" minY="525" width="27" height="27"/>
+                                <frame key="frameInset" minX="328" minY="518" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="messageMapIcon" id="35X-xv-AgD">
-                                <frame key="frameInset" minX="22" minY="498" width="54" height="54"/>
+                                <frame key="frameInset" minX="22" minY="505" width="54" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="callMapIcon" id="iNk-oX-icm">
@@ -578,7 +578,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="cancelRequestMapIcon" id="Ulm-1I-4jV">
-                                <frame key="frameInset" minX="160" minY="498" width="54" height="54"/>
+                                <frame key="frameInset" minX="124" minY="512" width="126" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -668,7 +668,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.25882352941176467" green="0.32941176470588235" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                         <connections>
                                             <action selector="pwEditDidChange:" destination="tgH-Vo-HBs" eventType="editingChanged" id="g0g-Rm-2rc"/>
                                         </connections>
@@ -678,7 +678,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.25882352941176467" green="0.32941176470588235" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G3h-pR-5w4">
                                         <frame key="frameInset" minX="262" minY="257" width="45" height="30"/>
@@ -1192,7 +1192,7 @@
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="back" width="13" height="21"/>
         <image name="callMapIcon" width="54" height="54"/>
-        <image name="cancelRequestMapIcon" width="54" height="54"/>
+        <image name="cancelRequestMapIcon" width="126" height="40"/>
         <image name="care_team" width="34" height="27"/>
         <image name="carrier_inactive" width="300" height="64"/>
         <image name="defaultAvatar" width="169" height="169"/>
@@ -1208,7 +1208,7 @@
         <image name="messageMapIcon" width="54" height="54"/>
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
-        <image name="recenterMapIcon" width="27" height="27"/>
+        <image name="recenterMapIcon" width="35" height="35"/>
         <image name="requestButton" width="375" height="64"/>
         <image name="requestLocationPermission" width="375" height="667"/>
         <image name="requestNotifPermission" width="375" height="667"/>
