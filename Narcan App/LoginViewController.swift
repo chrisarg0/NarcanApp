@@ -31,11 +31,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var pwField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var icon: UIView!
     
     var formInitialY: CGFloat!
     var formOffset: CGFloat!
     var btnInitialY: CGFloat!
     var btnOffset: CGFloat!
+    var iconInitialY: CGFloat!
+    var iconOffset: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,19 +62,24 @@ class LoginViewController: UIViewController {
         formInitialY = formParentView.frame.origin.y
         formOffset = -150
         btnInitialY = loginParentView.frame.origin.y
-        btnOffset = -205
+        btnOffset = -175
+        iconInitialY = icon.frame.origin.y
+        iconOffset = -200
+        
         
         // Register for keyboard events
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
             // Any code you put in here will be called when the keyboard is about to display
             self.formParentView.frame.origin.y = self.formInitialY + self.formOffset
             self.loginParentView.frame.origin.y = self.btnInitialY + self.btnOffset
+            self.icon.frame.origin.y = self.iconInitialY + self.iconOffset
         }
         
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification: Notification) in
             // Any code you put in here will be called when the keyboard is about to hide
             self.formParentView.frame.origin.y = self.formInitialY
             self.loginParentView.frame.origin.y = self.btnInitialY
+            self.icon.frame.origin.y = self.iconInitialY
             
             func keyboardWillHide(notification: NSNotification) {
                 // Move the buttons back down to it's original position
@@ -83,7 +91,7 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
          UIView.animate(withDuration: 90.0) {
-            self.loginForm.alpha = 1
+            self.icon.alpha = 1
         }
     }
     

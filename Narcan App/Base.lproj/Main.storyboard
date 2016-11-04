@@ -623,6 +623,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbu-F4-byy">
+                                <frame key="frameInset" minX="83" minY="571" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
+                                <state key="normal" title="Create an Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AoJ-Tv-BzR" kind="push" id="lYD-8J-CEM"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="iconTransparent" id="m1o-tU-4jT">
+                                <frame key="frameInset" minX="150" minY="116" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" id="ySw-50-RaE" userLabel="LoginView">
                                 <frame key="frameInset" minX="16" minY="472" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -633,17 +648,6 @@
                                         <state key="normal" image="login_active"/>
                                         <connections>
                                             <action selector="didPressLogin:" destination="tgH-Vo-HBs" eventType="touchUpInside" id="C3S-9p-qLU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbu-F4-byy">
-                                        <frame key="frameInset" minX="63" minY="99" width="209" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
-                                        <state key="normal" title="Create an Account">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="AoJ-Tv-BzR" kind="push" id="lYD-8J-CEM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -684,10 +688,6 @@
                                         <frame key="frameInset" minX="262" minY="257" width="45" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="iconTransparent" id="m1o-tU-4jT">
-                                        <frame key="frameInset" minX="133" minY="-29" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                 </subviews>
                             </view>
                         </subviews>
@@ -702,6 +702,7 @@
                     <connections>
                         <outlet property="emailField" destination="0h7-QW-4cI" id="OhK-wP-f5z"/>
                         <outlet property="formParentView" destination="xLs-ef-hrk" id="b3J-Vl-Fag"/>
+                        <outlet property="icon" destination="m1o-tU-4jT" id="bAH-Yf-wMR"/>
                         <outlet property="loginButton" destination="enf-p5-lNG" id="7oS-1D-Tj1"/>
                         <outlet property="loginForm" destination="ygM-v5-JgF" id="eUe-bb-PyV"/>
                         <outlet property="loginParentView" destination="ySw-50-RaE" id="Hvq-aM-aa0"/>
