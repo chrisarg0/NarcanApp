@@ -624,14 +624,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbu-F4-byy">
-                                <frame key="frameInset" minX="83" minY="571" width="209" height="30"/>
+                                <frame key="frameInset" minX="83" minY="571" width="209" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <state key="normal" title="Create an Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AoJ-Tv-BzR" kind="push" id="lYD-8J-CEM"/>
+                                    <segue destination="AoJ-Tv-BzR" kind="push" id="yyA-mN-Iks"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="iconTransparent" id="m1o-tU-4jT">
@@ -717,7 +717,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-237" y="-1470"/>
+            <point key="canvasLocation" x="-237.5" y="-1470.5"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="hzO-Xe-SVW">
@@ -1023,7 +1023,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a3-jE-qFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-1470"/>
+            <point key="canvasLocation" x="2338.5" y="-1470.5"/>
         </scene>
         <!--Location Request View Controller-->
         <scene sceneID="B0m-2i-ccv">
@@ -1070,7 +1070,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPd-Zl-yiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2339" y="-1471"/>
+            <point key="canvasLocation" x="2925.5" y="-1471.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yxH-cE-V4d">

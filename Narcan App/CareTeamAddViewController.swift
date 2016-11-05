@@ -38,7 +38,7 @@ class CareTeamAddViewController: UIViewController, UIPickerViewDataSource, UIPic
             self.emailText.text = self.mCare.email
             self.phoneText.text = self.mCare.phone
             self.roleText.text = self.mCare.role
-            self.roleSwitch.isOn = self.mCare.notification
+            //self.roleSwitch.isOn = self.mCare.notification
         }
     }
 
@@ -102,7 +102,7 @@ class CareTeamAddViewController: UIViewController, UIPickerViewDataSource, UIPic
         care.email = self.emailText.text
         care.phone = self.phoneText.text
         care.role = self.roleText.text
-        care.notification = self.roleSwitch.isOn
+        //care.notification = self.roleSwitch.isOn
         
         if self.mCare != nil {
             AppDelegate.defaultManager.mCareUsers.replaceObject(at: AppDelegate.defaultManager.mCareUsers.index(of: self.mCare), with: care)
