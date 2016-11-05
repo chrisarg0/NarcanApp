@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "carrier_inactive.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "carrier_inactive.png",
       "scale" : "2x"
     },
     {

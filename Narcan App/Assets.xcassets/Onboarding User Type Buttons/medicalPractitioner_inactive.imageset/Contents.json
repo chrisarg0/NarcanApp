@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "medicalPractitioner_inactive.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "medicalPractitioner_inactive.png",
       "scale" : "2x"
     },
     {

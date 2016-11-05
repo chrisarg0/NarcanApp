@@ -205,7 +205,7 @@
                                         <rect key="frame" x="0.0" y="65" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQh-AM-8t3" id="hrN-kW-56E">
-                                            <frame key="frameInset" width="375" height="79.5"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultAvatar" id="lxN-yb-hLs">
@@ -792,13 +792,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5ne-AM-FhU">
-                                <frame key="frameInset" minX="97" minY="423" width="183" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="requesterDidTouch:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="5VS-Iz-EXL"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WHAT BEST DESCRIBES YOU?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h7k-DR-bgT">
                                 <frame key="frameInset" minX="16" minY="173" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -810,21 +803,37 @@
                                 <frame key="frameInset" minX="102" minY="292" width="150" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lovedOne_inactive"/>
+                                <state key="selected" image="lovedOne_active"/>
+                                <state key="focused" image="lovedOne_active"/>
+                                <connections>
+                                    <action selector="lovedOneUserDidSelect:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="4nt-lt-OJh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x4i-aA-zqw">
                                 <frame key="frameInset" minX="102" minY="358" width="150" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="carrier_inactive"/>
+                                <state key="selected" image="carrier_active"/>
+                                <state key="focused" image="carrier_active"/>
+                                <connections>
+                                    <action selector="carrierUserDidSelect:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="nOb-ZE-C2f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Toh-IF-7M3">
                                 <frame key="frameInset" minX="102" minY="224" width="150" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="user_inactive"/>
+                                <state key="selected" image="user_active"/>
+                                <state key="focused" image="user_active"/>
+                                <connections>
+                                    <action selector="stdUserDidSelect:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="1cm-Xx-Nix"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kwa-ld-gxv">
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Next_Inactive"/>
+                                <state key="selected" image="Next_Active"/>
                                 <connections>
                                     <segue destination="4kM-Kk-Tuz" kind="modal" modalTransitionStyle="crossDissolve" id="dYn-5O-8Nh"/>
                                 </connections>
@@ -833,6 +842,11 @@
                                 <frame key="frameInset" minX="102" minY="410" width="150" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="medicalPractitioner_inactive"/>
+                                <state key="selected" image="medicalPractitioner_active"/>
+                                <state key="focused" image="medicalPractitioner_active"/>
+                                <connections>
+                                    <action selector="doctorUserDidSelect:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="0TO-oQ-8Sa"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="2of4" id="kgW-NK-JNj">
                                 <frame key="frameInset" minY="592" width="375" height="10"/>
@@ -841,21 +855,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mGx-oz-QI6">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="SRE-7W-riC">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5ln-cd-acI">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressBack:" destination="L6X-Aj-aE1" eventType="touchUpInside" id="Maz-v4-0Ae"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="mGx-oz-QI6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPL-9S-H3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -908,7 +908,7 @@
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
-                                    <action selector="pwFieldDidChange:" destination="AoJ-Tv-BzR" eventType="editingChanged" id="0wH-nH-Sxa"/>
+                                    <action selector="pwFieldDidChange:" destination="AoJ-Tv-BzR" eventType="editingDidEnd" id="8Vg-cg-3QZ"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SIGN UP FORM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t05-eb-UJx">
@@ -922,7 +922,11 @@
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Next_Inactive"/>
+                                <state key="selected" image="Next_Active"/>
                                 <state key="highlighted" image="Next_Active"/>
+                                <connections>
+                                    <segue destination="L6X-Aj-aE1" kind="modal" id="dzA-2t-TOV"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="1of4" id="FD5-KN-4FK">
                                 <frame key="frameInset" minY="592" width="375" height="10"/>
@@ -932,19 +936,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UWa-HZ-9FS">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="VIP-6L-zoe">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="79N-FL-JkY">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressBack:" destination="AoJ-Tv-BzR" eventType="touchUpInside" id="q1F-Vx-sp8"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="ooV-4h-qWf">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g8l-iY-WsT">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -956,9 +947,6 @@
                                 <state key="disabled">
                                     <color key="titleColor" red="0.98256606540000002" green="0.28627450980000002" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="L6X-Aj-aE1" kind="modal" modalTransitionStyle="crossDissolve" id="fJW-o0-bc9"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -969,7 +957,7 @@
                         <outlet property="emailField" destination="V4e-53-VKe" id="pV8-Je-BOM"/>
                         <outlet property="firstNameField" destination="u8t-c3-3eo" id="jql-fV-pem"/>
                         <outlet property="lastNameField" destination="RLz-em-hJO" id="v9l-31-QUW"/>
-                        <outlet property="nextBtn" destination="g8l-iY-WsT" id="YgU-0Z-xFi"/>
+                        <outlet property="nextBtn" destination="uLX-ap-f0I" id="ejZ-JT-oEQ"/>
                         <outlet property="phoneField" destination="x4K-mP-ebL" id="8qW-U9-E0v"/>
                         <outlet property="pwField" destination="sau-4B-TvB" id="7JZ-km-6KH"/>
                     </connections>
@@ -993,7 +981,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1kF-Re-K4J">
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Next_Inactive"/>
+                                <state key="normal" title="Button" image="Next_Active"/>
                                 <connections>
                                     <segue destination="lAr-fv-kew" kind="modal" modalTransitionStyle="crossDissolve" id="H3f-O0-c72"/>
                                 </connections>
@@ -1040,7 +1028,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gr7-UL-tQl">
                                 <frame key="frameInset" minY="603" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Next_Inactive"/>
+                                <state key="normal" title="Button" image="Next_Active"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="Cz2-zs-9d2"/>
                                 </connections>
@@ -1195,7 +1183,8 @@
         <image name="callMapIcon" width="54" height="54"/>
         <image name="cancelRequestMapIcon" width="126" height="40"/>
         <image name="care_team" width="34" height="27"/>
-        <image name="carrier_inactive" width="300" height="64"/>
+        <image name="carrier_active" width="150" height="32"/>
+        <image name="carrier_inactive" width="150" height="32"/>
         <image name="defaultAvatar" width="169" height="169"/>
         <image name="final" width="750" height="20"/>
         <image name="forgotPwForm" width="375" height="603"/>
@@ -1204,8 +1193,10 @@
         <image name="knowledge_base_120" width="31" height="24"/>
         <image name="loginForm" width="300" height="130"/>
         <image name="login_active" width="335" height="64"/>
-        <image name="lovedOne_inactive" width="300" height="92"/>
-        <image name="medicalPractitioner_inactive" width="300" height="64"/>
+        <image name="lovedOne_active" width="150" height="46"/>
+        <image name="lovedOne_inactive" width="150" height="46"/>
+        <image name="medicalPractitioner_active" width="150" height="32"/>
+        <image name="medicalPractitioner_inactive" width="150" height="32"/>
         <image name="messageMapIcon" width="54" height="54"/>
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
@@ -1217,7 +1208,8 @@
         <image name="settings_120" width="52" height="52"/>
         <image name="signUpForm" width="375" height="667"/>
         <image name="update_inactive" width="90" height="40"/>
-        <image name="user_inactive" width="300" height="96"/>
+        <image name="user_active" width="150" height="48"/>
+        <image name="user_inactive" width="150" height="48"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1225,7 +1217,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="eXY-9o-gEa"/>
+        <segue reference="Cz2-zs-9d2"/>
         <segue reference="hou-pt-bRW"/>
     </inferredMetricsTieBreakers>
 </document>

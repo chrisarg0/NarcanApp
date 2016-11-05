@@ -9,21 +9,25 @@
 import UIKit
 
 class SelectUserTypeViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func didPressBack(_ sender: AnyObject) {
-        navigationController!.popViewController(animated: true)
-        
-    }
-    @IBAction func carrierDidTouch(_ sender: AnyObject) {
-        
+    
+    @IBAction func stdUserDidSelect(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func requesterDidTouch(_ sender: AnyObject) {
+    @IBAction func lovedOneUserDidSelect(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
     }
-
+    
+    @IBAction func carrierUserDidSelect(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func doctorUserDidSelect(_ sender: UIButton) {
+        sender.isSelected = true
+    }
+    
 }
