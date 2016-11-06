@@ -25,15 +25,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U0D-vR-rau">
-                                <frame key="frameInset" minX="16" minY="319" width="343" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tim Burton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U0D-vR-rau">
+                                <frame key="frameInset" minX="16" minY="218" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" id="1Fo-6b-9kW">
-                                <frame key="frameInset" minX="104" minY="131" width="170" height="170"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avatar" id="1Fo-6b-9kW">
+                                <frame key="frameInset" minX="103" minY="25" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -42,7 +42,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHZ-mT-PIr">
-                                <frame key="frameInset" minY="603" width="376" height="64"/>
+                                <frame key="frameInset" minY="263" width="376" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="requestButton"/>
                                 <connections>
@@ -50,13 +50,45 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="1BF-I7-FIU">
-                                <frame key="frameInset" minX="249" minY="276" width="25" height="25"/>
+                                <frame key="frameInset" minX="248" minY="181" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="settings_120"/>
                                 <connections>
                                     <segue destination="28I-tm-Gfs" kind="push" id="xza-Qi-WHM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nlw-ru-1sF">
+                                <frame key="frameInset" minX="103" minY="181" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sosIcon"/>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" id="IIy-Tk-dtK">
+                                <frame key="frameInset" minY="603" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cLK-Xh-1E1">
+                                        <frame key="frameInset" minX="174" minY="18" width="27" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="phoneBook"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hGF-7A-Ms8">
+                                        <frame key="frameInset" minX="304" minY="15" width="28" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="journeyIcon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3qM-Od-7N5">
+                                        <frame key="frameInset" minX="46" minY="20" width="34" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="knowledge_base_120"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.29411764705882354" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="yko-zo-Iib">
+                                <frame key="frameInset" minY="327" width="375" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -83,7 +115,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="avatarImageView" destination="1Fo-6b-9kW" id="B9D-jN-wUt"/>
                         <outlet property="nameLbl" destination="U0D-vR-rau" id="uB1-Z5-JRX"/>
@@ -91,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-562"/>
+            <point key="canvasLocation" x="592.5" y="-562.5"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="0pe-Xh-BtQ">
@@ -206,7 +238,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="LQh-AM-8t3">
-                                        <rect key="frame" x="0.0" y="65" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="1" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQh-AM-8t3" id="hrN-kW-56E">
                                             <frame key="frameInset" width="375" height="79.5"/>
@@ -1493,6 +1525,7 @@
         <image name="forgotPwForm" width="375" height="603"/>
         <image name="iconTransparent" width="92" height="93"/>
         <image name="inTransitPill" width="87" height="21"/>
+        <image name="journeyIcon" width="28" height="34"/>
         <image name="knowledge_base_120" width="31" height="24"/>
         <image name="loginForm" width="300" height="130"/>
         <image name="login_active" width="335" height="64"/>
@@ -1508,8 +1541,9 @@
         <image name="requestLocationPermission" width="375" height="667"/>
         <image name="requestNotifPermission" width="375" height="667"/>
         <image name="settingsBase" width="375" height="603"/>
-        <image name="settings_120" width="52" height="52"/>
+        <image name="settings_120" width="25" height="25"/>
         <image name="signUpForm" width="375" height="667"/>
+        <image name="sosIcon" width="25" height="25"/>
         <image name="update_active" width="90" height="40"/>
         <image name="update_inactive" width="90" height="40"/>
         <image name="user_active" width="150" height="48"/>
@@ -1521,7 +1555,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hYw-RW-DbM"/>
+        <segue reference="qUh-XQ-Ful"/>
         <segue reference="hou-pt-bRW"/>
     </inferredMetricsTieBreakers>
 </document>

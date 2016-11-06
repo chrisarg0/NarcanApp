@@ -12,21 +12,28 @@ import CoreLocation
 import ServiceCore
 import SalesforceKit
 
-class RequestViewController: UIViewController {
+class RequestViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var avatarImageView: UIImageView!
-    
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var userTypeLbl: UILabel!
+    
     let regionRadius: CLLocationDistance = 1000
+    
+    var startLocation: CLLocation?
+    var locationManager: CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         //SCServiceCloud.sharedInstance().delegate = self
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager?.requestWhenInUseAuthorization()
+        
         
         let initialLocation = CLLocation(latitude: 37.774929, longitude: -122.419416)
         centerMapOnLocation(location: initialLocation)
@@ -35,19 +42,34 @@ class RequestViewController: UIViewController {
         
         
         
-        
-        
+        // Sets Avatar Image
         //if AppDelegate.defaultManager.user.thumbnail != nil && AppDelegate.defaultManager.user.thumbnail != "" {
             //let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
             //self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
             
         //}
         
+        //Sets Carriers Name
         //if AppDelegate.defaultManager.user.user_type != nil && AppDelegate.defaultManager.user.user_type != "" {
             //self.userTypeLbl.text = AppDelegate.defaultManager.user.user_type
         //}
+        // Calculate distance
     }
 
+    func locationManager(_ manager: CLLocationManager,
+                         didUpdateLocations locations: [CLLocation]) {
+     
+        if startLocation == nil {
+            startLocation  = locations.first
+        } else {
+            guard locations.first != nil else {return}
+            let distanceInMeters = startLocation?.distance(from: startLocation!)
+            print("distance in meters:\(distanceInMeters)")
+        }
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,6 +86,8 @@ class RequestViewController: UIViewController {
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
+    
+    // Service cloud helper methods
     
     func serviceCloud(_ serviceCloud: SCServiceCloud,
                       shouldAuthenticateService service: String,
@@ -85,6 +109,10 @@ class RequestViewController: UIViewController {
         
         // Inspect error and handle appropriately.
     }
+    
+    // PHONE BOOK (CARE TEAM MEMBERS)
+    // & alert controller
+
     
     @IBAction func phoneBookDidTouch(_ sender: UIButton) {
         let alertController = UIAlertController(title: nil, message: "Call someone from your care team:", preferredStyle: .actionSheet)
@@ -211,6 +239,8 @@ class RequestViewController: UIViewController {
         present(alertController, animated: true) {
         }
     }
+    
+    // MAP Overlay
     
     @IBAction func didPressCall(_ sender: UIButton) {
     }
