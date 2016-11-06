@@ -70,16 +70,19 @@
                                         <frame key="frameInset" minX="174" minY="18" width="27" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="phoneBook"/>
+                                        <state key="selected" image="phoneBook_enabled"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hGF-7A-Ms8">
                                         <frame key="frameInset" minX="304" minY="15" width="28" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="journeyIcon"/>
+                                        <state key="selected" image="journeyIcon_enabled"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3qM-Od-7N5">
                                         <frame key="frameInset" minX="46" minY="20" width="34" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="knowledge_base_120"/>
+                                        <state key="selected" image="knowledge_enabled"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431372549018" green="0.29411764705882354" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
@@ -222,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV1-Ux-e9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="1076"/>
+            <point key="canvasLocation" x="614" y="243"/>
         </scene>
         <!--Care Team View Controller-->
         <scene sceneID="lEW-XM-RBL">
@@ -308,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWW-0s-4Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="1876"/>
+            <point key="canvasLocation" x="614" y="1091"/>
         </scene>
         <!--Email Change View Controller-->
         <scene sceneID="Gvc-nW-CpF">
@@ -382,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9w4-FN-9og" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="1076"/>
+            <point key="canvasLocation" x="1181" y="1876"/>
         </scene>
         <!--Phone Change View Controller-->
         <scene sceneID="Q4X-os-csD">
@@ -456,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XtR-x6-hH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="1876"/>
+            <point key="canvasLocation" x="1698" y="1876"/>
         </scene>
         <!--Care Team Add View Controller-->
         <scene sceneID="IRg-av-bMh">
@@ -553,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaQ-DF-NnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="2726"/>
+            <point key="canvasLocation" x="614" y="1876"/>
         </scene>
         <!--Request View Controller-->
         <scene sceneID="59z-48-Flm">
@@ -672,6 +675,202 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9H-xk-mw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180.625" y="-561.39166666666665"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cw5-ql-bnH">
+            <objects>
+                <viewController id="GVR-7g-ncc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xf7-O8-VIT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="aLf-xQ-cxl">
+                                <frame key="frameInset" width="375" height="52.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Featured Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NOj-ae-LS3">
+                                        <frame key="frameInset" minX="13" minY="17" width="140" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.011764705882352941" green="0.16470588235294117" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" misplaced="YES" id="AVw-i1-Tmu">
+                                <frame key="frameInset" minY="52" width="375" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.1647058824" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="1wb-Jg-DvI">
+                                <frame key="frameInset" minY="124" width="375" height="0.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.59999999999999998" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="7jz-pV-4v2">
+                                <frame key="frameInset" minY="206" width="375" height="0.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.59999999999999998" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Ur-qK-30M">
+                                <frame key="frameInset" minX="316" minY="72" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="more"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tmd-tM-8RE">
+                                <frame key="frameInset" minX="316" minY="231" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="more"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B1B-Hm-ZP0">
+                                <frame key="frameInset" minX="316" minY="152" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="more"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recognizing an overdose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3VK-3i-aeN">
+                                <frame key="frameInset" minX="22" minY="77" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Light" family="Salesforce Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How can I get Naloxone?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Rn-jb-Zgi">
+                                <frame key="frameInset" minX="16" minY="157" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Light" family="Salesforce Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How to use Naloxone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTW-du-trD">
+                                <frame key="frameInset" minX="16" minY="236" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Light" family="Salesforce Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="288"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pf-Eg-YTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239" y="242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t65-Km-CMO">
+            <objects>
+                <viewController id="270-JD-DOC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyh-ez-iNo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="CxC-Ic-deR">
+                                <frame key="frameInset" minX="67" width="240" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="kMX-pH-cqp">
+                                        <frame key="frameInset" minX="-32" minY="22" width="305" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="krS-iq-OsW">
+                                <frame key="frameInset" minX="178" minY="26" width="19" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="searchIcon"/>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" id="FDD-TR-wfS">
+                                <frame key="frameInset" minY="54" width="375" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nt5-uJ-Wky">
+                                        <frame key="frameInset" minX="29" minY="22" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="FAQs"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1lU-1R-otw">
+                                        <frame key="frameInset" minX="29" minY="133" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="recognizingAnOverdoes"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vdl-dI-pYC">
+                                        <frame key="frameInset" minX="148" minY="22" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutOpiods"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nkA-6O-kiN">
+                                        <frame key="frameInset" minX="148" minY="133" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutNaloxone"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pzc-Ow-Pmh">
+                                        <frame key="frameInset" minX="267" minY="22" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="emergency"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qr6-uZ-uMK">
+                                        <frame key="frameInset" minX="267" minY="133" width="79" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="links"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="288"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ge9-Gb-hI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="53"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Oby-PD-E5d">
+            <objects>
+                <viewController id="3vT-2F-4f4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="aig-LY-gHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="4ma-Dp-AF0">
+                                <frame key="frameInset" minX="67" minY="80" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="days since last overdose" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4R7-bW-9JE">
+                                        <frame key="frameInset" minX="40" minY="68" width="160" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ByZ-Fh-LA5">
+                                        <frame key="frameInset" minX="112" width="88" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SalesforceSans-Bold" family="Salesforce Sans" pointSize="72"/>
+                                        <color key="textColor" red="0.28235294117647058" green="0.76470588235294112" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="288"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuL-0L-XbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="432"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="9lN-gb-kx0">
@@ -1437,7 +1636,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1u-b5-4fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="1076"/>
+            <point key="canvasLocation" x="1181" y="1091"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rk7-e6-KVY">
@@ -1455,7 +1654,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbA-zZ-9K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="1876"/>
+            <point key="canvasLocation" x="1698" y="1091"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wZ6-gg-QFk">
@@ -1473,7 +1672,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3L5-a0-XW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="2726"/>
+            <point key="canvasLocation" x="119" y="1091"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HWc-4b-tB6">
@@ -1501,6 +1700,7 @@
         <image name="AddNewCareTeamMember" width="375" height="666"/>
         <image name="CareTeamMemberCreated" width="375" height="667"/>
         <image name="DeborahAvatar" width="99" height="99"/>
+        <image name="FAQs" width="79" height="79"/>
         <image name="Next_Active" width="744" height="128"/>
         <image name="Next_Inactive" width="744" height="128"/>
         <image name="Tutorial1" width="375" height="667"/>
@@ -1512,6 +1712,8 @@
         <image name="Tutorial3.1" width="375" height="667"/>
         <image name="Tutorial3.2" width="375" height="667"/>
         <image name="Tutorial4" width="375" height="667"/>
+        <image name="aboutNaloxone" width="79" height="79"/>
+        <image name="aboutOpiods" width="79" height="79"/>
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="avatar" width="169" height="169"/>
         <image name="back" width="13" height="21"/>
@@ -1521,12 +1723,16 @@
         <image name="carrier_active" width="150" height="32"/>
         <image name="carrier_inactive" width="150" height="32"/>
         <image name="defaultAvatar" width="169" height="169"/>
+        <image name="emergency" width="79" height="79"/>
         <image name="final" width="750" height="20"/>
         <image name="forgotPwForm" width="375" height="603"/>
         <image name="iconTransparent" width="92" height="93"/>
         <image name="inTransitPill" width="87" height="21"/>
         <image name="journeyIcon" width="28" height="34"/>
+        <image name="journeyIcon_enabled" width="28" height="34"/>
         <image name="knowledge_base_120" width="31" height="24"/>
+        <image name="knowledge_enabled" width="35" height="26"/>
+        <image name="links" width="79" height="79"/>
         <image name="loginForm" width="300" height="130"/>
         <image name="login_active" width="335" height="64"/>
         <image name="lovedOne_active" width="150" height="46"/>
@@ -1534,12 +1740,16 @@
         <image name="medicalPractitioner_active" width="150" height="32"/>
         <image name="medicalPractitioner_inactive" width="150" height="32"/>
         <image name="messageMapIcon" width="54" height="54"/>
+        <image name="more" width="30" height="30"/>
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="phoneBook" width="27" height="28"/>
+        <image name="phoneBook_enabled" width="33" height="33"/>
         <image name="recenterMapIcon" width="35" height="35"/>
+        <image name="recognizingAnOverdoes" width="79" height="79"/>
         <image name="requestButton" width="375" height="64"/>
         <image name="requestLocationPermission" width="375" height="667"/>
         <image name="requestNotifPermission" width="375" height="667"/>
+        <image name="searchIcon" width="19" height="19"/>
         <image name="settingsBase" width="375" height="603"/>
         <image name="settings_120" width="25" height="25"/>
         <image name="signUpForm" width="375" height="667"/>
@@ -1555,7 +1765,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qUh-XQ-Ful"/>
+        <segue reference="hYw-RW-DbM"/>
         <segue reference="hou-pt-bRW"/>
     </inferredMetricsTieBreakers>
 </document>
