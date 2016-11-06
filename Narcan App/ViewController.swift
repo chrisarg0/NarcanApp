@@ -52,6 +52,135 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func phoneBookDidTouch(_ sender: UIButton) {
+        
+        let alertController = UIAlertController(title: nil, message: "Call someone from your care team:", preferredStyle: .actionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            // handle cancel response here. Doing nothing will dismiss the view.
+        }
+
+        alertController.addAction(cancelAction)
+        
+        let careTeamMember1 = UIAlertAction(title: "Wendy Pinkman", style: .default) { (action) in
+            // handle response here.
+            let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            
+            let phoneNum1:NSURL = NSURL(string: "tel://18009220204")!
+
+            
+            let call = UIAlertAction(title: "Call", style: .default) { (action) in
+                // handle cancel response here. Doing nothing will dismiss the view.
+                UIApplication.shared.openURL(phoneNum1 as URL)
+            }
+            
+            alertController.addAction(call)
+            
+            let sms = UIAlertAction(title: "Send text message", style: .default) { (action) in
+                // handle cancel response here. Doing nothing will dismiss the view.
+                
+            }
+            
+            alertController.addAction(sms)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+                // handle cancel response here. Doing nothing will dismiss the view.
+            }
+            
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true) {
+            }
+            
+        }
+
+        alertController.addAction(careTeamMember1)
+        
+        let careTeamMember2 = UIAlertAction(title: "Tim Pinkman", style: .default) { (action) in
+            // handle response here.
+            let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            
+            let call = UIAlertAction(title: "Call", style: .default) { (action) in
+                // do somesthing
+                let phoneNum1:NSURL = NSURL(string: "tel://18009220204")!
+                UIApplication.shared.openURL(phoneNum1 as URL)
+            }
+            
+            alertController.addAction(call)
+            
+            let sms = UIAlertAction(title: "Send text message", style: .default) { (action) in
+                // do somesthing
+                
+            }
+            
+            alertController.addAction(sms)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+                // handle cancel response here. Doing nothing will dismiss the view.
+            }
+            
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true) {
+            }
+        }
+        
+        alertController.addAction(careTeamMember2)
+        
+        let careTeamMember3 = UIAlertAction(title: "Walter White", style: .default) { (action) in
+            // handle response here.
+            let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            
+            let call = UIAlertAction(title: "Call", style: .default) { (action) in
+                // do somesthing
+                let phoneNum1:NSURL = NSURL(string: "tel://18009220204")!
+                UIApplication.shared.openURL(phoneNum1 as URL)
+            }
+            
+            alertController.addAction(call)
+            
+            let sms = UIAlertAction(title: "Send text message", style: .default) { (action) in
+                // do somesthing
+            }
+            
+            alertController.addAction(sms)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+                // handle cancel response here. Doing nothing will dismiss the view.
+            }
+            
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true) {
+            }
+        }
+        
+        alertController.addAction(careTeamMember3)
+        
+        let careTeamMember4 = UIAlertAction(title: "Call Suicide Hotline", style: .destructive) { (action) in
+            // handle response here.
+            let phoneNum1:NSURL = NSURL(string: "tel://18009220204")!
+            UIApplication.shared.openURL(phoneNum1 as URL)
+            
+        }
+        
+        alertController.addAction(careTeamMember4)
+        
+        let careTeamMember5 = UIAlertAction(title: "Call 911", style: .destructive) { (action) in
+            // handle response here.
+            let phoneNum1:NSURL = NSURL(string: "tel://18009220204")!
+            UIApplication.shared.openURL(phoneNum1 as URL)
+            
+        }
+        
+        alertController.addAction(careTeamMember5)
+        
+        present(alertController, animated: true) {
+        }
+        
+    }
+    
+    
 
 
 }

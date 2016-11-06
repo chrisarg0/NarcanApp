@@ -19,13 +19,13 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
 
         // Do any additional setup after loading the view.
         if AppDelegate.defaultManager.user.display_name != nil && AppDelegate.defaultManager.user.display_name != "" {
-            self.fullnameLbl.text = AppDelegate.defaultManager.user.display_name
+            self.fullnameLbl.text = AppDelegate.defaultManager.user.display_name.uppercased()
         }
         
-        if AppDelegate.defaultManager.user.thumbnail != nil && AppDelegate.defaultManager.user.thumbnail != "" {
-            let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
-            self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
-        }
+        //if AppDelegate.defaultManager.user.thumbnail != nil && AppDelegate.defaultManager.user.thumbnail != "" {
+          //  let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
+            //self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
+        //}
     }
 
     override func didReceiveMemoryWarning() {

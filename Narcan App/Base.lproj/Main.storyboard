@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tim Burton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U0D-vR-rau">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U0D-vR-rau">
                                 <frame key="frameInset" minX="16" minY="319" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="22"/>
@@ -42,7 +42,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHZ-mT-PIr">
-                                <frame key="frameInset" minX="1" minY="603" width="376" height="64"/>
+                                <frame key="frameInset" minY="603" width="376" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="requestButton"/>
                                 <connections>
@@ -68,6 +68,7 @@
                                 <state key="normal" image="knowledge_base_120"/>
                                 <connections>
                                     <action selector="showKnowledge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZW-05-fXX"/>
+                                    <segue destination="bpD-Yr-Pes" kind="push" id="qUh-XQ-Ful"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -76,6 +77,9 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="phoneBook"/>
+                                <connections>
+                                    <action selector="phoneBookDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSi-LB-Co2"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -101,7 +105,7 @@
                                 <frame key="frameInset" minY="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="defaultAvatar" id="1U5-Ut-SVW">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="avatar" id="1U5-Ut-SVW">
                                 <frame key="frameInset" minX="20" minY="137" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <userDefinedRuntimeAttributes>
@@ -186,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV1-Ux-e9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="303"/>
+            <point key="canvasLocation" x="593" y="1076"/>
         </scene>
         <!--Care Team View Controller-->
         <scene sceneID="lEW-XM-RBL">
@@ -205,7 +209,7 @@
                                         <rect key="frame" x="0.0" y="65" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQh-AM-8t3" id="hrN-kW-56E">
-                                            <frame key="frameInset" width="375" height="79"/>
+                                            <frame key="frameInset" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultAvatar" id="lxN-yb-hLs">
@@ -272,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWW-0s-4Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="1162"/>
+            <point key="canvasLocation" x="593" y="1876"/>
         </scene>
         <!--Email Change View Controller-->
         <scene sceneID="Gvc-nW-CpF">
@@ -316,9 +320,10 @@
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.6588235294" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vWC-Sx-RSp">
-                                <frame key="frameInset" minX="270" minY="255" width="144" height="40"/>
+                                <frame key="frameInset" minX="270" minY="255" width="89" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="update_inactive"/>
+                                <state key="highlighted" image="update_active"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9w4-FN-9og" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="303"/>
+            <point key="canvasLocation" x="1755" y="1076"/>
         </scene>
         <!--Phone Change View Controller-->
         <scene sceneID="Q4X-os-csD">
@@ -389,9 +394,10 @@
                                 <color key="backgroundColor" red="0.59607843137254901" green="0.6588235294117647" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CSF-oR-1HS">
-                                <frame key="frameInset" minX="270" minY="255" width="144" height="40"/>
+                                <frame key="frameInset" minX="270" minY="255" width="89" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="update_inactive"/>
+                                <state key="highlighted" image="update_active"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -418,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XtR-x6-hH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="1162"/>
+            <point key="canvasLocation" x="1755" y="1876"/>
         </scene>
         <!--Care Team Add View Controller-->
         <scene sceneID="IRg-av-bMh">
@@ -460,7 +466,7 @@
                                 <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please Select" textAlignment="natural" minimumFontSize="17" id="lyK-Yd-BFN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please Select" textAlignment="natural" minimumFontSize="17" id="lyK-Yd-BFN">
                                 <frame key="frameInset" minX="50" minY="377" width="234" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.32941176470588235" green="0.41176470588235292" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
@@ -515,7 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaQ-DF-NnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="2018"/>
+            <point key="canvasLocation" x="1181" y="2726"/>
         </scene>
         <!--Request View Controller-->
         <scene sceneID="59z-48-Flm">
@@ -529,7 +535,7 @@
                                 <frame key="frameInset" minY="580" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultAvatar" id="ujl-PV-w6T">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeborahAvatar" id="ujl-PV-w6T">
                                         <frame key="frameInset" minX="10" minY="8" width="67" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -537,8 +543,8 @@
                                         <frame key="frameInset" minX="86" minY="33" width="87" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carrier Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZCV-WK-brP">
-                                        <frame key="frameInset" minX="85" minY="8" width="106" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deborah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZCV-WK-brP">
+                                        <frame key="frameInset" minX="85" minY="8" width="69" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -565,22 +571,38 @@
                                 <frame key="frameInset" minY="64" width="375" height="508"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="recenterMapIcon" id="thp-da-x3F">
-                                <frame key="frameInset" minX="328" minY="518" width="27" height="27"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="messageMapIcon" id="35X-xv-AgD">
-                                <frame key="frameInset" minX="22" minY="505" width="54" height="54"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="callMapIcon" id="iNk-oX-icm">
-                                <frame key="frameInset" minX="20" minY="424" width="54" height="54"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="cancelRequestMapIcon" id="Ulm-1I-4jV">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gq5-uJ-zdA">
                                 <frame key="frameInset" minX="124" minY="512" width="126" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cancelRequestMapIcon"/>
+                                <connections>
+                                    <action selector="didPressCancel:" destination="EuN-xs-muS" eventType="touchUpInside" id="JRs-qq-4Ri"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l66-wX-xuw">
+                                <frame key="frameInset" minX="22" minY="505" width="54" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="messageMapIcon"/>
+                                <connections>
+                                    <action selector="didPressMessage:" destination="EuN-xs-muS" eventType="touchUpInside" id="S6M-dI-HfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b1t-x2-ERL">
+                                <frame key="frameInset" minX="20" minY="424" width="54" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="callMapIcon"/>
+                                <connections>
+                                    <action selector="didPressCall:" destination="EuN-xs-muS" eventType="touchUpInside" id="frX-Kv-szg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rRG-17-kZ1">
+                                <frame key="frameInset" minX="328" minY="518" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="recenterMapIcon"/>
+                                <connections>
+                                    <action selector="didPressCenter:" destination="EuN-xs-muS" eventType="touchUpInside" id="3UN-kn-xpM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -592,6 +614,7 @@
                                 <state key="normal" image="knowledge_base_120"/>
                                 <connections>
                                     <action selector="didPressBack:" destination="EuN-xs-muS" eventType="touchUpInside" id="8e5-C4-atE"/>
+                                    <segue destination="bpD-Yr-Pes" kind="push" id="hYw-RW-DbM"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -600,6 +623,9 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="phoneBook"/>
+                                <connections>
+                                    <action selector="phoneBookDidTouch:" destination="EuN-xs-muS" eventType="touchUpInside" id="4OS-QP-lr0"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1011,7 +1037,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a3-jE-qFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-1472"/>
+            <point key="canvasLocation" x="1806" y="-1470"/>
         </scene>
         <!--Location Request View Controller-->
         <scene sceneID="B0m-2i-ccv">
@@ -1055,7 +1081,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPd-Zl-yiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="-1470"/>
+            <point key="canvasLocation" x="2373" y="-1471"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a1u-H4-zW8">
@@ -1075,7 +1101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eug-g0-9Vo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="-1470"/>
+            <point key="canvasLocation" x="2882" y="-1474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="faw-wG-eBs">
@@ -1084,12 +1110,19 @@
                     <view key="view" contentMode="scaleToFill" id="oH9-dd-0lg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="1tY-ln-7aG">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsd-aa-Vk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="-701"/>
+            <point key="canvasLocation" x="2882" y="-703"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xf4-ak-laH">
@@ -1129,7 +1162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rf4-96-iav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3931" y="-703"/>
+            <point key="canvasLocation" x="3839" y="-702"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0bE-dD-ead">
@@ -1149,7 +1182,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIy-iq-eMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4472" y="-702"/>
+            <point key="canvasLocation" x="4296" y="-703"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="06v-e0-V5S">
+            <objects>
+                <viewController id="Srh-Hm-0Ku" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X69-A2-bMp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial4" id="HtB-qa-r6P">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9R-yl-pzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4296" y="-1470"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="y5h-wA-qZF">
@@ -1189,7 +1242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uy-S0-D35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3931" y="-1470"/>
+            <point key="canvasLocation" x="3839" y="-1473"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="us5-RY-Lgl">
@@ -1209,7 +1262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHZ-ot-X2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3931" y="-2233"/>
+            <point key="canvasLocation" x="3839" y="-2235"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="buZ-WV-FBD">
@@ -1229,7 +1282,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXT-Li-Xtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4408" y="-2234"/>
+            <point key="canvasLocation" x="4296" y="-2236"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GzH-Vv-S05">
+            <objects>
+                <viewController id="I4F-nw-4Rb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ad-iK-2I9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="AddNewCareTeamMember" id="76w-LD-Ufn">
+                                <frame key="frameInset" width="375" height="666"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qk0-BR-HiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4750" y="-2236"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9tj-zU-Tyo">
+            <objects>
+                <viewController id="KFU-SD-i7R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raR-k0-3Ju">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="CareTeamMemberCreated" id="Wqa-Lc-lCT">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcV-mp-OC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5214" y="-2237"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yxH-cE-V4d">
@@ -1270,6 +1363,32 @@
             </objects>
             <point key="canvasLocation" x="-782" y="-2454"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Llk-z9-giI">
+            <objects>
+                <viewController id="bpD-Yr-Pes" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fcN-PR-Zug">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iqf-S9-5zo">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="chj-eK-dwh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TA5-Nh-M9W">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsd-8g-vKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="293"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="H2a-Gr-Lbw">
             <objects>
@@ -1286,7 +1405,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1u-b5-4fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="303"/>
+            <point key="canvasLocation" x="1181" y="1076"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rk7-e6-KVY">
@@ -1304,7 +1423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbA-zZ-9K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="1162"/>
+            <point key="canvasLocation" x="1181" y="1876"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wZ6-gg-QFk">
@@ -1322,7 +1441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3L5-a0-XW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="2018"/>
+            <point key="canvasLocation" x="593" y="2726"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HWc-4b-tB6">
@@ -1347,6 +1466,9 @@
         <image name="1of4" width="750" height="20"/>
         <image name="2of4" width="750" height="20"/>
         <image name="3of4" width="750" height="20"/>
+        <image name="AddNewCareTeamMember" width="375" height="666"/>
+        <image name="CareTeamMemberCreated" width="375" height="667"/>
+        <image name="DeborahAvatar" width="99" height="99"/>
         <image name="Next_Active" width="744" height="128"/>
         <image name="Next_Inactive" width="744" height="128"/>
         <image name="Tutorial1" width="375" height="667"/>
@@ -1357,6 +1479,7 @@
         <image name="Tutorial3" width="375" height="667"/>
         <image name="Tutorial3.1" width="375" height="667"/>
         <image name="Tutorial3.2" width="375" height="667"/>
+        <image name="Tutorial4" width="375" height="667"/>
         <image name="addCareTeamMember" width="21" height="21"/>
         <image name="avatar" width="169" height="169"/>
         <image name="back" width="13" height="21"/>
@@ -1387,6 +1510,7 @@
         <image name="settingsBase" width="375" height="603"/>
         <image name="settings_120" width="52" height="52"/>
         <image name="signUpForm" width="375" height="667"/>
+        <image name="update_active" width="90" height="40"/>
         <image name="update_inactive" width="90" height="40"/>
         <image name="user_active" width="150" height="48"/>
         <image name="user_inactive" width="150" height="48"/>
@@ -1397,6 +1521,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="hYw-RW-DbM"/>
         <segue reference="hou-pt-bRW"/>
     </inferredMetricsTieBreakers>
 </document>
