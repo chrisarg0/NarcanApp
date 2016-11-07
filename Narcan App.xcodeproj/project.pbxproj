@@ -54,6 +54,7 @@
 		017A8EB11DB93EDB00FA9F25 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017A8EB01DB93EDB00FA9F25 /* Validation.swift */; };
 		01891AEF1DB83A33004FE37C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */; };
 		018C7AA81DC1ECDF00E02FDC /* CareTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C7AA71DC1ECDF00E02FDC /* CareTeamViewController.swift */; };
+		0196D42A1DD106CE0008E2E5 /* CarrierEnRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0196D4291DD106CE0008E2E5 /* CarrierEnRouteViewController.swift */; };
 		01A0C44B1DC1849100174DD0 /* EmailChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */; };
 		01A0C44D1DC184AC00174DD0 /* PhoneChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */; };
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
@@ -142,6 +143,7 @@
 		017A8EB01DB93EDB00FA9F25 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		01891AEE1DB83A33004FE37C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		018C7AA71DC1ECDF00E02FDC /* CareTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTeamViewController.swift; sourceTree = "<group>"; };
+		0196D4291DD106CE0008E2E5 /* CarrierEnRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierEnRouteViewController.swift; sourceTree = "<group>"; };
 		01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailChangeViewController.swift; sourceTree = "<group>"; };
 		01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneChangeViewController.swift; sourceTree = "<group>"; };
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				E23ADEF61DC94A5300F06599 /* CareTeamAddViewController.swift */,
 				0161CFF91DD0456B0047D62E /* RequestViewController.swift */,
 				0161D0031DD084B20047D62E /* ArticleViewController.swift */,
+				0196D4291DD106CE0008E2E5 /* CarrierEnRouteViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 			files = (
 				018C7AA81DC1ECDF00E02FDC /* CareTeamViewController.swift in Sources */,
 				01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */,
+				0196D42A1DD106CE0008E2E5 /* CarrierEnRouteViewController.swift in Sources */,
 				0161D00D1DD08BDA0047D62E /* AboutOpiodsViewController.swift in Sources */,
 				0161CFFA1DD0456B0047D62E /* RequestViewController.swift in Sources */,
 				0114B9901DB6A1830029A3EC /* ViewController.swift in Sources */,

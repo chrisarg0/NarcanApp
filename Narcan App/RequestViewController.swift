@@ -18,6 +18,10 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var userTypeLbl: UILabel!
+    @IBOutlet weak var carrier: UIImageView!
+    @IBOutlet weak var me: UIImageView!
+    
+    @IBOutlet weak var loadingScreen: UIImageView!
     
     //let regionRadius: CLLocationDistance = 1000
     
@@ -26,8 +30,18 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        carrier.frame.origin.y = -20
+        me.frame.origin.y = -20
         // Do any additional setup after loading the view.
         //SCServiceCloud.sharedInstance().delegate = self
+        carrierView.alpha = 0
+        loadingScreen.alpha = 1
+        
+        UIView.animate(withDuration: 3.0, animations: {
+            self.loadingScreen.alpha = 0
+            self.carrierView.alpha = 1
+        })
+        
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
@@ -60,6 +74,17 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
         //self.userTypeLbl.text = AppDelegate.defaultManager.user.user_type
         //}
         // Calculate distance
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 2.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
+            self.me.frame.origin.y = 362
+            }, completion: nil)
+        
+        UIView.animate(withDuration: 2.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
+            self.carrier.frame.origin.y = 78
+            }, completion: nil)
     }
     
     private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
