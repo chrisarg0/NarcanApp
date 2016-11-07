@@ -1,5 +1,13 @@
-# NarcanApp
-## CodePath iOS for Designers: Group Poject
+# FindNaloxone
+### For FDA Competition
+
+### Video Demo
+
+
+### Product Spec
+https://www.dropbox.com/s/4yxwvpfwn0n8ccm/FindNaloxone%20Product%20Spec.pdf?dl=0
+
+## For CodePath Group Poject
 
 ### App Description
 The app pairs carriers of the Naloxone drug with people in their communities who need it most.
@@ -11,6 +19,3 @@ The app has two main use cases: to pair those who are experiencing an overdose w
 
 ### Wireframes
 https://invis.io/QE97FYERT
-
-
-### User Stories
