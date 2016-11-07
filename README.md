@@ -6,7 +6,7 @@
 https://youtu.be/I-zUzVe5e2Y
 
 ### Product Spec
-https://www.dropbox.com/s/4yxwvpfwn0n8ccm/FindNaloxone%20Product%20Spec.pdf?dl=0
+https://www.dropbox.com/s/ww0uq0t1087jz3l/FindNaloxoneProductSpec.pdf?dl=0
 
 ## For CodePath Group Poject
 
