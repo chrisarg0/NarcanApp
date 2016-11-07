@@ -23,6 +23,27 @@ PODS:
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
   - DesignSystem (2.0.8)
+  - Firebase (3.9.0):
+    - Firebase/Core (= 3.9.0)
+  - Firebase/Core (3.9.0):
+    - FirebaseAnalytics (= 3.5.1)
+    - FirebaseCore (= 3.4.4)
+  - FirebaseAnalytics (3.5.1):
+    - FirebaseCore (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.4.4):
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.8)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/Defines (2.1.0)
+  - GoogleToolboxForMac/NSData+zlib (2.1.0):
+    - GoogleToolboxForMac/Defines (= 2.1.0)
   - IQKeyboardManager (4.0.7)
   - MBProgressHUD (1.0.0)
   - RevealingSplashView (0.1.0)
@@ -52,6 +73,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - DesignSystem
+  - Firebase
   - IQKeyboardManager
   - MBProgressHUD
   - RevealingSplashView
@@ -63,6 +85,13 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DesignSystem: 0777e9c9eec974d02334461735c6d95552341b59
+  Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
+  FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
+  FirebaseCore: d0ed25f27b6f9158eccc439f1be6f92e81207e28
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   RevealingSplashView: 501dd03d975ba2c4165dd463ea1c7c407fb9d13e
@@ -70,6 +99,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ServiceSDK: 32819a29a0f3cac59a6942634dc2f20e020187db
 
-PODFILE CHECKSUM: c54cd8e43c7a2bfd31107eff8bcf331055de7053
+PODFILE CHECKSUM: ab33810be81d775d0023db2c4bd10794caa08627
 
-COCOAPODS: 1.1.0
+COCOAPODS: 1.0.1

@@ -6,88 +6,78 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>CocoaLumberjack.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>DesignSystem-SalesforceDesignSystem.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>DesignSystem.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Narcan App.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Narcan AppTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Narcan AppUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>RevealingSplashView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
-		</dict>
-		<key>SalesforceNetwork.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>SalesforceRestAPI.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SalesforceSDKCore-SalesforceSDKResources.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SalesforceSDKCore.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1B417E9052F6A2E508FDBFDE13313338</key>
+		<key>07F0B3C78B2D416B20140AA6B296290B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,47 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>319301176C2C1FEC1459A0815FF15DC6</key>
+		<key>3174E699A8921ADAE583780F45A04C4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>37C76CD246D637B8E4C586284A0D96B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>392361D5C2FFD347474A22990132923B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3AA8DF734A64F88502BCFEC66E760E89</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4010F01E264A42EA2CA50B748C3A413B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4392A722DB90337F648E10CF18110BC3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>593A2763D4B39295E4713A47CAE61265</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>612D6AF2748EAB31573753DD7F3096A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6180EB1E37F457604D65BD8D388767DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,32 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7A7FCDE5C1960E634C2F169491048136</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>84819E979E3F58B938DF8DC20F68DF59</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8A2E8FED01C8A6BC8ADFCF3C3B78368F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8B9D9DB220A4E40C68090DFE910A212D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C4092EE5CA6F01E67884B969B54053B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -187,27 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>905D8C2E9FD9A17D483E3294AA45D0EC</key>
+		<key>92BB131FA876445E027D20AE23EA7B5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>94D0BE3AE50E7BB57F192DC084FFD1BF</key>
+		<key>B6AFF6C8E2C1921EABF4B55094F23BE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98A7966113629EBF35097648FFB0939C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BC308FBD7CF024960F12347BD8A3525B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D24735D62123A93E5D6FDA7A9FB1AA9C</key>
+		<key>C484AE13E0A387097A0384A56024004F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -217,27 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC88CF2DCAB38FD3F60EF174C90095A0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DDB1A2A388C21163CBC8C531D3600A54</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DEA22ABED27F68613B9EE59405287EF1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E42266D9D44C69E835502F38746A94E4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E85A2109BFB03C3587BF4C0FA6B6811E</key>
+		<key>F1C87C95B3013454B0582FB8B6F0FF23</key>
 		<dict>
 			<key>primary</key>
 			<true/>

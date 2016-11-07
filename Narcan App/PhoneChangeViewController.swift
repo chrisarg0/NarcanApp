@@ -30,12 +30,6 @@ class PhoneChangeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didPressCancel(_ sender: AnyObject) {
         
-        dismiss(animated: true, completion: nil)
-
-        
-    }
-    
     
 }

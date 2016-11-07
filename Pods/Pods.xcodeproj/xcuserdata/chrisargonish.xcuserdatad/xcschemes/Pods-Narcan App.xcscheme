@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDB1A2A388C21163CBC8C531D3600A54"
+               BlueprintIdentifier = "07F0B3C78B2D416B20140AA6B296290B"
                BuildableName = "Pods_Narcan_App.framework"
                BlueprintName = "Pods-Narcan App"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDB1A2A388C21163CBC8C531D3600A54"
+            BlueprintIdentifier = "07F0B3C78B2D416B20140AA6B296290B"
             BuildableName = "Pods_Narcan_App.framework"
             BlueprintName = "Pods-Narcan App"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDB1A2A388C21163CBC8C531D3600A54"
-            BuildableName = "Pods_Narcan_App.framework"
-            BlueprintName = "Pods-Narcan App"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

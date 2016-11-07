@@ -2,13 +2,12 @@
 //  RequestViewController.swift
 //  Narcan App
 //
-//  Created by Chris Argonish on 10/18/16.
+//  Created by Chris Argonish on 11/6/16.
 //  Copyright © 2016 Chris. All rights reserved.
 //
 
 import UIKit
 import MapKit
-import CoreLocation
 import ServiceCore
 import SalesforceKit
 
@@ -20,7 +19,7 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var userTypeLbl: UILabel!
     
-    let regionRadius: CLLocationDistance = 1000
+    //let regionRadius: CLLocationDistance = 1000
     
     var startLocation: CLLocation?
     var locationManager: CLLocationManager?
@@ -34,31 +33,62 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         locationManager?.requestWhenInUseAuthorization()
         
+        let laTaqueria = CLLocation(latitude: 37.774929, longitude: -122.419416)
+        let regionRadius: CLLocationDistance = 1000.0
+        let region = MKCoordinateRegionMakeWithDistance(laTaqueria.coordinate, regionRadius, regionRadius)
+        mapView.setRegion(region, animated: true)
+        // mapView.delegate = self
         
-        let initialLocation = CLLocation(latitude: 37.774929, longitude: -122.419416)
-        centerMapOnLocation(location: initialLocation)
-        var annotation = MKPointAnnotation()
+        
+        //let initialLocation = CLLocation(latitude: 37.774929, longitude: -122.419416)
+        //centerMapOnLocation(location: initialLocation)
+        
+        //var annotation = MKPointAnnotation()
         
         
         
         
         // Sets Avatar Image
         //if AppDelegate.defaultManager.user.thumbnail != nil && AppDelegate.defaultManager.user.thumbnail != "" {
-            //let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
-            //self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
-            
+        //let imageUrlWithToken = "\(AppDelegate.defaultManager.user.thumbnail!)?oauth_token=\(AppDelegate.defaultManager.access_token!)"
+        //self.avatarImageView.sd_setImage(with: URL(string: imageUrlWithToken)!, placeholderImage: UIImage(named: "avatar.png")!)
+        
         //}
         
         //Sets Carriers Name
         //if AppDelegate.defaultManager.user.user_type != nil && AppDelegate.defaultManager.user.user_type != "" {
-            //self.userTypeLbl.text = AppDelegate.defaultManager.user.user_type
+        //self.userTypeLbl.text = AppDelegate.defaultManager.user.user_type
         //}
         // Calculate distance
     }
+    
+    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if startLocation == nil {
+            startLocation = locations.first
+        } else {
+            guard let latest = locations.first else { return }
+            let distanceInMeters = startLocation?.distance(from: latest)
+            print("distance in meters: \(distanceInMeters!)")
+        }
+        
+    }
+    
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            locationManager?.startUpdatingLocation()
+            locationManager?.allowsBackgroundLocationUpdates = true
+        }
+    }
+    
+    
 
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]) {
-     
+        
         if startLocation == nil {
             startLocation  = locations.first
         } else {
@@ -76,16 +106,15 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func didPressBack(_ sender: AnyObject) {
-    
+        
         navigationController!.popViewController(animated: true)
         
     }
     
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
+    //func centerMapOnLocation(location: CLLocation) {
+      //  let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
+        //mapView.setRegion(coordinateRegion, animated: true)
+    //}
     
     // Service cloud helper methods
     
@@ -112,7 +141,6 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
     
     // PHONE BOOK (CARE TEAM MEMBERS)
     // & alert controller
-
     
     @IBAction func phoneBookDidTouch(_ sender: UIButton) {
         let alertController = UIAlertController(title: nil, message: "Call someone from your care team:", preferredStyle: .actionSheet)
@@ -254,3 +282,4 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func didPressCenter(_ sender: UIButton) {
     }
 }
+

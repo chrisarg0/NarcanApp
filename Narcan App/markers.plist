@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item0</key>
+	<dict>
+		<key>Name</key>
+		<string>Carrier</string>
+		<key>Type</key>
+		<string></string>
+		<key>Image</key>
+		<string>carrierPin-1</string>
+		<key>Lattitude</key>
+		<string>37.774929</string>
+		<key>Longitude</key>
+		<string>-122.419416</string>
+	</dict>
+	<key>Item1</key>
+	<dict>
+		<key>Name</key>
+		<string>Request</string>
+		<key>Type</key>
+		<string></string>
+		<key>Image</key>
+		<string>myPin</string>
+		<key>Lattitude</key>
+		<string>37.774929</string>
+		<key>Longitude</key>
+		<string>-122.419416</string>
+	</dict>
+</dict>
+</plist>

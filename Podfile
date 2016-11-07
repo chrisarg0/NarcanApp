@@ -11,6 +11,7 @@ source 'https://github.com/goinstant/pods-specs-public'
 
   # Pods for Narcan App
 
+pod 'Firebase'
 pod 'SalesforceSDKCore'
 #pod 'SalesforceRestAPI'
 #pod 'SalesforceNetwork'

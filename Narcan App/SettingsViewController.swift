@@ -35,7 +35,8 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBAction func backDidPress(_ sender: AnyObject) {
         
-        navigationController!.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+
         
     }
     
