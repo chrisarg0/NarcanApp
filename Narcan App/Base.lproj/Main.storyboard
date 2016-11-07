@@ -667,7 +667,6 @@
                                 <state key="normal" image="cancelRequestMapIcon"/>
                                 <connections>
                                     <action selector="didPressCancel:" destination="EuN-xs-muS" eventType="touchUpInside" id="JRs-qq-4Ri"/>
-                                    <segue destination="DSV-2y-4k1" kind="modal" modalTransitionStyle="crossDissolve" id="Sg4-VL-KRk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rRG-17-kZ1">
@@ -763,6 +762,15 @@
                                     <action selector="didPressCall:" destination="DSV-2y-4k1" eventType="touchUpInside" id="39t-db-Bwc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RcQ-Ue-Ayg">
+                                <frame key="frameInset" minX="172" minY="559" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q4q-gx-gPk">
+                                <frame key="frameInset" minX="312" minY="25" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="phoneBook"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -770,6 +778,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hhg-5O-IqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5084.5" y="-563.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="n6o-ym-oXK">
+            <objects>
+                <viewController id="8HA-YC-LmA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WY6-4F-w7L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="carrierView" id="Ie1-co-Ivq">
+                                <frame key="frameInset" minY="22" width="375" height="645"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oy1-bG-QWv">
+                                <frame key="frameInset" minX="290" minY="334" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lrd-bx-Bbi">
+                                <frame key="frameInset" minX="312" minY="25" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="phoneBook"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jW8-iO-EQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5084.5" y="198.5"/>
         </scene>
         <!--Article View Controller-->
         <scene sceneID="t1N-nZ-D3e">
@@ -2172,6 +2209,7 @@
         <image name="care_team" width="34" height="27"/>
         <image name="carrierEnRoute" width="375" height="645"/>
         <image name="carrierPin-1" width="76" height="97"/>
+        <image name="carrierView" width="375" height="645"/>
         <image name="carrier_active" width="150" height="32"/>
         <image name="carrier_inactive" width="150" height="32"/>
         <image name="defaultAvatar" width="169" height="169"/>
