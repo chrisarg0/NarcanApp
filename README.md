@@ -34,6 +34,7 @@ https://invis.io/MJ8W8CKRF
 * As a standard user, I should be able to find a knowledgebase to inform me on various related topics
 * As a standard user, I should be able to create a naloxone request, that pairs me with a naloxone carrier, and should be able to see related information displayed on my home screen and in a separate mapView
 * As a user, I should have the ability to update my personal settings, and be able to add members to my care team
+* Implement tableViews where appropriate
  
 ### Stretch Use Cases
 * LaunchScreen.storyboard animation
