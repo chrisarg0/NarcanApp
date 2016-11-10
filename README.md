@@ -20,3 +20,13 @@ The app has two main use cases: to pair those who are experiencing an overdose w
 
 ### Wireframes
 https://invis.io/MJ8W8CKRF
+
+### Core Use Cases
+*
+*
+*
+ 
+### Stretch Use Cases
+*
+*
+*
