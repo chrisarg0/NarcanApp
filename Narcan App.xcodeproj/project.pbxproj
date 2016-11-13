@@ -199,6 +199,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01045D821DD8F6D3007153EB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				017951801DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf */,
+				017951811DB88A6F00AF53A3 /* OpenSans-Semibold.ttf */,
+				017951821DB88A6F00AF53A3 /* OpenSans-Regular.ttf */,
+				017951831DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf */,
+				017951841DB88A6F00AF53A3 /* OpenSans-Light.ttf */,
+				017951851DB88A6F00AF53A3 /* OpenSans-Italic.ttf */,
+				017951861DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf */,
+				017951871DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf */,
+				017951881DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf */,
+				017951891DB88A6F00AF53A3 /* OpenSans-Bold.ttf */,
+				017951781DB88A4D00AF53A3 /* SalesforceSans-Bold.ttf */,
+				017951791DB88A4D00AF53A3 /* SalesforceSans-BoldItalic.ttf */,
+				0179517A1DB88A4D00AF53A3 /* SalesforceSans-Italic.ttf */,
+				0179517B1DB88A4D00AF53A3 /* SalesforceSans-Light.ttf */,
+				0179517C1DB88A4D00AF53A3 /* SalesforceSans-LightItalic.ttf */,
+				0179517D1DB88A4D00AF53A3 /* SalesforceSans-Regular.ttf */,
+				0179517E1DB88A4D00AF53A3 /* SalesforceSans-Thin.ttf */,
+				0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		0114B9811DB6A1830029A3EC = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +249,6 @@
 		0114B98C1DB6A1830029A3EC /* Narcan App */ = {
 			isa = PBXGroup;
 			children = (
-				0161CFF01DD043A10047D62E /* TabbedViewControllers */,
 				E22F2CC71DBF3B540056C8AA /* Narcan App.entitlements */,
 				E22CBE2A1DB93F6D001F0AF2 /* Manager Controllers */,
 				017951761DB86A0200AF53A3 /* Resources */,
@@ -284,26 +308,9 @@
 		017951761DB86A0200AF53A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				01045D821DD8F6D3007153EB /* Fonts */,
 				017A8EB01DB93EDB00FA9F25 /* Validation.swift */,
 				01C067151DB82D6300DC5AA7 /* Common.swift */,
-				017951801DB88A6F00AF53A3 /* OpenSans-SemiboldItalic.ttf */,
-				017951811DB88A6F00AF53A3 /* OpenSans-Semibold.ttf */,
-				017951821DB88A6F00AF53A3 /* OpenSans-Regular.ttf */,
-				017951831DB88A6F00AF53A3 /* OpenSans-LightItalic.ttf */,
-				017951841DB88A6F00AF53A3 /* OpenSans-Light.ttf */,
-				017951851DB88A6F00AF53A3 /* OpenSans-Italic.ttf */,
-				017951861DB88A6F00AF53A3 /* OpenSans-ExtraBoldItalic.ttf */,
-				017951871DB88A6F00AF53A3 /* OpenSans-ExtraBold.ttf */,
-				017951881DB88A6F00AF53A3 /* OpenSans-BoldItalic.ttf */,
-				017951891DB88A6F00AF53A3 /* OpenSans-Bold.ttf */,
-				017951781DB88A4D00AF53A3 /* SalesforceSans-Bold.ttf */,
-				017951791DB88A4D00AF53A3 /* SalesforceSans-BoldItalic.ttf */,
-				0179517A1DB88A4D00AF53A3 /* SalesforceSans-Italic.ttf */,
-				0179517B1DB88A4D00AF53A3 /* SalesforceSans-Light.ttf */,
-				0179517C1DB88A4D00AF53A3 /* SalesforceSans-LightItalic.ttf */,
-				0179517D1DB88A4D00AF53A3 /* SalesforceSans-Regular.ttf */,
-				0179517E1DB88A4D00AF53A3 /* SalesforceSans-Thin.ttf */,
-				0179517F1DB88A4D00AF53A3 /* SalesforceSans-ThinItalic.ttf */,
 				0161CFFF1DD0754E0047D62E /* Markers.swift */,
 			);
 			name = Resources;
@@ -312,6 +319,7 @@
 		017951771DB86A0F00AF53A3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0161CFF01DD043A10047D62E /* TabbedViewControllers */,
 				0161D0051DD08B690047D62E /* ArticleGroups */,
 				0114B98F1DB6A1830029A3EC /* ViewController.swift */,
 				0114B9BF1DB6EC0A0029A3EC /* KnowledgeViewController.swift */,

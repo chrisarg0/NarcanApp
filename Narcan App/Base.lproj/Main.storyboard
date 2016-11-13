@@ -1284,7 +1284,7 @@
                                         <frame key="frameInset" minX="20" minY="167" width="300" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="naloxoneApp2016!" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="0gb-IO-3tj">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="0gb-IO-3tj">
                                         <frame key="frameInset" minX="29" minY="257" width="225" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.25882352941176467" green="0.32941176470588235" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
@@ -1294,7 +1294,7 @@
                                             <action selector="pwEditDidChange:" destination="tgH-Vo-HBs" eventType="editingChanged" id="g0g-Rm-2rc"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="chris@liquidhub.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="0h7-QW-4cI">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="0h7-QW-4cI">
                                         <frame key="frameInset" minX="29" minY="179" width="278" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.25882352941176467" green="0.32941176470588235" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
