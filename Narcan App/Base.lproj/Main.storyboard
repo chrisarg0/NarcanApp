@@ -1675,26 +1675,6 @@
             <point key="canvasLocation" x="2373" y="-1471"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="a1u-H4-zW8">
-            <objects>
-                <viewController id="b5l-gm-uc4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iNt-ab-0Nh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial1" id="gn8-Nt-1kF">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eug-g0-9Vo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2882" y="-1474"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="faw-wG-eBs">
             <objects>
                 <viewController id="GPE-IH-xBa" sceneMemberID="viewController">
@@ -1774,146 +1754,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIy-iq-eMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8404.5" y="-703.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="06v-e0-V5S">
-            <objects>
-                <viewController id="Srh-Hm-0Ku" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X69-A2-bMp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial4" id="HtB-qa-r6P">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9R-yl-pzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4296" y="-1470"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="y5h-wA-qZF">
-            <objects>
-                <viewController id="maJ-NC-roj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ad3-v8-Fxy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial2" id="lEo-z8-B9u">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jk-HC-8lB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3380" y="-1470"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lK7-BE-cfn">
-            <objects>
-                <viewController id="hj6-7l-QWT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bgg-dM-dQ5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial3" id="dYp-bF-Yg1">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0uy-S0-D35" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3839" y="-1473"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="us5-RY-Lgl">
-            <objects>
-                <viewController id="XXB-1L-iZs" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tam-F9-PbW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial3.1" id="nPt-JR-rZQ">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xHZ-ot-X2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3839" y="-2235"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="buZ-WV-FBD">
-            <objects>
-                <viewController id="oVy-af-f5a" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PRb-w8-rZQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Tutorial3.2" id="jmi-Wg-7Dd">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XXT-Li-Xtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4296" y="-2236"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GzH-Vv-S05">
-            <objects>
-                <viewController id="I4F-nw-4Rb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9ad-iK-2I9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="AddNewCareTeamMember" id="76w-LD-Ufn">
-                                <frame key="frameInset" width="375" height="666"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qk0-BR-HiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4750" y="-2236"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="9tj-zU-Tyo">
-            <objects>
-                <viewController id="KFU-SD-i7R" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="raR-k0-3Ju">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="CareTeamMemberCreated" id="Wqa-Lc-lCT">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hcV-mp-OC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5214" y="-2237"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PCY-18-sG4">
@@ -2182,21 +2022,13 @@
         <image name="1of4" width="750" height="20"/>
         <image name="2of4" width="750" height="20"/>
         <image name="3of4" width="750" height="20"/>
-        <image name="AddNewCareTeamMember" width="375" height="666"/>
-        <image name="CareTeamMemberCreated" width="375" height="667"/>
         <image name="DeborahAvatar" width="99" height="99"/>
         <image name="FAQs" width="79" height="79"/>
         <image name="Next_Active" width="744" height="128"/>
         <image name="Next_Inactive" width="744" height="128"/>
-        <image name="Tutorial1" width="375" height="667"/>
         <image name="Tutorial1.1" width="375" height="667"/>
         <image name="Tutorial1.2" width="375" height="667"/>
         <image name="Tutorial1.3" width="375" height="667"/>
-        <image name="Tutorial2" width="375" height="667"/>
-        <image name="Tutorial3" width="375" height="667"/>
-        <image name="Tutorial3.1" width="375" height="667"/>
-        <image name="Tutorial3.2" width="375" height="667"/>
-        <image name="Tutorial4" width="375" height="667"/>
         <image name="aboutNaloxone" width="79" height="79"/>
         <image name="aboutOpiods" width="79" height="79"/>
         <image name="addCareTeamMember" width="21" height="21"/>
