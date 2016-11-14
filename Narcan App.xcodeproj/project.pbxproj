@@ -57,6 +57,8 @@
 		0196D42A1DD106CE0008E2E5 /* CarrierEnRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0196D4291DD106CE0008E2E5 /* CarrierEnRouteViewController.swift */; };
 		01A0C44B1DC1849100174DD0 /* EmailChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */; };
 		01A0C44D1DC184AC00174DD0 /* PhoneChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */; };
+		01B18B921DDA749000D2CB33 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B18B911DDA749000D2CB33 /* BaseTransition.swift */; };
+		01B18B941DDA749F00D2CB33 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B18B931DDA749F00D2CB33 /* FadeTransition.swift */; };
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
 		01C067161DB82D6300DC5AA7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067151DB82D6300DC5AA7 /* Common.swift */; };
 		01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067171DB8362800DC5AA7 /* SignUpViewController.swift */; };
@@ -146,6 +148,8 @@
 		0196D4291DD106CE0008E2E5 /* CarrierEnRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierEnRouteViewController.swift; sourceTree = "<group>"; };
 		01A0C44A1DC1849100174DD0 /* EmailChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailChangeViewController.swift; sourceTree = "<group>"; };
 		01A0C44C1DC184AC00174DD0 /* PhoneChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneChangeViewController.swift; sourceTree = "<group>"; };
+		01B18B911DDA749000D2CB33 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		01B18B931DDA749F00D2CB33 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01C067151DB82D6300DC5AA7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		01C067171DB8362800DC5AA7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 				017A8EB01DB93EDB00FA9F25 /* Validation.swift */,
 				01C067151DB82D6300DC5AA7 /* Common.swift */,
 				0161CFFF1DD0754E0047D62E /* Markers.swift */,
+				01B18B911DDA749000D2CB33 /* BaseTransition.swift */,
+				01B18B931DDA749F00D2CB33 /* FadeTransition.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -707,6 +713,7 @@
 				0161D0001DD0754E0047D62E /* Markers.swift in Sources */,
 				0161D00B1DD08BCC0047D62E /* AboutNaloxoneViewController.swift in Sources */,
 				E2815F961DBFEF7F00C36697 /* UIView+Border.m in Sources */,
+				01B18B941DDA749F00D2CB33 /* FadeTransition.swift in Sources */,
 				0161D00F1DD08BED0047D62E /* InCaseOfEmergencyViewController.swift in Sources */,
 				E27CA1B51DBECED7000B4D0D /* NarcanDefaultsManager.swift in Sources */,
 				E23ADEF91DC94ECE00F06599 /* NarcanCare.swift in Sources */,
@@ -728,6 +735,7 @@
 				0161CFFC1DD046760047D62E /* RequestHomeViewController.swift in Sources */,
 				01C067161DB82D6300DC5AA7 /* Common.swift in Sources */,
 				E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */,
+				01B18B921DDA749000D2CB33 /* BaseTransition.swift in Sources */,
 				E22CBE2C1DB93FB2001F0AF2 /* NarcanAPIManager.swift in Sources */,
 				0161D0091DD08BB10047D62E /* LinksViewController.swift in Sources */,
 				017951751DB84E7300AF53A3 /* SelectUserTypeViewController.swift in Sources */,
