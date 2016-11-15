@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     var requestVC: UIViewController!
     var myJourneyVc: UIViewController!
     var viewControllers: [UIViewController]!
-    var selectedIndex: Int = 0
+    var selectedIndex: Int = 1
 
 
     

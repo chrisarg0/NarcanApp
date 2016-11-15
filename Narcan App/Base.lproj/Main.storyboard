@@ -75,7 +75,7 @@
                                         <state key="normal" image="journeyIcon"/>
                                         <state key="selected" image="journeyIcon_enabled"/>
                                         <connections>
-                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcH-5s-DNX"/>
+                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsU-FL-sQq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3qM-Od-7N5">
@@ -84,7 +84,7 @@
                                         <state key="normal" image="knowledge_base_120"/>
                                         <state key="selected" image="knowledge_enabled"/>
                                         <connections>
-                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ki8-oA-F0g"/>
+                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZp-Wx-14H"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pGZ-5I-N30">
@@ -107,7 +107,7 @@
                                         <state key="normal" image="homeIcon"/>
                                         <state key="selected" image="homeIcon_active"/>
                                         <connections>
-                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm4-ho-YHN"/>
+                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5B-O1-4Da"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CUI-cH-h29">
@@ -162,9 +162,9 @@
                         <outlet property="avatarImageView" destination="1Fo-6b-9kW" id="B9D-jN-wUt"/>
                         <outlet property="contentView" destination="1gG-3u-csF" id="ev4-OZ-eBZ"/>
                         <outlet property="nameLbl" destination="U0D-vR-rau" id="uB1-Z5-JRX"/>
-                        <outletCollection property="buttons" destination="cLK-Xh-1E1" collectionClass="NSMutableArray" id="eZX-2d-6Zf"/>
-                        <outletCollection property="buttons" destination="3qM-Od-7N5" collectionClass="NSMutableArray" id="O8s-3o-7ws"/>
-                        <outletCollection property="buttons" destination="hGF-7A-Ms8" collectionClass="NSMutableArray" id="mbf-8R-r9I"/>
+                        <outletCollection property="buttons" destination="3qM-Od-7N5" collectionClass="NSMutableArray" id="yaM-OV-DIC"/>
+                        <outletCollection property="buttons" destination="cLK-Xh-1E1" collectionClass="NSMutableArray" id="3vE-xB-azy"/>
+                        <outletCollection property="buttons" destination="hGF-7A-Ms8" collectionClass="NSMutableArray" id="jIO-Ob-6XE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -985,10 +985,10 @@
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressBack:" destination="lvj-qC-aaF" eventType="touchUpInside" id="vCf-Ll-mOH"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="didPressBack:" destination="lvj-qC-aaF" id="Lkk-pq-vEa"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -1014,10 +1014,10 @@
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressBack:" destination="aXg-LX-6sS" eventType="touchUpInside" id="5zA-cG-MhO"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="didPressBack:" destination="aXg-LX-6sS" id="Da6-NL-QYr"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
