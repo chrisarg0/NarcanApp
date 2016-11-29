@@ -32,15 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        SCServiceCloud.sharedInstance().cases.caseCreateActionName = "NewNarcanRequest"
 //        
 //        // Create configuration object with init params
-//        let config = SCSServiceConfiguration(
-//            community: NSURL(string: "https://getperqs-developer-edition.na16.force.com/naloxone")! as URL,
+        let config = SCSServiceConfiguration(
+            community: URL(string: "https://getperqs-developer-edition.na16.force.com/naloxone")!)
 //            dataCategoryGroup: "Example",
 //            rootDataCategory: "Example")
-//        
-//        // Perform any additional configuration here
-//        
-//        // Pass configuration to shared instance
-//        SCServiceCloud.sharedInstance().serviceConfiguration = config
 
         
         let navigationBarAppearace = UINavigationBar.appearance()

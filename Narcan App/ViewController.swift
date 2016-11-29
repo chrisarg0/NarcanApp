@@ -255,6 +255,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func newCase(_ sender: AnyObject) {
+        SCServiceCloud.sharedInstance().cases.setInterfaceVisible(true,
+                                                                  animated: true,
+                                                                  completion: nil)
+    }
     
     
 }
