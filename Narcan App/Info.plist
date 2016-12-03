@@ -49,7 +49,7 @@
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Narcan needs the access to camera.</string>
+	<string>Find Naloxone needs access to your camera in order to update your profile picture.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We are going to use your location only while you&apos;re using our application.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -87,6 +87,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Narcan needs the access to photo library.</string>
+	<string>Find Naloxone needs access to your photo library in order to update your profile image.</string>
 </dict>
 </plist>

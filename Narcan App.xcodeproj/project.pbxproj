@@ -18,7 +18,7 @@
 		0114B9C21DB6EC1A0029A3EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */; };
 		0161CFF21DD043CD0047D62E /* KnowledgeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161CFF11DD043CD0047D62E /* KnowledgeHomeViewController.swift */; };
 		0161CFF41DD043E80047D62E /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161CFF31DD043E80047D62E /* DefaultViewController.swift */; };
-		0161CFF61DD043F30047D62E /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161CFF51DD043F30047D62E /* JourneyViewController.swift */; };
+		0161CFF61DD043F30047D62E /* TeamTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161CFF51DD043F30047D62E /* TeamTabViewController.swift */; };
 		0161CFFA1DD0456B0047D62E /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161CFF91DD0456B0047D62E /* RequestViewController.swift */; };
 		0161CFFC1DD046760047D62E /* RequestHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161CFFB1DD046760047D62E /* RequestHomeViewController.swift */; };
 		0161CFFE1DD065360047D62E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0161CFFD1DD065360047D62E /* MapKit.framework */; };
@@ -109,7 +109,7 @@
 		0114B9C11DB6EC1A0029A3EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0161CFF11DD043CD0047D62E /* KnowledgeHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeHomeViewController.swift; sourceTree = "<group>"; };
 		0161CFF31DD043E80047D62E /* DefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
-		0161CFF51DD043F30047D62E /* JourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		0161CFF51DD043F30047D62E /* TeamTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTabViewController.swift; sourceTree = "<group>"; };
 		0161CFF91DD0456B0047D62E /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		0161CFFB1DD046760047D62E /* RequestHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHomeViewController.swift; sourceTree = "<group>"; };
 		0161CFFD1DD065360047D62E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -291,7 +291,7 @@
 			children = (
 				0161CFF11DD043CD0047D62E /* KnowledgeHomeViewController.swift */,
 				0161CFF31DD043E80047D62E /* DefaultViewController.swift */,
-				0161CFF51DD043F30047D62E /* JourneyViewController.swift */,
+				0161CFF51DD043F30047D62E /* TeamTabViewController.swift */,
 				0161CFFB1DD046760047D62E /* RequestHomeViewController.swift */,
 			);
 			name = TabbedViewControllers;
@@ -731,7 +731,7 @@
 				E23ADEF71DC94A5300F06599 /* CareTeamAddViewController.swift in Sources */,
 				0161CFF41DD043E80047D62E /* DefaultViewController.swift in Sources */,
 				017951A11DB8992400AF53A3 /* NotificationRequestViewController.swift in Sources */,
-				0161CFF61DD043F30047D62E /* JourneyViewController.swift in Sources */,
+				0161CFF61DD043F30047D62E /* TeamTabViewController.swift in Sources */,
 				0161CFFC1DD046760047D62E /* RequestHomeViewController.swift in Sources */,
 				01C067161DB82D6300DC5AA7 /* Common.swift in Sources */,
 				E22F2CC91DBF503F0056C8AA /* NarcanUser.swift in Sources */,

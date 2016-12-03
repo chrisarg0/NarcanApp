@@ -10,8 +10,9 @@ import UIKit
 import MapKit
 import ServiceCore
 import SalesforceKit
+import CoreLocation
 
-class RequestViewController: UIViewController, CLLocationManagerDelegate {
+class RequestViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
@@ -51,7 +52,7 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
         let regionRadius: CLLocationDistance = 1000.0
         let region = MKCoordinateRegionMakeWithDistance(laTaqueria.coordinate, regionRadius, regionRadius)
         mapView.setRegion(region, animated: true)
-        // mapView.delegate = self
+        mapView.delegate = self
         
         
         //let initialLocation = CLLocation(latitude: 37.774929, longitude: -122.419416)
@@ -87,41 +88,41 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate {
             }, completion: nil)
     }
     
-    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if startLocation == nil {
-            startLocation = locations.first
-        } else {
-            guard let latest = locations.first else { return }
-            let distanceInMeters = startLocation?.distance(from: latest)
-            print("distance in meters: \(distanceInMeters!)")
-        }
-        
-    }
+//    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        if startLocation == nil {
+//            startLocation = locations.first
+//        } else {
+//            guard let latest = locations.first else { return }
+//            let distanceInMeters = startLocation?.distance(from: latest)
+//            print("distance in meters: \(distanceInMeters!)")
+//        }
+//        
+//    }
     
-    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse || status == .authorizedAlways {
-            locationManager?.startUpdatingLocation()
-            locationManager?.allowsBackgroundLocationUpdates = true
-        }
-    }
+//    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+//        if status == .authorizedWhenInUse || status == .authorizedAlways {
+//            locationManager?.startUpdatingLocation()
+//            locationManager?.allowsBackgroundLocationUpdates = true
+//        }
+//    }
+//    
+//    
+//
+//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+//    }
     
     
-
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-    }
-    
-    
-    func locationManager(_ manager: CLLocationManager,
-                         didUpdateLocations locations: [CLLocation]) {
-        
-        if startLocation == nil {
-            startLocation  = locations.first
-        } else {
-            guard locations.first != nil else {return}
-            let distanceInMeters = startLocation?.distance(from: startLocation!)
-            print("distance in meters:\(distanceInMeters)")
-        }
-    }
+//    func locationManager(_ manager: CLLocationManager,
+//                         didUpdateLocations locations: [CLLocation]) {
+//        
+//        if startLocation == nil {
+//            startLocation  = locations.first
+//        } else {
+//            guard let latest = locations.first else {return}
+//            let distanceInMeters = startLocation?.distance(from: startLocation!)
+//            print("distance in meters:\(distanceInMeters)")
+//        }
+//    }
     
     
     

@@ -1,5 +1,5 @@
 //
-//  JourneyViewController.swift
+//  TeamTabViewController.swift
 //  Narcan App
 //
 //  Created by Chris Argonish on 11/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JourneyViewController: UIViewController {
+class TeamTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

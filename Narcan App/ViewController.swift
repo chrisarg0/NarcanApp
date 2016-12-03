@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var defaultHomeVc: UIViewController!
     var articleTypeVc: UIViewController!
     var requestVC: UIViewController!
-    var myJourneyVc: UIViewController!
+    var teamTabVc: UIViewController!
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 1
 
@@ -54,9 +54,9 @@ class ViewController: UIViewController {
         
         articleTypeVc = main.instantiateViewController(withIdentifier: "articleTypeVc")
         requestVC = main.instantiateViewController(withIdentifier: "requestVC")
-        myJourneyVc = main.instantiateViewController(withIdentifier: "myJourneyVc")
+        teamTabVc = main.instantiateViewController(withIdentifier: "teamTabVc")
 
-        viewControllers = [articleTypeVc, defaultHomeVc, myJourneyVc, requestVC]
+        viewControllers = [articleTypeVc, defaultHomeVc, teamTabVc, requestVC]
         
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
