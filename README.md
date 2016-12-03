@@ -10,11 +10,6 @@ https://www.dropbox.com/s/ww0uq0t1087jz3l/FindNaloxoneProductSpec.pdf?dl=0
 
 ## For CodePath Group Poject
 
-### Project Team
-* Chris Argonish
-* Doris Hernandez
-* Jeff Rauch
-
 ### App Description
 The app pairs carriers of the Naloxone drug with people in their communities who need it most.
 
