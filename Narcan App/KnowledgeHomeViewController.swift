@@ -12,10 +12,10 @@ class KnowledgeHomeViewController: UIViewController {
 
     @IBOutlet weak var articleType1: UIButton!
     @IBOutlet weak var articleType2: UIButton!
-    @IBOutlet weak var articleType3: UIButton!
+    //@IBOutlet weak var articleType3: UIButton!
     @IBOutlet weak var articleType4: UIButton!
     @IBOutlet weak var articleType5: UIButton!
-    @IBOutlet weak var articleType6: UIButton!
+    //@IBOutlet weak var articleType6: UIButton!
     
     
     override func viewDidLoad() {

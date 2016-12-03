@@ -10,26 +10,33 @@ import UIKit
 
 class DefaultViewController: UIViewController {
 
+    @IBOutlet weak var introWarning: UIImageView!
+    @IBOutlet weak var requestButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        requestButton.alpha = 0
+        requestButton.frame.origin.y = 300
+        
+        introWarning.alpha = 0
+        introWarning.frame.origin.y = 623
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 0.9, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
+                self.requestButton.frame.origin.y = 246
+                self.requestButton.alpha = 1
+                    }, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.6, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.3, options: [], animations: {
+            self.introWarning.frame.origin.y = 503
+            self.introWarning.alpha = 1
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        }, completion: nil)
+        
+        
     }
-    */
 
 }
