@@ -13,6 +13,8 @@ class DefaultViewController: UIViewController {
     @IBOutlet weak var introWarning: UIImageView!
     @IBOutlet weak var requestButton: UIButton!
     
+    var fadeTransition: FadeTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         requestButton.alpha = 0
@@ -40,7 +42,11 @@ class DefaultViewController: UIViewController {
     }
 
     @IBAction func didTapEsc(_ sender: Any) {
-        introWarning.isHidden = true
+        UIView.animate(withDuration: 0.5, delay: 0.6, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.3, options: [], animations: {
+            self.introWarning.frame.origin.y = 623
+            self.introWarning.alpha = 0
+            
+        }, completion: nil)
     }
     
     

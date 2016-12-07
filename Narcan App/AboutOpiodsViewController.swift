@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutOpiodsViewController: UIViewController, UITableViewDataSource {
+class AboutOpiodsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     //@IBOutlet weak var articleTitle: UILabel!
@@ -17,7 +17,7 @@ class AboutOpiodsViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
+        //tableView.dataSource = self
 
         navigationController?.navigationBar.barTintColor = UIColor(red:0.97, green:0.54, blue:0.38, alpha:1.00)
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
@@ -25,17 +25,17 @@ class AboutOpiodsViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
     }
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
-        
-        return cell
-        
-    }
+//    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//    
+//    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
+//        
+//        return cell
+//        
+//    }
     
     @IBAction func didPressBack(_ sender: AnyObject) {
         

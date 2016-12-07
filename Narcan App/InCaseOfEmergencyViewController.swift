@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InCaseOfEmergencyViewController: UIViewController, UITableViewDataSource {
+class InCaseOfEmergencyViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,23 +16,23 @@ class InCaseOfEmergencyViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
+        //tableView.dataSource = self
 
         navigationController?.navigationBar.barTintColor = UIColor(red:0.94, green:0.43, blue:0.39, alpha:1.00)
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
     }
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 10
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
-        
-        return cell
-        
-    }
+//    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//            return 10
+//    }
+//    
+//    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
+//        
+//        return cell
+//        
+//    }
     
     @IBAction func didPressBack(_ sender: AnyObject) {
         
