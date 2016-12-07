@@ -61,4 +61,17 @@ class KnowledgeHomeViewController: UIViewController {
 //            }, completion: nil)
         
     }
+    
+    @IBAction func didPressBtn(_ sender: Any) {
+        
+        let url = URL(string: "https://www.narcan.com/pdf/NARCAN-Quick-Start-Guide.pdf")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
+    
+    
 }

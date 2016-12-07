@@ -10,6 +10,10 @@ import UIKit
 
 class TeamTabViewController: UIViewController {
 
+    @IBOutlet var avatars: [UIButton]!
+    var selectedIndex: Int = 1
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +25,32 @@ class TeamTabViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func didPressAvatar(_ sender: Any) {
+        
+        let previousIndex = selectedIndex
+        
+        selectedIndex = (sender as AnyObject).tag
+        
+        avatars[previousIndex].isSelected = false
+        
+//        let previousVC = viewControllers[previousIndex]
+//        
+//        previousVC.willMove(toParentViewController: nil)
+//        previousVC.view.removeFromSuperview()
+//        previousVC.removeFromParentViewController()
+//        
+//        sender.isSelected = true
+//        let vc = viewControllers[selectedIndex]
+//        addChildViewController(vc)
+//        
+//        vc.view.frame = contentView.bounds
+//        contentView.addSubview(vc.view)
+//        
+//        func viewDidAppear(_ animated: Bool) {
+//            vc.didMove(toParentViewController: self)
+        
     }
-    */
+
+    
 
 }

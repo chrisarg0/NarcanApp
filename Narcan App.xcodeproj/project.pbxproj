@@ -62,6 +62,7 @@
 		01C067141DB8266800DC5AA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067131DB8266800DC5AA7 /* LoginViewController.swift */; };
 		01C067161DB82D6300DC5AA7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067151DB82D6300DC5AA7 /* Common.swift */; };
 		01C067181DB8362800DC5AA7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C067171DB8362800DC5AA7 /* SignUpViewController.swift */; };
+		01CDC4181DF754990098460B /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CDC4171DF754990098460B /* ArticleCell.swift */; };
 		01D16DF61DD00D9600E9F92E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01D16DF51DD00D9500E9F92E /* GoogleService-Info.plist */; };
 		46768326B317CACC9795468A /* Pods_Narcan_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD88CC730DD147C391F134 /* Pods_Narcan_App.framework */; };
 		5193F7A6BC26BE023472EC8D /* Pods_Narcan_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4CC802686FDCB55B6CC8F2 /* Pods_Narcan_AppUITests.framework */; };
@@ -153,6 +154,7 @@
 		01C067131DB8266800DC5AA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01C067151DB82D6300DC5AA7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		01C067171DB8362800DC5AA7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		01CDC4171DF754990098460B /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		01D16DF51DD00D9500E9F92E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2ED4BE25D9166264B1A70252 /* Pods-Narcan App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan App/Pods-Narcan App.debug.xcconfig"; sourceTree = "<group>"; };
 		6CF97A04D98FE9B0B56D2069 /* Pods-Narcan AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Narcan AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Narcan AppUITests/Pods-Narcan AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				0161D00A1DD08BCC0047D62E /* AboutNaloxoneViewController.swift */,
 				0161D00C1DD08BDA0047D62E /* AboutOpiodsViewController.swift */,
 				0161D00E1DD08BED0047D62E /* InCaseOfEmergencyViewController.swift */,
+				01CDC4171DF754990098460B /* ArticleCell.swift */,
 			);
 			name = ArticleGroups;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 				01B18B921DDA749000D2CB33 /* BaseTransition.swift in Sources */,
 				E22CBE2C1DB93FB2001F0AF2 /* NarcanAPIManager.swift in Sources */,
 				0161D0091DD08BB10047D62E /* LinksViewController.swift in Sources */,
+				01CDC4181DF754990098460B /* ArticleCell.swift in Sources */,
 				017951751DB84E7300AF53A3 /* SelectUserTypeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,22 +8,35 @@
 
 import UIKit
 
-class AboutNaloxoneViewController: UIViewController {
+class AboutNaloxoneViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    //@IBOutlet weak var articleTitle: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+
         navigationController?.navigationBar.barTintColor = UIColor(red:0.48, green:0.60, blue:0.90, alpha:1.00)
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
     }
     
-
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
+        
+        return cell
+        
+    }
+    
     @IBAction func didPressBack(_ sender: AnyObject) {
         
         dismiss(animated: true, completion: nil)

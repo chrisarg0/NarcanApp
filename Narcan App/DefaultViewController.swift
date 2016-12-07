@@ -39,4 +39,9 @@ class DefaultViewController: UIViewController {
         
     }
 
+    @IBAction func didTapEsc(_ sender: Any) {
+        introWarning.isHidden = true
+    }
+    
+    
 }

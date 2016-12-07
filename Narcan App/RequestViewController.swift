@@ -10,9 +10,8 @@ import UIKit
 import MapKit
 import ServiceCore
 import SalesforceKit
-import CoreLocation
 
-class RequestViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class RequestViewController: UIViewController {
     
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
@@ -21,16 +20,43 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet weak var userTypeLbl: UILabel!
     @IBOutlet weak var carrier: UIImageView!
     @IBOutlet weak var me: UIImageView!
-    
     @IBOutlet weak var loadingScreen: UIImageView!
+    @IBOutlet weak var spinnerImageView: UIImageView!
+    @IBOutlet weak var loadingMsg1: UILabel!
+    @IBOutlet weak var loadingMsg2: UILabel!
     
-    //let regionRadius: CLLocationDistance = 1000
+    //Custom Spinner
+    var loading_1: UIImage!
+    var loading_2: UIImage!
+    var loading_3: UIImage!
+    var loading_4: UIImage!
+    var loading_5: UIImage!
+    var loading_6: UIImage!
+    var loading_7: UIImage!
+    var spinnerImages: [UIImage]!
+    var animatedSpinner: UIImage!
+    
+    let regionRadius: CLLocationDistance = 1000
     
     var startLocation: CLLocation?
     var locationManager: CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loading_1 = UIImage(named: "spinner-1")
+        loading_2 = UIImage(named: "spinner-2")
+        loading_3 = UIImage(named: "spinner-3")
+        loading_4 = UIImage(named: "spinner-4")
+        loading_5 = UIImage(named: "spinner-5")
+        loading_6 = UIImage(named: "spinner-6")
+        loading_7 = UIImage(named: "spinner-7")
+        spinnerImages = [loading_1, loading_2, loading_1, loading_3, loading_1, loading_4, loading_1, loading_5, loading_1, loading_6, loading_1, loading_7]
+        
+        animatedSpinner = UIImage.animatedImage(with: spinnerImages, duration: 3.0)
+
+        spinnerImageView.image = animatedSpinner
+        
         carrier.frame.origin.y = -20
         me.frame.origin.y = -20
         // Do any additional setup after loading the view.
@@ -38,21 +64,23 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         carrierView.alpha = 0
         loadingScreen.alpha = 1
         
-        UIView.animate(withDuration: 3.0, animations: {
+        UIView.animate(withDuration: 6.0, animations: {
+            self.spinnerImageView.alpha = 0
+            self.loadingMsg1.alpha = 0
+            self.loadingMsg2.alpha = 0
             self.loadingScreen.alpha = 0
             self.carrierView.alpha = 1
         })
+        
+        let laTaqueria = CLLocation(latitude: 37.774929, longitude: -122.419416)
+        //let regionRadius: CLLocationDistance = 1000.0
+        let region = MKCoordinateRegionMakeWithDistance(laTaqueria.coordinate, regionRadius, regionRadius)
+        mapView.setRegion(region, animated: true)
         
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         locationManager?.requestWhenInUseAuthorization()
-        
-        let laTaqueria = CLLocation(latitude: 37.774929, longitude: -122.419416)
-        let regionRadius: CLLocationDistance = 1000.0
-        let region = MKCoordinateRegionMakeWithDistance(laTaqueria.coordinate, regionRadius, regionRadius)
-        mapView.setRegion(region, animated: true)
-        mapView.delegate = self
         
         
         //let initialLocation = CLLocation(latitude: 37.774929, longitude: -122.419416)
@@ -309,3 +337,16 @@ class RequestViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     }
 }
 
+extension RequestViewController: MKMapViewDelegate {
+    func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
+        print("rendering")
+    }
+}
+
+extension RequestViewController: CLLocationManagerDelegate{
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        }
+    }
+}
