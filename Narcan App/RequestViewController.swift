@@ -44,6 +44,7 @@ class RequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // custom loading animation
         loading_1 = UIImage(named: "spinner-1")
         loading_2 = UIImage(named: "spinner-2")
         loading_3 = UIImage(named: "spinner-3")
@@ -57,6 +58,7 @@ class RequestViewController: UIViewController {
 
         spinnerImageView.image = animatedSpinner
         
+        // show map view animation
         carrier.frame.origin.y = -20
         me.frame.origin.y = -20
         // Do any additional setup after loading the view.
@@ -72,9 +74,11 @@ class RequestViewController: UIViewController {
             self.carrierView.alpha = 1
         })
         
-        let laTaqueria = CLLocation(latitude: 37.774929, longitude: -122.419416)
+        
+        // mapView stuff
+        let zyngaOffice = CLLocation(latitude: 37.770927, longitude: -122.403665)
         //let regionRadius: CLLocationDistance = 1000.0
-        let region = MKCoordinateRegionMakeWithDistance(laTaqueria.coordinate, regionRadius, regionRadius)
+        let region = MKCoordinateRegionMakeWithDistance(zyngaOffice.coordinate, regionRadius, regionRadius)
         mapView.setRegion(region, animated: true)
         
         locationManager = CLLocationManager()
