@@ -20,9 +20,6 @@ class RequestViewController: UIViewController {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var userTypeLbl: UILabel!
-    @IBOutlet weak var carrier: UIImageView!
-    @IBOutlet weak var me: UIImageView!
-    @IBOutlet weak var loadingScreen: UIImageView!
     @IBOutlet weak var spinnerImageView: UIImageView!
     @IBOutlet weak var loadingMsg1: UILabel!
     @IBOutlet weak var loadingMsg2: UILabel!
@@ -61,20 +58,15 @@ class RequestViewController: UIViewController {
 
         spinnerImageView.image = animatedSpinner
         
-        // show map view animation
-        carrier.frame.origin.y = -20
-        me.frame.origin.y = -20
+        
         // Do any additional setup after loading the view.
         //SCServiceCloud.sharedInstance().delegate = self
         carrierView.alpha = 0
-        loadingScreen.alpha = 1
         
-        UIView.animate(withDuration: 6.0, animations: {
+        UIView.animate(withDuration: 5.0, animations: {
             self.spinnerImageView.alpha = 0
             self.loadingMsg1.alpha = 0
             self.loadingMsg2.alpha = 0
-            self.loadingScreen.alpha = 0
-            self.carrierView.alpha = 1
         })
         
         
@@ -187,14 +179,18 @@ class RequestViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 6.0, animations: {
+            self.carrierView.alpha = 1
+        })
+
         
-        UIView.animate(withDuration: 2.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
-            self.me.frame.origin.y = 362
-            }, completion: nil)
-        
-        UIView.animate(withDuration: 2.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
-            self.carrier.frame.origin.y = 78
-            }, completion: nil)
+//        UIView.animate(withDuration: 2.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
+//            self.me.frame.origin.y = 362
+//            }, completion: nil)
+//        
+//        UIView.animate(withDuration: 2.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
+//            self.carrier.frame.origin.y = 78
+//            }, completion: nil)
     }
     
 //    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

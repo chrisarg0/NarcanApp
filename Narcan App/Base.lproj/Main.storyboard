@@ -625,7 +625,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rRG-17-kZ1">
-                                <rect key="frame" x="313" y="524" width="30" height="30"/>
+                                <rect key="frame" x="313" y="522" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="recenterMapIcon"/>
                                 <connections>
@@ -633,7 +633,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eXj-bV-fOU">
-                                <rect key="frame" x="24" y="502" width="50" height="50"/>
+                                <rect key="frame" x="15" y="484" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backBtnMap"/>
                                 <connections>
@@ -641,31 +641,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="beD-fR-5C0">
-                                <rect key="frame" x="290" y="406" width="68" height="68"/>
+                                <rect key="frame" x="15" y="406" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="phoneBookMap"/>
                                 <connections>
                                     <action selector="phoneBookDidTouch:" destination="EuN-xs-muS" eventType="touchUpInside" id="hAy-up-JkS"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="carrierPin-1" id="ZqK-Cs-K8t">
-                                <rect key="frame" x="296" y="74" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="myPin" id="vpj-qj-WxY">
-                                <rect key="frame" x="139" y="346" width="37" height="48"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="loadingScreen" id="IAD-tE-C3u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="spinner-1" id="CQJ-Ef-uVx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="spinner-1" id="CQJ-Ef-uVx">
-                                <rect key="frame" x="0.0" y="-5" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We'll let you know once we've paired you with a nearby carrier!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yWc-7R-3EI">
-                                <rect key="frame" x="70" y="382" width="235" height="80"/>
+                                <rect key="frame" x="70" y="392" width="235" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SalesforceSans-Bold" family="Salesforce Sans" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -703,13 +691,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="avatarImageView" destination="ujl-PV-w6T" id="7sG-9k-Wpu"/>
-                        <outlet property="carrier" destination="ZqK-Cs-K8t" id="GUq-ZO-T0V"/>
                         <outlet property="carrierView" destination="uQO-26-y8j" id="Liv-49-n9e"/>
                         <outlet property="loadingMsg1" destination="MJe-K6-4aC" id="mSk-zz-ozu"/>
                         <outlet property="loadingMsg2" destination="yWc-7R-3EI" id="Awu-Gj-6Dj"/>
-                        <outlet property="loadingScreen" destination="IAD-tE-C3u" id="6Oz-DK-jXt"/>
                         <outlet property="mapView" destination="Za7-wE-NMb" id="chc-7D-TXG"/>
-                        <outlet property="me" destination="vpj-qj-WxY" id="XLR-mU-lhe"/>
                         <outlet property="spinnerImageView" destination="CQJ-Ef-uVx" id="yKF-Jz-yvU"/>
                         <outlet property="timeLbl" destination="o3V-fG-0dO" id="mdf-e0-ApU"/>
                         <outlet property="userTypeLbl" destination="ZCV-WK-brP" id="7sB-C2-StM"/>
@@ -771,11 +756,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="introWarning" id="6XD-ev-GCO">
-                                <rect key="frame" x="0.0" y="498" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="428" width="375" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="leU-fd-5H5">
-                                <rect key="frame" x="341" y="514" width="30" height="30"/>
+                                <rect key="frame" x="326" y="439" width="46" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="didTapEsc:" destination="GVR-7g-ncc" eventType="touchUpInside" id="Ql6-bE-EWj"/>
@@ -2105,7 +2090,6 @@
         <image name="careTeamIcon" width="32" height="23"/>
         <image name="careTeamIcon_active" width="32" height="23"/>
         <image name="care_team" width="34" height="27"/>
-        <image name="carrierPin-1" width="76" height="97"/>
         <image name="carrier_active" width="150" height="32"/>
         <image name="carrier_inactive" width="150" height="32"/>
         <image name="defaultAvatar" width="169" height="169"/>
@@ -2116,11 +2100,10 @@
         <image name="homeIcon_active" width="30" height="23"/>
         <image name="iconTransparent" width="92" height="93"/>
         <image name="infoBtn" width="20" height="20"/>
-        <image name="introWarning" width="375" height="120"/>
+        <image name="introWarning" width="375" height="190"/>
         <image name="knowledge_base_120" width="31" height="24"/>
         <image name="knowledge_enabled" width="35" height="26"/>
         <image name="links" width="79" height="79"/>
-        <image name="loadingScreen" width="375" height="664"/>
         <image name="loginForm" width="300" height="130"/>
         <image name="login_active" width="335" height="64"/>
         <image name="lovedOne_active" width="150" height="46"/>
@@ -2128,7 +2111,6 @@
         <image name="medicalPractitioner_active" width="150" height="32"/>
         <image name="medicalPractitioner_inactive" width="150" height="32"/>
         <image name="more" width="30" height="30"/>
-        <image name="myPin" width="76" height="97"/>
         <image name="newCareTeamMemberForm" width="375" height="603"/>
         <image name="newRequestButton" width="251" height="251"/>
         <image name="phoneBook" width="33" height="33"/>

@@ -12,6 +12,9 @@ import ServiceCore
 import ServiceCases
 import ServiceKnowledge
 import SalesforceKit
+import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,6 +29,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        let types: UNAuthorizationOptions = [.alert, .badge, .sound]
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: types) { granted, error in
+            if error != nil {
+                print("Error asking for permission")
+            } else {
+                switch granted {
+                case true:
+                    NotificationCenter.default.addObserver(self, selector: #selector(self.tokenRefreshNotification(notification:)), name: NSNotification.Name.firInstanceIDTokenRefresh, object: nil)
+                    application.registerForRemoteNotifications()
+                    print("notification authorized")
+                case false:
+                    print("access not granted")
+                }
+            }
+        }
 //////////Commented out due to errors//////////////////////////////////////////////////
 //        SCServiceCloud.sharedInstance().knowledge.isEnabled = true
 //        SCServiceCloud.sharedInstance().cases.isEnabled = true
@@ -48,43 +68,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //Push Notification
-        SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
+        //SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
         
 //        let center = UNUserNotificationCenter.current()
 //        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
 //            // actions based on whether notifications were authorized or not
 //        }
 //        application.registerForRemoteNotifications()
-        
+        FIRApp.configure()
         return true
     }
     
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        
-        NSLog("Failed to get token, error: \(error.localizedDescription)")
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        
-        let nc = NotificationCenter.default
-        nc.post(name: NSNotification.Name(rawValue: messageKey), object: nil, userInfo: userInfo)
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        
-        let nc = NotificationCenter.default
-        nc.post(name: NSNotification.Name(rawValue: messageKey), object: nil, userInfo: userInfo)
-        
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-        print(deviceTokenString)
-        
-        SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
-        
-        SFPushNotificationManager.sharedInstance().registerForSalesforceNotifications()
-    }
+//// SALESFORCE PUSH NOTIFICATION SETUP
+//    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+//        
+//        NSLog("Failed to get token, error: \(error.localizedDescription)")
+//    }
+//    
+//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+//        
+//        let nc = NotificationCenter.default
+//        nc.post(name: NSNotification.Name(rawValue: messageKey), object: nil, userInfo: userInfo)
+//    }
+//    
+//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//        
+//        let nc = NotificationCenter.default
+//        nc.post(name: NSNotification.Name(rawValue: messageKey), object: nil, userInfo: userInfo)
+//        
+//    }
+//    
+//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+//        print(deviceTokenString)
+//        
+//        SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
+//        
+//        SFPushNotificationManager.sharedInstance().registerForSalesforceNotifications()
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -94,6 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        FIRMessaging.messaging().disconnect()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -102,12 +124,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        connectToFBPushNotificationMessenger()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func tokenRefreshNotification(notification: NSNotification) {
+        let refreshedToken = FIRInstanceID.instanceID().token()!
+        print("InstanceID Token: \(refreshedToken)")
+        connectToFBPushNotificationMessenger()
+    }
+    
+    func connectToFBPushNotificationMessenger() {
+        FIRMessaging.messaging().connect { (error) in
+            if (error != nil) {
+                print("Unable to connect \(error)")
+            } else {
+                print("Connected to Firebase Connection Manager!")
+            }
+        }
+    }
 
 }
 

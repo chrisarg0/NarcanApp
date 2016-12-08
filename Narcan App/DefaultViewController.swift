@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
 
 class DefaultViewController: UIViewController {
 
@@ -17,19 +20,20 @@ class DefaultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FIRMessaging.messaging().subscribe(toTopic: "/naloxone/updates")
         requestButton.alpha = 0
         requestButton.frame.origin.y = 300
         
         introWarning.alpha = 0
-        introWarning.frame.origin.y = 623
+        introWarning.frame.origin.y = 723
         
         UIView.animate(withDuration: 0.9, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
-            self.requestButton.frame.origin.y = 246
+            self.requestButton.frame.origin.y = 226
             self.requestButton.alpha = 1
         }, completion: nil)
         
-        UIView.animate(withDuration: 0.5, delay: 0.6, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.3, options: [], animations: {
-            self.introWarning.frame.origin.y = 503
+        UIView.animate(withDuration: 0.5, delay: 0.6, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
+            self.introWarning.frame.origin.y = 433
             self.introWarning.alpha = 1
             
         }, completion: nil)
@@ -38,6 +42,7 @@ class DefaultViewController: UIViewController {
 
     @IBAction func didTapEsc(_ sender: Any) {
         UIView.animate(withDuration: 0.5, delay: 0.6, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.3, options: [], animations: {
+            self.requestButton.frame.origin.y = 246
             self.introWarning.frame.origin.y = 623
             self.introWarning.alpha = 0
             
