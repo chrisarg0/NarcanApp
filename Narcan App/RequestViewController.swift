@@ -8,11 +8,13 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 import ServiceCore
 import SalesforceKit
 
 class RequestViewController: UIViewController {
     
+    // outlets
     @IBOutlet weak var carrierView: UIView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var avatarImageView: UIImageView!
@@ -36,14 +38,15 @@ class RequestViewController: UIViewController {
     var spinnerImages: [UIImage]!
     var animatedSpinner: UIImage!
     
-    let regionRadius: CLLocationDistance = 1000
     
-    var startLocation: CLLocation?
-    var locationManager: CLLocationManager?
+    // map stuff
+    let manager = CLLocationManager()
+    //let regionRadius: CLLocationDistance = 1000
+    //var startLocation: CLLocation?
+    //var locationManager: CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // custom loading animation
         loading_1 = UIImage(named: "spinner-1")
         loading_2 = UIImage(named: "spinner-2")
@@ -75,16 +78,82 @@ class RequestViewController: UIViewController {
         })
         
         
-        // mapView stuff
+        // mapView stuff 1
+        
         let zyngaOffice = CLLocation(latitude: 37.770927, longitude: -122.403665)
-        //let regionRadius: CLLocationDistance = 1000.0
+        
+        let regionRadius: CLLocationDistance = 200000.0
         let region = MKCoordinateRegionMakeWithDistance(zyngaOffice.coordinate, regionRadius, regionRadius)
         mapView.setRegion(region, animated: true)
+        mapView.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
+
+        //2
+        let sourceLocation = CLLocationCoordinate2D(latitude: 37.770927, longitude: -122.403665)
+        let destinationLocation = CLLocationCoordinate2D(latitude: 37.784399, longitude: -122.403422)
         
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager?.requestWhenInUseAuthorization()
+        //3
+        let sourcePlacemark = MKPlacemark(coordinate: sourceLocation, addressDictionary: nil)
+        let destinationPlacemark = MKPlacemark(coordinate: destinationLocation, addressDictionary: nil)
+
+        //4
+        let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
+        let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
+
+        //5
+        let sourceAnnotation = MKPointAnnotation()
+        sourceAnnotation.title = "Me"
+        
+        if let location = sourcePlacemark.location {
+            sourceAnnotation.coordinate = location.coordinate
+        }
+        
+        let destinationAnnotation = MKPointAnnotation()
+        destinationAnnotation.title = "Deborah"
+
+        if let location = destinationPlacemark.location {
+            destinationAnnotation.coordinate = location.coordinate
+        }
+        
+        //6
+        self.mapView.showAnnotations([sourceAnnotation,destinationAnnotation], animated: true )
+
+        //7
+        let directionRequest = MKDirectionsRequest()
+        directionRequest.source = sourceMapItem
+        directionRequest.destination = destinationMapItem
+        directionRequest.transportType = .automobile
+        
+        //8
+        let directions = MKDirections(request: directionRequest)
+
+        //9
+        directions.calculate {
+            (response, error) -> Void in
+            
+            guard let response = response else {
+                if let error = error {
+                    print("Error: \(error)")
+                }
+                
+                return
+            }
+            
+            let route = response.routes[0]
+            self.mapView.add((route.polyline), level: MKOverlayLevel.aboveRoads)
+            
+            let rect = route.polyline.boundingMapRect
+            self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+        }
+        
+
+        
+//        locationManager = CLLocationManager()
+//        locationManager?.delegate = self
+//        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager?.requestWhenInUseAuthorization()
         
         
         //let initialLocation = CLLocation(latitude: 37.774929, longitude: -122.419416)
@@ -107,6 +176,14 @@ class RequestViewController: UIViewController {
         //self.userTypeLbl.text = AppDelegate.defaultManager.user.user_type
         //}
         // Calculate distance
+    }
+    
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.red
+        renderer.lineWidth = 4.0
+        
+        return renderer
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -157,11 +234,7 @@ class RequestViewController: UIViewController {
 //    }
     
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    // Actions
     
     @IBAction func didPressBack(_ sender: AnyObject) {
         
@@ -341,16 +414,39 @@ class RequestViewController: UIViewController {
     }
 }
 
-extension RequestViewController: MKMapViewDelegate {
-    func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
-        print("rendering")
-    }
-}
-
-extension RequestViewController: CLLocationManagerDelegate{
+extension RequestViewController: CLLocationManagerDelegate {
     private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             mapView.showsUserLocation = true
         }
     }
+}
+
+extension RequestViewController: MKMapViewDelegate {
+    func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
+        print("rendering")
+    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        if annotation is MKUserLocation {
+//            return nil
+//        }
+//        
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "carrierLocation") as? MKPinAnnotationView
+//        
+//        if annotationView == nil {
+//            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "carrierLocation")
+//        } else {
+//            annotationView?.annotation = annotation
+//        }
+//        
+//        annotationView?.pinTintColor = UIColor.green
+//        annotationView?.canShowCallout = true
+//        if let place = annotation as? Carriers,
+//            let image = place.image {
+//                annotationView?.detailCalloutAccessoryView = UIImageView(image: image)
+//        }
+//        
+//        return annotationView
+//        
+//    }
 }

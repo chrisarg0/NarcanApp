@@ -23,21 +23,16 @@ class DefaultViewController: UIViewController {
         introWarning.alpha = 0
         introWarning.frame.origin.y = 623
         
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        
         UIView.animate(withDuration: 0.9, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: [], animations: {
-                self.requestButton.frame.origin.y = 246
-                self.requestButton.alpha = 1
-                    }, completion: nil)
+            self.requestButton.frame.origin.y = 246
+            self.requestButton.alpha = 1
+        }, completion: nil)
         
         UIView.animate(withDuration: 0.5, delay: 0.6, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.3, options: [], animations: {
             self.introWarning.frame.origin.y = 503
             self.introWarning.alpha = 1
-
+            
         }, completion: nil)
-        
         
     }
 
